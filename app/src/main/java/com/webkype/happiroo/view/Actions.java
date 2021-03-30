@@ -1,0 +1,6 @@
+package com.webkype.happiroo.view;
+
+public enum Actions {
+    CLICKED,REMOVED,DELETE,ADD, CLEAR, UPDATED,REMOVE_CLICK,VALUE_UPDATED,NO_ACTION,
+    EDIT,MAKE_COVER_IMAGE,ENABLED,DISABLED;
+}

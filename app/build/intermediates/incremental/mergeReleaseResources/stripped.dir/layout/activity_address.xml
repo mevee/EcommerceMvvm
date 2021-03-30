@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".view.activity.checout_process.AddressActivity" android:tag="layout/activity_address_0">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/addressHeaderCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="@dimen/_4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48dp">
+
+                <ImageView
+                    android:id="@+id/backAddress"
+                    android:layout_width="@dimen/_36dp"
+                    android:layout_height="@dimen/_36dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="@dimen/_8dp"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_address"
+                    android:fontFamily="@font/lato_black"
+                    android:textSize="@dimen/_18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_48dp"
+                    android:textColor="@color/dark_gray"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/main_address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/addressHeaderCard">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/addNewAddressRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40dp"
+                        android:layout_height="@dimen/_40dp"
+                        android:src="@drawable/address_new"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_a_new_address"
+                        android:fontFamily="@font/lato_black"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/_20sp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_72dp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10dp"
+                    android:background="@color/bg_gray"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:layout_marginStart="@dimen/_12dp"
+                    android:layout_marginEnd="@dimen/_12dp"
+                    android:text="@string/my_saved_addresses"
+                    android:fontFamily="@font/lato_semibold"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_address_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressbar_address"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+         

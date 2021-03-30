@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "652702705498",
+    "project_id": "lemend-a3517",
+    "storage_bucket": "lemend-a3517.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652702705498:android:a3b3fc9022f84a34f37563",
+        "android_client_info": {
+          "package_name": "com.webkype.happiroo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "652702705498-itprk9fg928aaji45ot38gtgim3jtkpn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.webkype.happiroo",
+            "certificate_hash": "948d9a9617a9fd82f4fd17d75e96bb3442e267d8"
+          }
+        },
+        {
+          "client_id": "652702705498-h01eretqg2hqc8iqu2nsj9oge5jsbcvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDima95jFJ3ohM4p0IG5h_X49XI0ir-0kU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "652702705498-h01eretqg2hqc8iqu2nsj9oge5jsbcvl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "652702705498-bn0demanu34gapvt9b6udna6a736g4ch.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.webkype.happiroobusiness"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652702705498:android:d55b85e4a0f46db2f37563",
+        "android_client_info": {
+          "package_name": "com.webkype.happiroobusiness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "652702705498-4u11spmgla5mve0qbmp1bilph6lhrs0g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.webkype.happiroobusiness",
+            "certificate_hash": "948d9a9617a9fd82f4fd17d75e96bb3442e267d8"
+          }
+        },
+        {
+          "client_id": "652702705498-h01eretqg2hqc8iqu2nsj9oge5jsbcvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDima95jFJ3ohM4p0IG5h_X49XI0ir-0kU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "652702705498-h01eretqg2hqc8iqu2nsj9oge5jsbcvl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "652702705498-bn0demanu34gapvt9b6udna6a736g4ch.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.webkype.happiroobusiness"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

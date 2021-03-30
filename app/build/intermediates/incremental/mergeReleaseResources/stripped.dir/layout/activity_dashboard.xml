@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.DashboardActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavLine" />
+
+    <View
+        android:id="@+id/bottomNavLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_above="@+id/bottomNav"
+        android:alpha="0.2"
+        android:background="@color/colorAccent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:state_checked="true"
+        android:theme="@style/Widget.BottomNavigationView"
+        app:itemIconSize="@dimen/_20dp"
+        app:itemIconTint="@drawable/color_selector"
+        app:itemTextAppearanceActive="@style/TextNormal"
+        app:itemTextAppearanceInactive="@style/TextNormal"
+        app:itemTextColor="@drawable/color_selector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/home_menu_items" />
+
+</RelativeLayout>

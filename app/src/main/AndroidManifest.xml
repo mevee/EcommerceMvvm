@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.webkype.happiroo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".view.activity.FavServiceActivity"></activity>
+        <activity android:name=".view.activity.shopProduct.FavProductListActivity" />
+        <activity android:name=".view.activity.orders.OrderDetailActivity" />
+        <activity android:name=".view.activity.orders.OrderListActivity" />
+        <activity android:name=".view.activity.shopProduct.ShopProductDetailActivity" />
+        <activity
+            android:name=".view.activity.shopProduct.ProductListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.activity.shopProduct.ShoppingCatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme" />
+        <activity
+            android:name=".view.activity.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme" />
+        <activity
+            android:name=".view.activity.NotificationsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme" />
+        <activity
+            android:name=".view.activity.ImagePagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionTheme" />
+        <activity
+            android:name=".view.activity.bookings.BookingDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme" />
+        <activity
+            android:name=".view.activity.checout_process.CovidMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme" />
+        <activity
+            android:name=".view.activity.checout_process.CartOverviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme" />
+        <activity
+            android:name=".view.activity.PromocodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme" />
+        <activity
+            android:name=".view.activity.ReferEarnActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionTheme" />
+        <activity
+            android:name=".view.activity.checout_process.SelectSlotActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme" />
+        <activity
+            android:name=".view.activity.checout_process.AddEditAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme" />
+        <activity
+            android:name=".view.activity.checout_process.AddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme" />
+        <activity
+            android:name=".view.activity.checout_process.CartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme" />
+        <activity
+            android:name=".view.activity.shopService.ServiceProductDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme" />
+        <activity
+            android:name=".view.activity.shopService.ServiceListingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme" />
+        <activity
+            android:name=".view.activity.shopService.ServiceDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionTheme" />
+        <activity
+            android:name=".view.activity.ProfileEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.activity.ChangeLocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionTheme" />
+        <activity
+            android:name=".view.activity.DashboardActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.activity.FetchLocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme" />
+        <activity
+            android:name=".view.activity.auth.OtpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.activity.auth.AuthenticateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".view.activity.WalkThroughActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme" />
+        <activity
+            android:name=".view.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteActionTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_qD5gsSOze976lE" />
+        <service
+            android:name=".Firebase.MyFirebaseService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_channel_id"
+                android:value="@string/channel_id" />
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/logo" />
+            <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+                 notification message. See README(https://goo.gl/6BKBk7) for more. -->
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@color/colorPrimaryDark" />
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,583 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.webkype.happiroo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:5:5-67
+11-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:6:5-79
+12-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:7:5-81
+13-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:8:5-80
+14-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:8:22-77
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:9:5-79
+15-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:10:5-81
+16-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:10:22-78
+17    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+17-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b754856cd86d0ac34406f0de6b196611\jetified-firebase-iid-21.0.1\AndroidManifest.xml:24:5-68
+17-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b754856cd86d0ac34406f0de6b196611\jetified-firebase-iid-21.0.1\AndroidManifest.xml:24:22-65
+18    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+18-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b754856cd86d0ac34406f0de6b196611\jetified-firebase-iid-21.0.1\AndroidManifest.xml:26:5-82
+18-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b754856cd86d0ac34406f0de6b196611\jetified-firebase-iid-21.0.1\AndroidManifest.xml:26:22-79
+19    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+19-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a6582ff393776a5f5119133a3d265e4a\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:26:5-110
+19-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a6582ff393776a5f5119133a3d265e4a\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:26:22-107
+20
+21    <application
+21-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:12:5-163:19
+22        android:allowBackup="true"
+22-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:13:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.1.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\678d0984588fcb445435f5f10a70d91e\core-1.1.0\AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:hardwareAccelerated="true"
+25-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:14:9-43
+26        android:icon="@mipmap/ic_launcher"
+26-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:15:9-43
+27        android:label="@string/app_name"
+27-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:16:9-41
+28        android:largeHeap="true"
+28-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:17:9-33
+29        android:requestLegacyExternalStorage="true"
+29-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:18:9-52
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:19:9-54
+31        android:supportsRtl="true"
+31-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:20:9-35
+32        android:theme="@style/AppTheme"
+32-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:21:9-40
+33        android:usesCleartextTraffic="true" >
+33-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:22:9-44
+34        <activity android:name="com.webkype.happiroo.view.activity.FavServiceActivity" />
+34-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:23:9-79
+34-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:23:19-67
+35        <activity android:name="com.webkype.happiroo.view.activity.shopProduct.FavProductListActivity" />
+35-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:24:9-86
+35-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:24:19-83
+36        <activity android:name="com.webkype.happiroo.view.activity.orders.OrderDetailActivity" />
+36-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:25:9-78
+36-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:25:19-75
+37        <activity android:name="com.webkype.happiroo.view.activity.orders.OrderListActivity" />
+37-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:26:9-76
+37-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:26:19-73
+38        <activity android:name="com.webkype.happiroo.view.activity.shopProduct.ShopProductDetailActivity" />
+38-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:27:9-89
+38-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:27:19-86
+39        <activity
+39-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:28:9-32:63
+40            android:name="com.webkype.happiroo.view.activity.shopProduct.ProductListActivity"
+40-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:29:13-74
+41            android:screenOrientation="portrait"
+41-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:30:13-49
+42            android:theme="@style/WhiteActionTheme"
+42-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:31:13-52
+43            android:windowSoftInputMode="stateAlwaysHidden" />
+43-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:32:13-60
+44        <activity
+44-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:33:9-36:55
+45            android:name="com.webkype.happiroo.view.activity.shopProduct.ShoppingCatActivity"
+45-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:34:13-74
+46            android:screenOrientation="portrait"
+46-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:35:13-49
+47            android:theme="@style/WhiteActionTheme" />
+47-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:36:13-52
+48        <activity
+48-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:37:9-40:55
+49            android:name="com.webkype.happiroo.view.activity.WebViewActivity"
+49-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:38:13-58
+50            android:screenOrientation="portrait"
+50-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:39:13-49
+51            android:theme="@style/WhiteActionTheme" />
+51-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:40:13-52
+52        <activity
+52-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:41:9-44:55
+53            android:name="com.webkype.happiroo.view.activity.NotificationsActivity"
+53-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:42:13-64
+54            android:screenOrientation="portrait"
+54-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:43:13-49
+55            android:theme="@style/WhiteActionTheme" />
+55-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:44:13-52
+56        <activity
+56-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:45:9-48:52
+57            android:name="com.webkype.happiroo.view.activity.ImagePagerActivity"
+57-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:46:13-61
+58            android:screenOrientation="portrait"
+58-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:47:13-49
+59            android:theme="@style/NoActionTheme" />
+59-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:48:13-49
+60        <activity
+60-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:49:9-52:55
+61            android:name="com.webkype.happiroo.view.activity.bookings.BookingDetailActivity"
+61-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:50:13-73
+62            android:screenOrientation="portrait"
+62-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:51:13-49
+63            android:theme="@style/WhiteActionTheme" />
+63-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:52:13-52
+64        <activity
+64-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:53:9-56:55
+65            android:name="com.webkype.happiroo.view.activity.checout_process.CovidMessageActivity"
+65-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:54:13-79
+66            android:screenOrientation="portrait"
+66-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:55:13-49
+67            android:theme="@style/WhiteActionTheme" />
+67-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:56:13-52
+68        <activity
+68-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:57:9-60:55
+69            android:name="com.webkype.happiroo.view.activity.checout_process.CartOverviewActivity"
+69-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:58:13-79
+70            android:screenOrientation="portrait"
+70-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:59:13-49
+71            android:theme="@style/WhiteActionTheme" />
+71-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:60:13-52
+72        <activity
+72-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:61:9-64:55
+73            android:name="com.webkype.happiroo.view.activity.PromocodeActivity"
+73-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:62:13-60
+74            android:screenOrientation="portrait"
+74-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:63:13-49
+75            android:theme="@style/WhiteActionTheme" />
+75-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:64:13-52
+76        <activity
+76-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:65:9-68:52
+77            android:name="com.webkype.happiroo.view.activity.ReferEarnActivity"
+77-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:66:13-60
+78            android:screenOrientation="portrait"
+78-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:67:13-49
+79            android:theme="@style/NoActionTheme" />
+79-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:68:13-49
+80        <activity
+80-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:69:9-73:55
+81            android:name="com.webkype.happiroo.view.activity.checout_process.SelectSlotActivity"
+81-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:70:13-77
+82            android:exported="true"
+82-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:71:13-36
+83            android:screenOrientation="portrait"
+83-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:72:13-49
+84            android:theme="@style/WhiteActionTheme" />
+84-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:73:13-52
+85        <activity
+85-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:74:9-77:55
+86            android:name="com.webkype.happiroo.view.activity.checout_process.AddEditAddressActivity"
+86-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:75:13-81
+87            android:screenOrientation="portrait"
+87-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:76:13-49
+88            android:theme="@style/WhiteActionTheme" />
+88-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:77:13-52
+89        <activity
+89-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:78:9-81:55
+90            android:name="com.webkype.happiroo.view.activity.checout_process.AddressActivity"
+90-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:79:13-74
+91            android:screenOrientation="portrait"
+91-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:80:13-49
+92            android:theme="@style/WhiteActionTheme" />
+92-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:81:13-52
+93        <activity
+93-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:82:9-85:55
+94            android:name="com.webkype.happiroo.view.activity.checout_process.CartActivity"
+94-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:83:13-71
+95            android:screenOrientation="portrait"
+95-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:84:13-49
+96            android:theme="@style/WhiteActionTheme" />
+96-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:85:13-52
+97        <activity
+97-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:86:9-89:55
+98            android:name="com.webkype.happiroo.view.activity.shopService.ServiceProductDetailActivity"
+98-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:87:13-83
+99            android:screenOrientation="portrait"
+99-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:88:13-49
+100            android:theme="@style/WhiteActionTheme" />
+100-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:89:13-52
+101        <activity
+101-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:90:9-93:55
+102            android:name="com.webkype.happiroo.view.activity.shopService.ServiceListingActivity"
+102-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:91:13-77
+103            android:screenOrientation="portrait"
+103-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:92:13-49
+104            android:theme="@style/WhiteActionTheme" />
+104-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:93:13-52
+105        <activity
+105-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:94:9-97:52
+106            android:name="com.webkype.happiroo.view.activity.shopService.ServiceDetailActivity"
+106-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:95:13-76
+107            android:screenOrientation="portrait"
+107-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:96:13-49
+108            android:theme="@style/NoActionTheme" />
+108-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:97:13-49
+109        <activity
+109-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:98:9-102:63
+110            android:name="com.webkype.happiroo.view.activity.ProfileEditActivity"
+110-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:99:13-62
+111            android:screenOrientation="portrait"
+111-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:100:13-49
+112            android:theme="@style/NoActionTheme"
+112-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:101:13-49
+113            android:windowSoftInputMode="stateAlwaysHidden" />
+113-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:102:13-60
+114        <activity
+114-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:103:9-106:52
+115            android:name="com.webkype.happiroo.view.activity.ChangeLocationActivity"
+115-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:104:13-65
+116            android:screenOrientation="portrait"
+116-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:105:13-49
+117            android:theme="@style/NoActionTheme" />
+117-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:106:13-49
+118        <activity
+118-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:107:9-112:63
+119            android:name="com.webkype.happiroo.view.activity.DashboardActivity"
+119-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:108:13-60
+120            android:exported="true"
+120-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:109:13-36
+121            android:screenOrientation="portrait"
+121-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:110:13-49
+122            android:theme="@style/NoActionTheme"
+122-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:111:13-49
+123            android:windowSoftInputMode="stateAlwaysHidden" />
+123-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:112:13-60
+124        <activity
+124-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:113:9-116:55
+125            android:name="com.webkype.happiroo.view.activity.FetchLocationActivity"
+125-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:114:13-64
+126            android:screenOrientation="portrait"
+126-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:115:13-49
+127            android:theme="@style/WhiteActionTheme" />
+127-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:116:13-52
+128        <activity
+128-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:117:9-121:63
+129            android:name="com.webkype.happiroo.view.activity.auth.OtpActivity"
+129-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:118:13-59
+130            android:screenOrientation="portrait"
+130-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:119:13-49
+131            android:theme="@style/WhiteActionTheme"
+131-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:120:13-52
+132            android:windowSoftInputMode="stateAlwaysHidden" />
+132-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:121:13-60
+133        <activity
+133-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:122:9-126:63
+134            android:name="com.webkype.happiroo.view.activity.auth.AuthenticateActivity"
+134-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:123:13-68
+135            android:screenOrientation="portrait"
+135-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:124:13-49
+136            android:theme="@style/WhiteActionTheme"
+136-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:125:13-52
+137            android:windowSoftInputMode="stateAlwaysHidden" />
+137-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:126:13-60
+138        <activity
+138-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:127:9-130:55
+139            android:name="com.webkype.happiroo.view.activity.WalkThroughActivity"
+139-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:128:13-62
+140            android:screenOrientation="portrait"
+140-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:129:13-49
+141            android:theme="@style/WhiteActionTheme" />
+141-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:130:13-52
+142        <activity
+142-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:131:9-140:20
+143            android:name="com.webkype.happiroo.view.activity.SplashActivity"
+143-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:132:13-57
+144            android:screenOrientation="portrait"
+144-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:133:13-49
+145            android:theme="@style/WhiteActionTheme" >
+145-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:134:13-52
+146            <intent-filter>
+146-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:135:13-139:29
+147                <action android:name="android.intent.action.MAIN" />
+147-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:136:17-69
+147-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:136:25-66
+148
+149                <category android:name="android.intent.category.LAUNCHER" />
+149-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:138:17-77
+149-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:138:27-74
+150            </intent-filter>
+151        </activity>
+152
+153        <meta-data
+153-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:142:9-144:55
+154            android:name="com.razorpay.ApiKey"
+154-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:143:13-47
+155            android:value="rzp_live_qD5gsSOze976lE" />
+155-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:144:13-52
+156
+157        <service
+157-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:145:9-162:19
+158            android:name="com.webkype.happiroo.Firebase.MyFirebaseService"
+158-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:146:13-55
+159            android:exported="false" >
+159-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:147:13-37
+160            <intent-filter>
+160-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:148:13-150:29
+161                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+161-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:149:17-78
+161-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:149:25-75
+162            </intent-filter>
+163
+164            <meta-data
+164-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:151:13-153:54
+165                android:name="com.google.firebase.messaging.default_notification_channel_id"
+165-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:152:17-93
+166                android:value="@string/channel_id" />
+166-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:153:17-51
+167            <meta-data
+167-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:154:13-156:53
+168                android:name="com.google.firebase.messaging.default_notification_icon"
+168-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:155:17-87
+169                android:resource="@drawable/logo" />
+169-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:156:17-50
+170            <!--
+171                 Set color used with incoming notification messages. This is used when no color is set for the incoming
+172                 notification message. See README(https://goo.gl/6BKBk7) for more.
+173            -->
+174            <meta-data
+174-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:159:13-161:62
+175                android:name="com.google.firebase.messaging.default_notification_color"
+175-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:160:17-88
+176                android:resource="@color/colorPrimaryDark" />
+176-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:161:17-59
+177        </service>
+178
+179        <receiver android:name="com.razorpay.RzpTokenReceiver" >
+179-->[com.razorpay:checkout:1.5.16] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0ed464ddc5b6e266d9e408e8594d9658\jetified-checkout-1.5.16\AndroidManifest.xml:12:9-16:20
+179-->[com.razorpay:checkout:1.5.16] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0ed464ddc5b6e266d9e408e8594d9658\jetified-checkout-1.5.16\AndroidManifest.xml:12:19-63
+180            <intent-filter>
+180-->[com.razorpay:checkout:1.5.16] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0ed464ddc5b6e266d9e408e8594d9658\jetified-checkout-1.5.16\AndroidManifest.xml:13:13-15:29
+181                <action android:name="rzp.device_token.share" />
+181-->[com.razorpay:checkout:1.5.16] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0ed464ddc5b6e266d9e408e8594d9658\jetified-checkout-1.5.16\AndroidManifest.xml:14:17-65
+181-->[com.razorpay:checkout:1.5.16] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0ed464ddc5b6e266d9e408e8594d9658\jetified-checkout-1.5.16\AndroidManifest.xml:14:25-62
+182            </intent-filter>
+183        </receiver>
+184
+185        <activity
+185-->[com.razorpay:checkout:1.5.16] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0ed464ddc5b6e266d9e408e8594d9658\jetified-checkout-1.5.16\AndroidManifest.xml:18:9-29:20
+186            android:name="com.razorpay.CheckoutActivity"
+186-->[com.razorpay:checkout:1.5.16] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0ed464ddc5b6e266d9e408e8594d9658\jetified-checkout-1.5.16\AndroidManifest.xml:19:13-57
+187            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+187-->[com.razorpay:checkout:1.5.16] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0ed464ddc5b6e266d9e408e8594d9658\jetified-checkout-1.5.16\AndroidManifest.xml:20:13-83
+188            android:theme="@style/CheckoutTheme" >
+188-->[com.razorpay:checkout:1.5.16] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0ed464ddc5b6e266d9e408e8594d9658\jetified-checkout-1.5.16\AndroidManifest.xml:21:13-49
+189            <intent-filter>
+189-->[com.razorpay:checkout:1.5.16] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0ed464ddc5b6e266d9e408e8594d9658\jetified-checkout-1.5.16\AndroidManifest.xml:22:13-28:29
+190                <action android:name="android.intent.action.MAIN" />
+190-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:136:17-69
+190-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:136:25-66
+191
+192                <data
+192-->[com.razorpay:checkout:1.5.16] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0ed464ddc5b6e266d9e408e8594d9658\jetified-checkout-1.5.16\AndroidManifest.xml:25:17-27:47
+193                    android:host="rzp.io"
+193-->[com.razorpay:checkout:1.5.16] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0ed464ddc5b6e266d9e408e8594d9658\jetified-checkout-1.5.16\AndroidManifest.xml:26:21-42
+194                    android:scheme="io.rzp" />
+194-->[com.razorpay:checkout:1.5.16] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0ed464ddc5b6e266d9e408e8594d9658\jetified-checkout-1.5.16\AndroidManifest.xml:27:21-44
+195            </intent-filter>
+196        </activity>
+197        <!--
+198             FirebaseMessagingService performs security checks at runtime,
+199             but set to not exported to explicitly avoid allowing another app to call it.
+200        -->
+201        <service
+201-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a5ffcde1e37beb5eb4152a327c6630f2\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:28:9-35:19
+202            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+202-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a5ffcde1e37beb5eb4152a327c6630f2\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:29:13-82
+203            android:directBootAware="true"
+203-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a5ffcde1e37beb5eb4152a327c6630f2\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:30:13-43
+204            android:exported="false" >
+204-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a5ffcde1e37beb5eb4152a327c6630f2\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:31:13-37
+205            <intent-filter android:priority="-500" >
+205-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:148:13-150:29
+206                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+206-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:149:17-78
+206-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:149:25-75
+207            </intent-filter>
+208        </service>
+209        <service
+209-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a5ffcde1e37beb5eb4152a327c6630f2\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:36:9-42:19
+210            android:name="com.google.firebase.components.ComponentDiscoveryService"
+210-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a5ffcde1e37beb5eb4152a327c6630f2\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:37:13-84
+211            android:directBootAware="true"
+211-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a3d7a23a0cf0bf17577e36c4f7d91a6d\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+212            android:exported="false" >
+212-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a5ffcde1e37beb5eb4152a327c6630f2\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:38:13-37
+213            <meta-data
+213-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a5ffcde1e37beb5eb4152a327c6630f2\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:39:13-41:85
+214                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+214-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a5ffcde1e37beb5eb4152a327c6630f2\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:40:17-119
+215                android:value="com.google.firebase.components.ComponentRegistrar" />
+215-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a5ffcde1e37beb5eb4152a327c6630f2\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:41:17-82
+216            <meta-data
+216-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b754856cd86d0ac34406f0de6b196611\jetified-firebase-iid-21.0.1\AndroidManifest.xml:32:13-34:85
+217                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+217-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b754856cd86d0ac34406f0de6b196611\jetified-firebase-iid-21.0.1\AndroidManifest.xml:33:17-96
+218                android:value="com.google.firebase.components.ComponentRegistrar" />
+218-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b754856cd86d0ac34406f0de6b196611\jetified-firebase-iid-21.0.1\AndroidManifest.xml:34:17-82
+219            <meta-data
+219-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\bddfe023d2b0f5e4a037ec0014add27b\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:30:13-32:85
+220                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+220-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\bddfe023d2b0f5e4a037ec0014add27b\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:31:17-139
+221                android:value="com.google.firebase.components.ComponentRegistrar" />
+221-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\bddfe023d2b0f5e4a037ec0014add27b\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:32:17-82
+222            <meta-data
+222-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\3b4a9dada64b254a48b85d5227e78928\jetified-firebase-installations-16.3.5\AndroidManifest.xml:18:13-20:85
+223                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+223-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\3b4a9dada64b254a48b85d5227e78928\jetified-firebase-installations-16.3.5\AndroidManifest.xml:19:17-127
+224                android:value="com.google.firebase.components.ComponentRegistrar" />
+224-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\3b4a9dada64b254a48b85d5227e78928\jetified-firebase-installations-16.3.5\AndroidManifest.xml:20:17-82
+225            <meta-data
+225-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\64a71562fb4d6fcb2e2bd4e45f72639e\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:28:13-30:85
+226                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+226-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\64a71562fb4d6fcb2e2bd4e45f72639e\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:29:17-115
+227                android:value="com.google.firebase.components.ComponentRegistrar" />
+227-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\64a71562fb4d6fcb2e2bd4e45f72639e\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:30:17-82
+228            <!--
+229                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+230                clients to use it as well, by defining this registrar in their own core/common library.
+231            -->
+232            <meta-data
+232-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a3d7a23a0cf0bf17577e36c4f7d91a6d\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+233                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+233-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a3d7a23a0cf0bf17577e36c4f7d91a6d\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+234                android:value="com.google.firebase.components.ComponentRegistrar" />
+234-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a3d7a23a0cf0bf17577e36c4f7d91a6d\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+235        </service>
+236
+237        <activity
+237-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\ade3d48849ab5a1cd2eb5fc7a6bf4c43\jetified-play-services-auth-19.0.0\AndroidManifest.xml:23:9-27:75
+238            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+238-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\ade3d48849ab5a1cd2eb5fc7a6bf4c43\jetified-play-services-auth-19.0.0\AndroidManifest.xml:24:13-93
+239            android:excludeFromRecents="true"
+239-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\ade3d48849ab5a1cd2eb5fc7a6bf4c43\jetified-play-services-auth-19.0.0\AndroidManifest.xml:25:13-46
+240            android:exported="false"
+240-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\ade3d48849ab5a1cd2eb5fc7a6bf4c43\jetified-play-services-auth-19.0.0\AndroidManifest.xml:26:13-37
+241            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+241-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\ade3d48849ab5a1cd2eb5fc7a6bf4c43\jetified-play-services-auth-19.0.0\AndroidManifest.xml:27:13-72
+242        <!--
+243            Service handling Google Sign-In user revocation. For apps that do not integrate with
+244            Google Sign-In, this service will never be started.
+245        -->
+246        <service
+246-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\ade3d48849ab5a1cd2eb5fc7a6bf4c43\jetified-play-services-auth-19.0.0\AndroidManifest.xml:33:9-37:51
+247            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+247-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\ade3d48849ab5a1cd2eb5fc7a6bf4c43\jetified-play-services-auth-19.0.0\AndroidManifest.xml:34:13-89
+248            android:exported="true"
+248-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\ade3d48849ab5a1cd2eb5fc7a6bf4c43\jetified-play-services-auth-19.0.0\AndroidManifest.xml:35:13-36
+249            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+249-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\ade3d48849ab5a1cd2eb5fc7a6bf4c43\jetified-play-services-auth-19.0.0\AndroidManifest.xml:36:13-107
+250            android:visibleToInstantApps="true" />
+250-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\ade3d48849ab5a1cd2eb5fc7a6bf4c43\jetified-play-services-auth-19.0.0\AndroidManifest.xml:37:13-48
+251
+252        <receiver
+252-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b754856cd86d0ac34406f0de6b196611\jetified-firebase-iid-21.0.1\AndroidManifest.xml:37:9-44:20
+253            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+253-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b754856cd86d0ac34406f0de6b196611\jetified-firebase-iid-21.0.1\AndroidManifest.xml:38:13-78
+254            android:exported="true"
+254-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b754856cd86d0ac34406f0de6b196611\jetified-firebase-iid-21.0.1\AndroidManifest.xml:39:13-36
+255            android:permission="com.google.android.c2dm.permission.SEND" >
+255-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b754856cd86d0ac34406f0de6b196611\jetified-firebase-iid-21.0.1\AndroidManifest.xml:40:13-73
+256            <intent-filter>
+256-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b754856cd86d0ac34406f0de6b196611\jetified-firebase-iid-21.0.1\AndroidManifest.xml:41:13-43:29
+257                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+257-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b754856cd86d0ac34406f0de6b196611\jetified-firebase-iid-21.0.1\AndroidManifest.xml:42:17-81
+257-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b754856cd86d0ac34406f0de6b196611\jetified-firebase-iid-21.0.1\AndroidManifest.xml:42:25-78
+258            </intent-filter>
+259        </receiver>
+260
+261        <activity
+261-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\d7946066c32494519a67483f012a78f8\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+262            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+262-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\d7946066c32494519a67483f012a78f8\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+263            android:exported="false"
+263-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\d7946066c32494519a67483f012a78f8\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+264            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+264-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\d7946066c32494519a67483f012a78f8\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+265
+266        <provider
+266-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a3d7a23a0cf0bf17577e36c4f7d91a6d\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+267            android:name="com.google.firebase.provider.FirebaseInitProvider"
+267-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a3d7a23a0cf0bf17577e36c4f7d91a6d\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+268            android:authorities="com.webkype.happiroo.firebaseinitprovider"
+268-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a3d7a23a0cf0bf17577e36c4f7d91a6d\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+269            android:directBootAware="true"
+269-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a3d7a23a0cf0bf17577e36c4f7d91a6d\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+270            android:exported="false"
+270-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a3d7a23a0cf0bf17577e36c4f7d91a6d\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+271            android:initOrder="100" />
+271-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a3d7a23a0cf0bf17577e36c4f7d91a6d\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+272
+273        <receiver
+273-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a6582ff393776a5f5119133a3d265e4a\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:29:9-33:20
+274            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+274-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a6582ff393776a5f5119133a3d265e4a\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:30:13-85
+275            android:enabled="true"
+275-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a6582ff393776a5f5119133a3d265e4a\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:31:13-35
+276            android:exported="false" >
+276-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a6582ff393776a5f5119133a3d265e4a\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:32:13-37
+277        </receiver>
+278
+279        <service
+279-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a6582ff393776a5f5119133a3d265e4a\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:35:9-38:40
+280            android:name="com.google.android.gms.measurement.AppMeasurementService"
+280-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a6582ff393776a5f5119133a3d265e4a\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:36:13-84
+281            android:enabled="true"
+281-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a6582ff393776a5f5119133a3d265e4a\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:37:13-35
+282            android:exported="false" />
+282-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a6582ff393776a5f5119133a3d265e4a\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:38:13-37
+283        <service
+283-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a6582ff393776a5f5119133a3d265e4a\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:39:9-43:72
+284            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+284-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a6582ff393776a5f5119133a3d265e4a\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:40:13-87
+285            android:enabled="true"
+285-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a6582ff393776a5f5119133a3d265e4a\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:41:13-35
+286            android:exported="false"
+286-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a6582ff393776a5f5119133a3d265e4a\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:42:13-37
+287            android:permission="android.permission.BIND_JOB_SERVICE" />
+287-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a6582ff393776a5f5119133a3d265e4a\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:43:13-69
+288
+289        <meta-data
+289-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e5d011ce0cdcafb53df456a435101f50\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
+290            android:name="com.google.android.gms.version"
+290-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e5d011ce0cdcafb53df456a435101f50\jetified-play-services-basement-17.1.1\AndroidManifest.xml:24:13-58
+291            android:value="@integer/google_play_services_version" />
+291-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e5d011ce0cdcafb53df456a435101f50\jetified-play-services-basement-17.1.1\AndroidManifest.xml:25:13-66
+292
+293        <service
+293-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\964a61b9aafdfdbe0901fb0f71e14f72\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+294            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+294-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\964a61b9aafdfdbe0901fb0f71e14f72\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+295            android:exported="false" >
+295-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\964a61b9aafdfdbe0901fb0f71e14f72\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+296            <meta-data
+296-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\964a61b9aafdfdbe0901fb0f71e14f72\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+297                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+297-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\964a61b9aafdfdbe0901fb0f71e14f72\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+298                android:value="cct" />
+298-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\964a61b9aafdfdbe0901fb0f71e14f72\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+299        </service>
+300        <service
+300-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\d6df07035f94b8c101b172848563bae8\jetified-transport-runtime-2.2.5\AndroidManifest.xml:26:9-30:19
+301            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+301-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\d6df07035f94b8c101b172848563bae8\jetified-transport-runtime-2.2.5\AndroidManifest.xml:27:13-117
+302            android:exported="false"
+302-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\d6df07035f94b8c101b172848563bae8\jetified-transport-runtime-2.2.5\AndroidManifest.xml:28:13-37
+303            android:permission="android.permission.BIND_JOB_SERVICE" >
+303-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\d6df07035f94b8c101b172848563bae8\jetified-transport-runtime-2.2.5\AndroidManifest.xml:29:13-69
+304        </service>
+305
+306        <receiver
+306-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\d6df07035f94b8c101b172848563bae8\jetified-transport-runtime-2.2.5\AndroidManifest.xml:32:9-34:40
+307            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+307-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\d6df07035f94b8c101b172848563bae8\jetified-transport-runtime-2.2.5\AndroidManifest.xml:33:13-132
+308            android:exported="false" />
+308-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\d6df07035f94b8c101b172848563bae8\jetified-transport-runtime-2.2.5\AndroidManifest.xml:34:13-37
+309    </application>
+310
+311</manifest>

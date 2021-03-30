@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="ShopCatItemBinding">
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_4dp"
+        android:layout_marginStart="@dimen/_4dp"
+        android:layout_height="@dimen/_104dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="@dimen/_1dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/service_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_constraintDimensionRatio="h,1:1"
+                android:src="@drawable/image_placeholder"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/serviceCatLayoutItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:foreground="?attr/selectableItemBackground"
+             >
+            
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_8dp"
+            android:paddingBottom="@dimen/_8dp"
+            android:text="Home Services Text"
+            android:background="@drawable/shadowdark"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="@dimen/_14sp"
+            android:fontFamily="@font/lato_semibold"
+            android:textColor="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+</layout>

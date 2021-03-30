@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.activity.ReferEarnActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/referEarnHeaderCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="@dimen/_4dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backReferEarn"
+                android:layout_width="@dimen/_36dp"
+                android:layout_height="@dimen/_36dp"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@color/white"
+                android:padding="@dimen/_8dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refer &amp; Earn"
+                android:textSize="@dimen/_18sp"
+                android:fontFamily="@font/lato_black"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_48dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/referEarnHeaderCard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_128dp"
+                android:src="@drawable/referral_graphic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:layout_marginTop="@dimen/_12dp"
+                android:text="My Referral Code"
+                android:gravity="center"
+                android:textSize="@dimen/_18sp"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/lato_black"/>
+
+            <EditText
+                android:id="@+id/referTxt_eT"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:textSize="@dimen/_16sp"
+                android:gravity="center"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/text_bg"
+                android:layout_marginTop="@dimen/_4dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:fontFamily="@font/lato_bold"
+                android:paddingStart="@dimen/_8dp"
+                android:paddingEnd="@dimen/_8dp"
+                android:text="CTAK11"
+                android:textColor="@color/dark_gray"
+                android:singleLine="true"
+                android:inputType="textCapWords"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:text="Share your referral code and get \u20b9100 wallet bonus"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/dark_gray"/>
+
+            <LinearLayout
+                android:id="@+id/shareableicon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginRight="24dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/whatsappicon"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/whatsappicon" />
+
+                <ImageView
+                    android:id="@+id/fbicon"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/fbicon" />
+
+                <ImageView
+                    android:id="@+id/twittericon"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/twittericon" />
+
+                <ImageView
+                    android:id="@+id/copy"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/copy" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shareabletext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="24dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:text="Whatsapp"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:text="Facebook"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:text="Twitter"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:text="Copy"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/abc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginRight="24dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/instagramIcon"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/instagram" />
+
+                <ImageView
+                    android:id="@+id/messengerIcon"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/messenger" />
+
+                <ImageView
+                    android:id="@+id/skypeIcon"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/skype" />
+
+                <ImageView
+                    android:id="@+id/linkedInIcon"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/linkedin" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/def"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="24dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:text="Instagram"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:text="Messenger"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:text="Skype"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:text="LinkedIn"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xyz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginRight="24dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/gmailIcon"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/gmail" />
+
+                <ImageView
+                    android:id="@+id/messageIcon"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/send" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yvg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="24dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:text="Gmail"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:text="Message"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="56dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
