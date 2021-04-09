@@ -184,6 +184,10 @@
                             android:layout_marginStart="@dimen/_6dp"
                             android:layout_marginEnd="@dimen/_6dp" />
 
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_24dp"/>
+
                     </LinearLayout>
 
                 </androidx.core.widget.NestedScrollView>

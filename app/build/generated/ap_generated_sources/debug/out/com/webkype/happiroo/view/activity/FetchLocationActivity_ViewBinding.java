@@ -18,7 +18,7 @@ public class FetchLocationActivity_ViewBinding implements Unbinder {
 
   private View view7f0a00b9;
 
-  private View view7f0a0254;
+  private View view7f0a0256;
 
   @UiThread
   public FetchLocationActivity_ViewBinding(FetchLocationActivity target) {
@@ -47,7 +47,7 @@ public class FetchLocationActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.searchLocationLinear, "method 'onClick'");
-    view7f0a0254 = view;
+    view7f0a0256 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -67,7 +67,7 @@ public class FetchLocationActivity_ViewBinding implements Unbinder {
     view7f0a0061 = null;
     view7f0a00b9.setOnClickListener(null);
     view7f0a00b9 = null;
-    view7f0a0254.setOnClickListener(null);
-    view7f0a0254 = null;
+    view7f0a0256.setOnClickListener(null);
+    view7f0a0256 = null;
   }
 }

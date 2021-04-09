@@ -17,7 +17,7 @@ import me.relex.circleindicator.CircleIndicator;
 public class WalkThroughActivity_ViewBinding implements Unbinder {
   private WalkThroughActivity target;
 
-  private View view7f0a0272;
+  private View view7f0a0274;
 
   private View view7f0a007f;
 
@@ -35,7 +35,7 @@ public class WalkThroughActivity_ViewBinding implements Unbinder {
     target.welcomePagerIndicator = Utils.findRequiredViewAsType(source, R.id.welcomePagerIndicator, "field 'welcomePagerIndicator'", CircleIndicator.class);
     target.btnWelcomeTxt = Utils.findRequiredViewAsType(source, R.id.btnWelcomeTxt, "field 'btnWelcomeTxt'", TextView.class);
     view = Utils.findRequiredView(source, R.id.skipWelcome_tV, "method 'onClick'");
-    view7f0a0272 = view;
+    view7f0a0274 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,8 +63,8 @@ public class WalkThroughActivity_ViewBinding implements Unbinder {
     target.welcomePagerIndicator = null;
     target.btnWelcomeTxt = null;
 
-    view7f0a0272.setOnClickListener(null);
-    view7f0a0272 = null;
+    view7f0a0274.setOnClickListener(null);
+    view7f0a0274 = null;
     view7f0a007f.setOnClickListener(null);
     view7f0a007f = null;
   }

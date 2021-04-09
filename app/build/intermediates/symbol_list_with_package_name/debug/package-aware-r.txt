@@ -1752,6 +1752,8 @@ drawable ovel_active
 drawable ovel_disabled
 drawable ovel_grey
 drawable project_icon
+drawable qr_gpay
+drawable qr_ppay
 drawable rate_icon
 drawable referral_graphic
 drawable referral_link
@@ -1774,6 +1776,7 @@ drawable slider1
 drawable slider2
 drawable slider3
 drawable slider4
+drawable stroke_2
 drawable stroke_rounded_grey
 drawable styling_image1
 drawable styling_image2
@@ -2023,6 +2026,7 @@ id etMobileAddress
 id etNameAddress
 id etReview
 id etState
+id etTransactionId
 id et_Email
 id et_fullname
 id et_maxPrice
@@ -2177,6 +2181,7 @@ id llAboutUs
 id llFIlter
 id llNoDataHistoryBooking
 id llNoDataOngoingBooing
+id llOnline
 id llProfileRateApp
 id llProfileShareApp
 id ll_bottom_buttons
@@ -2545,6 +2550,7 @@ id tvToBePaid
 id tvToolbarTitle
 id tvTotalAmount
 id tvTotalRatings
+id tvUpiId
 id tvUserName
 id tvVendorName
 id tvVendorRating

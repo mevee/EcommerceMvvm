@@ -47,7 +47,7 @@ MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\f0cf206725c3bd621a97baefd7a082f2\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e84def5dfbbe2bdc2fde886f52f41687\jetified-play-services-measurement-sdk-api-18.0.0\AndroidManifest.xml:17:1-27:12
 MERGED from [com.google.android.gms:play-services-measurement-base:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\eee4f2e7643c8b4afb960b53224e397f\jetified-play-services-measurement-base-18.0.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e5d011ce0cdcafb53df456a435101f50\jetified-play-services-basement-17.1.1\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\678380ddb5a7cd197a1df50014a9f1f8\jetified-play-services-basement-17.1.1\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\6198dbc7fae26f039693fc5348906043\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\bd8a9aeaa083678cb22f5145dcadb0e2\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\0f5fd1c3273f40646f74f623e5c212e5\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -222,8 +222,8 @@ MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\User
 MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\f0cf206725c3bd621a97baefd7a082f2\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-measurement-base:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\eee4f2e7643c8b4afb960b53224e397f\jetified-play-services-measurement-base-18.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-measurement-base:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\eee4f2e7643c8b4afb960b53224e397f\jetified-play-services-measurement-base-18.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e5d011ce0cdcafb53df456a435101f50\jetified-play-services-basement-17.1.1\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e5d011ce0cdcafb53df456a435101f50\jetified-play-services-basement-17.1.1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\678380ddb5a7cd197a1df50014a9f1f8\jetified-play-services-basement-17.1.1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\678380ddb5a7cd197a1df50014a9f1f8\jetified-play-services-basement-17.1.1\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.core:core:1.1.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\678d0984588fcb445435f5f10a70d91e\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\678d0984588fcb445435f5f10a70d91e\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\39abb2ad7cb806dcc4c6910b4f89f65a\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
@@ -626,8 +626,8 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] C:
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e84def5dfbbe2bdc2fde886f52f41687\jetified-play-services-measurement-sdk-api-18.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-base:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\eee4f2e7643c8b4afb960b53224e397f\jetified-play-services-measurement-base-18.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-measurement-base:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\eee4f2e7643c8b4afb960b53224e397f\jetified-play-services-measurement-base-18.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e5d011ce0cdcafb53df456a435101f50\jetified-play-services-basement-17.1.1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e5d011ce0cdcafb53df456a435101f50\jetified-play-services-basement-17.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\678380ddb5a7cd197a1df50014a9f1f8\jetified-play-services-basement-17.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\678380ddb5a7cd197a1df50014a9f1f8\jetified-play-services-basement-17.1.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\6198dbc7fae26f039693fc5348906043\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\6198dbc7fae26f039693fc5348906043\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\bd8a9aeaa083678cb22f5145dcadb0e2\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -917,11 +917,11 @@ ADDED from [com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Ab
 	android:name
 		ADDED from [com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a6582ff393776a5f5119133a3d265e4a\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:40:13-87
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e5d011ce0cdcafb53df456a435101f50\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\678380ddb5a7cd197a1df50014a9f1f8\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e5d011ce0cdcafb53df456a435101f50\jetified-play-services-basement-17.1.1\AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\678380ddb5a7cd197a1df50014a9f1f8\jetified-play-services-basement-17.1.1\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\e5d011ce0cdcafb53df456a435101f50\jetified-play-services-basement-17.1.1\AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\678380ddb5a7cd197a1df50014a9f1f8\jetified-play-services-basement-17.1.1\AndroidManifest.xml:24:13-58
 service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
 ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\964a61b9aafdfdbe0901fb0f71e14f72\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\d6df07035f94b8c101b172848563bae8\jetified-transport-runtime-2.2.5\AndroidManifest.xml:36:9-38:40

@@ -18,7 +18,7 @@ public class OtpActivity_ViewBinding implements Unbinder {
 
   private View view7f0a0066;
 
-  private View view7f0a028e;
+  private View view7f0a0290;
 
   @UiThread
   public OtpActivity_ViewBinding(OtpActivity target) {
@@ -41,7 +41,7 @@ public class OtpActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.submitOtpTxtBtn, "method 'onClick'");
-    view7f0a028e = view;
+    view7f0a0290 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -62,7 +62,7 @@ public class OtpActivity_ViewBinding implements Unbinder {
 
     view7f0a0066.setOnClickListener(null);
     view7f0a0066 = null;
-    view7f0a028e.setOnClickListener(null);
-    view7f0a028e = null;
+    view7f0a0290.setOnClickListener(null);
+    view7f0a0290 = null;
   }
 }

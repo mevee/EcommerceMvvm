@@ -4,7 +4,9 @@ package com.webkype.happiroo.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -33,6 +35,12 @@ public abstract class ActivityCartOverviewBinding extends ViewDataBinding {
   public final PriceDetailLayoutBinding costDistrLayout;
 
   @NonNull
+  public final EditText etTransactionId;
+
+  @NonNull
+  public final LinearLayout llOnline;
+
+  @NonNull
   public final NestedScrollView mainCartOverview;
 
   @NonNull
@@ -56,18 +64,24 @@ public abstract class ActivityCartOverviewBinding extends ViewDataBinding {
   @NonNull
   public final TextView tvTimeSlotTitle;
 
+  @NonNull
+  public final TextView tvUpiId;
+
   protected ActivityCartOverviewBinding(Object _bindingComponent, View _root, int _localFieldCount,
       ImageView backCartOverview, CardView cartOverviewHeaderCard,
       RelativeLayout confirmBookingRelative, PriceDetailLayoutBinding costDistrLayout,
-      NestedScrollView mainCartOverview, ProgressBar progressbarCartOverView,
-      RecyclerView rvPaymentMode, RecyclerView rvServiceInclude, TextView tvAddressDetailOverview,
-      TextView tvDateTimeSelected, TextView tvPaymentModeTitle, TextView tvTimeSlotTitle) {
+      EditText etTransactionId, LinearLayout llOnline, NestedScrollView mainCartOverview,
+      ProgressBar progressbarCartOverView, RecyclerView rvPaymentMode,
+      RecyclerView rvServiceInclude, TextView tvAddressDetailOverview, TextView tvDateTimeSelected,
+      TextView tvPaymentModeTitle, TextView tvTimeSlotTitle, TextView tvUpiId) {
     super(_bindingComponent, _root, _localFieldCount);
     this.backCartOverview = backCartOverview;
     this.cartOverviewHeaderCard = cartOverviewHeaderCard;
     this.confirmBookingRelative = confirmBookingRelative;
     this.costDistrLayout = costDistrLayout;
     setContainedBinding(this.costDistrLayout);
+    this.etTransactionId = etTransactionId;
+    this.llOnline = llOnline;
     this.mainCartOverview = mainCartOverview;
     this.progressbarCartOverView = progressbarCartOverView;
     this.rvPaymentMode = rvPaymentMode;
@@ -76,6 +90,7 @@ public abstract class ActivityCartOverviewBinding extends ViewDataBinding {
     this.tvDateTimeSelected = tvDateTimeSelected;
     this.tvPaymentModeTitle = tvPaymentModeTitle;
     this.tvTimeSlotTitle = tvTimeSlotTitle;
+    this.tvUpiId = tvUpiId;
   }
 
   @NonNull

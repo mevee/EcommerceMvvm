@@ -94,6 +94,12 @@ public class CartOverviewActivity extends AppCompatActivity implements PaymentRe
             public void onClicked(int position, int action) {
                 if (action == CLICKED) {
                     paymentMode = mPaymentModes.get(position).getId();
+
+                    if ("online".equals(paymentMode)){
+                        binding.llOnline.setVisibility(View.VISIBLE);
+                    }else {
+                        binding.llOnline.setVisibility(View.GONE);
+                    }
                 }
             }
         });

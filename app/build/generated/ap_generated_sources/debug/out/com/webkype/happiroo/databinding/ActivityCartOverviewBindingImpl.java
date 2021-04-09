@@ -12,7 +12,7 @@ public class ActivityCartOverviewBindingImpl extends ActivityCartOverviewBinding
     @Nullable
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
-        sIncludes = new androidx.databinding.ViewDataBinding.IncludedLayouts(14);
+        sIncludes = new androidx.databinding.ViewDataBinding.IncludedLayouts(17);
         sIncludes.setIncludes(1, 
             new String[] {"price_detail_layout"},
             new int[] {2},
@@ -23,12 +23,15 @@ public class ActivityCartOverviewBindingImpl extends ActivityCartOverviewBinding
         sViewsWithIds.put(R.id.main_cart_overview, 5);
         sViewsWithIds.put(R.id.tvPaymentModeTitle, 6);
         sViewsWithIds.put(R.id.rv_payment_mode, 7);
-        sViewsWithIds.put(R.id.tvTimeSlotTitle, 8);
-        sViewsWithIds.put(R.id.tvDateTimeSelected, 9);
-        sViewsWithIds.put(R.id.tvAddressDetailOverview, 10);
-        sViewsWithIds.put(R.id.rvServiceInclude, 11);
-        sViewsWithIds.put(R.id.confirmBookingRelative, 12);
-        sViewsWithIds.put(R.id.progressbarCartOverView, 13);
+        sViewsWithIds.put(R.id.llOnline, 8);
+        sViewsWithIds.put(R.id.tvUpiId, 9);
+        sViewsWithIds.put(R.id.etTransactionId, 10);
+        sViewsWithIds.put(R.id.tvTimeSlotTitle, 11);
+        sViewsWithIds.put(R.id.tvDateTimeSelected, 12);
+        sViewsWithIds.put(R.id.tvAddressDetailOverview, 13);
+        sViewsWithIds.put(R.id.rvServiceInclude, 14);
+        sViewsWithIds.put(R.id.confirmBookingRelative, 15);
+        sViewsWithIds.put(R.id.progressbarCartOverView, 16);
     }
     // views
     @NonNull
@@ -41,22 +44,25 @@ public class ActivityCartOverviewBindingImpl extends ActivityCartOverviewBinding
     // Inverse Binding Event Handlers
 
     public ActivityCartOverviewBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 14, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 17, sIncludes, sViewsWithIds));
     }
     private ActivityCartOverviewBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 1
             , (android.widget.ImageView) bindings[4]
             , (androidx.cardview.widget.CardView) bindings[3]
-            , (android.widget.RelativeLayout) bindings[12]
+            , (android.widget.RelativeLayout) bindings[15]
             , (com.webkype.happiroo.databinding.PriceDetailLayoutBinding) bindings[2]
+            , (android.widget.EditText) bindings[10]
+            , (android.widget.LinearLayout) bindings[8]
             , (androidx.core.widget.NestedScrollView) bindings[5]
-            , (android.widget.ProgressBar) bindings[13]
+            , (android.widget.ProgressBar) bindings[16]
             , (androidx.recyclerview.widget.RecyclerView) bindings[7]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[11]
-            , (android.widget.TextView) bindings[10]
-            , (android.widget.TextView) bindings[9]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[14]
+            , (android.widget.TextView) bindings[13]
+            , (android.widget.TextView) bindings[12]
             , (android.widget.TextView) bindings[6]
-            , (android.widget.TextView) bindings[8]
+            , (android.widget.TextView) bindings[11]
+            , (android.widget.TextView) bindings[9]
             );
         this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);

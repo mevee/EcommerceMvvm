@@ -83,6 +83,63 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
+                <LinearLayout
+                    android:id="@+id/llOnline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_120dp"
+                        android:layout_height="@dimen/_120dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/qr_ppay" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_120dp"
+                        android:layout_height="@dimen/_120dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/qr_gpay" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvUpiId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:layout_marginBottom="@dimen/_6dp"
+                        android:fontFamily="@font/lato_medium"
+                        android:text="AxisBankabc@upi"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/html_txt_color"
+                        android:textSize="@dimen/_14sp" />
+
+                    <EditText
+                        android:id="@+id/etTransactionId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8dp"
+                        android:layout_marginTop="@dimen/_6dp"
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:layout_marginBottom="@dimen/_4dp"
+                        android:background="@drawable/stroke_2"
+                        android:fontFamily="@font/lato_bold"
+                        android:hint="Transaction Id"
+                        android:maxLines="1"
+                        android:padding="@dimen/_6dp"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/_14sp" />
+                </LinearLayout>
+
+
                 <TextView
                     android:id="@+id/tvTimeSlotTitle"
                     android:layout_width="wrap_content"
