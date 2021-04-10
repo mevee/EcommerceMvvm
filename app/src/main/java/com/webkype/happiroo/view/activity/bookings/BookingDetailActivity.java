@@ -179,8 +179,9 @@ public class BookingDetailActivity extends AppCompatActivity {
                         builder.append("\nCountry : " + detail.getCountry());
                         builder.append("\n" + detail.getAddress());
                         builder.append("\nLandmark : " + detail.getLocation());
+                        binding.tvPaymentMode.setText(detail.getPaymentmode());
+                        binding.tvAmountPaid.setText("\u20B9" + detail.getSellingamount());
                         binding.tvServiceAddressBd.setText(builder.toString());
-                        binding.tvAmountPaid.setText("\u20B9" + detail.getRemainingamnt());
                         if ("Completed".equals(bookingStatus)) {
                             binding.cancelBookingLayout.setVisibility(View.GONE);
                             binding.otpBookingLayout.setVisibility(View.GONE);

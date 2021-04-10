@@ -66,6 +66,9 @@ public abstract class ActivityBookingDetailBinding extends ViewDataBinding {
   public final TextView tvBookingStatusBd;
 
   @NonNull
+  public final TextView tvPaymentMode;
+
+  @NonNull
   public final TextView tvServiceAddressBd;
 
   @NonNull
@@ -92,9 +95,10 @@ public abstract class ActivityBookingDetailBinding extends ViewDataBinding {
       LinearLayout cancelBookingLayout, TextView ivTotalVendorRaingsBd, ImageView ivVendorImageBd,
       NestedScrollView mainLayoutBookingDetail, LinearLayout otpBookingLayout,
       ProgressBar progressbarBookingDetail, RecyclerView rvServiceInclude, TextView tvAmountPaid,
-      TextView tvBookingIdBd, TextView tvBookingStatusBd, TextView tvServiceAddressBd,
-      TextView tvServiceNameBd, TextView tvServiceOtp, TextView tvServiceTimingBd,
-      TextView tvVendorNameBd, TextView tvVendorRatingBd, CardView vendorImageItem) {
+      TextView tvBookingIdBd, TextView tvBookingStatusBd, TextView tvPaymentMode,
+      TextView tvServiceAddressBd, TextView tvServiceNameBd, TextView tvServiceOtp,
+      TextView tvServiceTimingBd, TextView tvVendorNameBd, TextView tvVendorRatingBd,
+      CardView vendorImageItem) {
     super(_bindingComponent, _root, _localFieldCount);
     this.addReviewVendorBtn = addReviewVendorBtn;
     this.backBookingDetail = backBookingDetail;
@@ -111,6 +115,7 @@ public abstract class ActivityBookingDetailBinding extends ViewDataBinding {
     this.tvAmountPaid = tvAmountPaid;
     this.tvBookingIdBd = tvBookingIdBd;
     this.tvBookingStatusBd = tvBookingStatusBd;
+    this.tvPaymentMode = tvPaymentMode;
     this.tvServiceAddressBd = tvServiceAddressBd;
     this.tvServiceNameBd = tvServiceNameBd;
     this.tvServiceOtp = tvServiceOtp;

@@ -2527,6 +2527,7 @@ id tvOrderName
 id tvOrderStatus
 id tvOrderTime
 id tvOrderValue
+id tvPaymentMode
 id tvPaymentModeTitle
 id tvPaymentType
 id tvPrice

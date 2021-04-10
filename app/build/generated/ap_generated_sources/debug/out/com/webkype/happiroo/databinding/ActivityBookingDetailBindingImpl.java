@@ -33,9 +33,10 @@ public class ActivityBookingDetailBindingImpl extends ActivityBookingDetailBindi
         sViewsWithIds.put(R.id.tvBookingIdBd, 17);
         sViewsWithIds.put(R.id.tvServiceAddressBd, 18);
         sViewsWithIds.put(R.id.tvServiceTimingBd, 19);
-        sViewsWithIds.put(R.id.rvServiceInclude, 20);
-        sViewsWithIds.put(R.id.tvAmountPaid, 21);
-        sViewsWithIds.put(R.id.progressbarBookingDetail, 22);
+        sViewsWithIds.put(R.id.tvPaymentMode, 20);
+        sViewsWithIds.put(R.id.rvServiceInclude, 21);
+        sViewsWithIds.put(R.id.tvAmountPaid, 22);
+        sViewsWithIds.put(R.id.progressbarBookingDetail, 23);
     }
     // views
     @NonNull
@@ -46,7 +47,7 @@ public class ActivityBookingDetailBindingImpl extends ActivityBookingDetailBindi
     // Inverse Binding Event Handlers
 
     public ActivityBookingDetailBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 23, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 24, sIncludes, sViewsWithIds));
     }
     private ActivityBookingDetailBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
@@ -60,11 +61,12 @@ public class ActivityBookingDetailBindingImpl extends ActivityBookingDetailBindi
             , (android.widget.ImageView) bindings[12]
             , (androidx.core.widget.NestedScrollView) bindings[6]
             , (android.widget.LinearLayout) bindings[9]
-            , (android.widget.ProgressBar) bindings[22]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[20]
-            , (android.widget.TextView) bindings[21]
+            , (android.widget.ProgressBar) bindings[23]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[21]
+            , (android.widget.TextView) bindings[22]
             , (android.widget.TextView) bindings[17]
             , (android.widget.TextView) bindings[8]
+            , (android.widget.TextView) bindings[20]
             , (android.widget.TextView) bindings[18]
             , (android.widget.TextView) bindings[3]
             , (android.widget.TextView) bindings[10]
