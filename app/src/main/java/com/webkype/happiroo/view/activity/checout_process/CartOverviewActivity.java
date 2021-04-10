@@ -87,17 +87,17 @@ public class CartOverviewActivity extends AppCompatActivity implements PaymentRe
             mPaymentModes.add(new PaymentModel(R.drawable.coin, "Cash On Delivery", "cod"));
         else
             mPaymentModes.add(new PaymentModel(R.drawable.coin, "Pay after service", "cod"));
-        mPaymentModes.add(new PaymentModel(R.drawable.online_icon, "Pay Online(Credit Card, Debit Card, Netbanking)", "online"));
+        mPaymentModes.add(new PaymentModel(R.drawable.online_icon, "Pay via UPI App (GooglePay/ PhonePay/ PayTm etc)", "online"));
 
         selectPaymetModeAdpater = new SelectItemWithImageAdapter(this, mPaymentModes, new CommonListener() {
             @Override
             public void onClicked(int position, int action) {
                 if (action == CLICKED) {
                     paymentMode = mPaymentModes.get(position).getId();
-
-                    if ("online".equals(paymentMode)){
+                    transactionId = "";
+                    if ("online".equals(paymentMode)) {
                         binding.llOnline.setVisibility(View.VISIBLE);
-                    }else {
+                    } else {
                         binding.llOnline.setVisibility(View.GONE);
                     }
                 }
@@ -130,20 +130,29 @@ public class CartOverviewActivity extends AppCompatActivity implements PaymentRe
                 return;
             }
             if ("online".equals(paymentMode)) {
-                goToPaymentGateWay();
+                if (TextUtils.isEmpty(binding.etTransactionId.getText().toString())) {
+                    Toast.makeText(context, "Transaction Id is required. Please enter it", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                transactionId = binding.etTransactionId.getText().toString();
+                bookService(walletUsed, Preference.getUser(context).getUserId());
+
+//                goToPaymentGateWay();
             } else if ("cod".equals(paymentMode)) {
                 if ("Service".equals(activeShopping)) {
+
                     bookService(walletUsed, Preference.getUser(context).getUserId());
+
                 } else if ("Product".equals(activeShopping)) {
                     bookProduct(walletUsed, Preference.getUser(context).getUserId());
                 }
-            } else if ("wallet".equals(paymentMode)) {
+            }/* else if ("wallet".equals(paymentMode)) {
                 if ("Service".equals(activeShopping)) {
                     bookService(walletUsed, Preference.getUser(context).getUserId());
                 } else if ("Product".equals(activeShopping)) {
                     bookProduct(walletUsed, Preference.getUser(context).getUserId());
                 }
-            }
+            }*/
         });
 
         binding.mainCartOverview.setVisibility(View.GONE);
@@ -326,9 +335,9 @@ public class CartOverviewActivity extends AppCompatActivity implements PaymentRe
         transactionId = s;
         if ("Service".equals(activeShopping)) {
             bookService(walletUsed, Preference.getUser(context).getUserId());
-        } else if ("Product".equals(activeShopping)) {
+        } /*else if ("Product".equals(activeShopping)) {
             bookProduct(walletUsed, Preference.getUser(context).getUserId());
-        }
+        }*/
     }
 
     @Override
