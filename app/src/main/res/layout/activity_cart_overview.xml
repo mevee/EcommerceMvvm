@@ -101,7 +101,17 @@
                         android:layout_height="@dimen/_156dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/qr_ppay" />
-
+                        <TextView
+                            android:id="@+id/tvUpiId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_6dp"
+                            android:layout_marginBottom="@dimen/_6dp"
+                            android:fontFamily="@font/lato_medium"
+                            android:text="9999762636@ibl"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/html_txt_color"
+                            android:textSize="@dimen/_14sp" />
 
                     <ImageView
                         android:layout_marginTop="@dimen/_16dp"
@@ -112,14 +122,16 @@
 
                     </LinearLayout>
 
+
+
                     <TextView
-                        android:id="@+id/tvUpiId"
+                        android:id="@+id/tvUpiId2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_8dp"
+                        android:layout_marginTop="@dimen/_6dp"
                         android:layout_marginBottom="@dimen/_6dp"
                         android:fontFamily="@font/lato_medium"
-                        android:text="AxisBankabc@upi"
+                        android:text="amanyadav.ay3399@okicici"
                         android:layout_gravity="center_horizontal"
                         android:textColor="@color/html_txt_color"
                         android:textSize="@dimen/_14sp" />

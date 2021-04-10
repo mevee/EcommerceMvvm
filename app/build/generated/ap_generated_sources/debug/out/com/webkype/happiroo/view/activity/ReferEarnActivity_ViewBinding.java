@@ -17,11 +17,11 @@ public class ReferEarnActivity_ViewBinding implements Unbinder {
 
   private View view7f0a006a;
 
-  private View view7f0a033a;
+  private View view7f0a033b;
 
   private View view7f0a0124;
 
-  private View view7f0a0320;
+  private View view7f0a0321;
 
   private View view7f0a00b3;
 
@@ -57,7 +57,7 @@ public class ReferEarnActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.whatsappicon, "method 'onClick'");
-    view7f0a033a = view;
+    view7f0a033b = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -73,7 +73,7 @@ public class ReferEarnActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.twittericon, "method 'onClick'");
-    view7f0a0320 = view;
+    view7f0a0321 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -149,12 +149,12 @@ public class ReferEarnActivity_ViewBinding implements Unbinder {
 
     view7f0a006a.setOnClickListener(null);
     view7f0a006a = null;
-    view7f0a033a.setOnClickListener(null);
-    view7f0a033a = null;
+    view7f0a033b.setOnClickListener(null);
+    view7f0a033b = null;
     view7f0a0124.setOnClickListener(null);
     view7f0a0124 = null;
-    view7f0a0320.setOnClickListener(null);
-    view7f0a0320 = null;
+    view7f0a0321.setOnClickListener(null);
+    view7f0a0321 = null;
     view7f0a00b3.setOnClickListener(null);
     view7f0a00b3 = null;
     view7f0a0156.setOnClickListener(null);

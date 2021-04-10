@@ -67,13 +67,16 @@ public abstract class ActivityCartOverviewBinding extends ViewDataBinding {
   @NonNull
   public final TextView tvUpiId;
 
+  @NonNull
+  public final TextView tvUpiId2;
+
   protected ActivityCartOverviewBinding(Object _bindingComponent, View _root, int _localFieldCount,
       ImageView backCartOverview, CardView cartOverviewHeaderCard,
       RelativeLayout confirmBookingRelative, PriceDetailLayoutBinding costDistrLayout,
       EditText etTransactionId, LinearLayout llOnline, NestedScrollView mainCartOverview,
       ProgressBar progressbarCartOverView, RecyclerView rvPaymentMode,
       RecyclerView rvServiceInclude, TextView tvAddressDetailOverview, TextView tvDateTimeSelected,
-      TextView tvPaymentModeTitle, TextView tvTimeSlotTitle, TextView tvUpiId) {
+      TextView tvPaymentModeTitle, TextView tvTimeSlotTitle, TextView tvUpiId, TextView tvUpiId2) {
     super(_bindingComponent, _root, _localFieldCount);
     this.backCartOverview = backCartOverview;
     this.cartOverviewHeaderCard = cartOverviewHeaderCard;
@@ -91,6 +94,7 @@ public abstract class ActivityCartOverviewBinding extends ViewDataBinding {
     this.tvPaymentModeTitle = tvPaymentModeTitle;
     this.tvTimeSlotTitle = tvTimeSlotTitle;
     this.tvUpiId = tvUpiId;
+    this.tvUpiId2 = tvUpiId2;
   }
 
   @NonNull
