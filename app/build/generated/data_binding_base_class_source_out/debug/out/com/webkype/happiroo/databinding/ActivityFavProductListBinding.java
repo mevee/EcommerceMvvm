@@ -36,7 +36,6 @@ public abstract class ActivityFavProductListBinding extends ViewDataBinding {
     this.progressBarProductList = progressBarProductList;
     this.rvMore = rvMore;
     this.toolbarFavList = toolbarFavList;
-    setContainedBinding(this.toolbarFavList);
   }
 
   @NonNull

@@ -66,6 +66,7 @@ public class ActivityCartOverviewBindingImpl extends ActivityCartOverviewBinding
             , (android.widget.TextView) bindings[9]
             , (android.widget.TextView) bindings[10]
             );
+        setContainedBinding(this.costDistrLayout);
         this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);
         this.mboundView1 = (android.widget.LinearLayout) bindings[1];

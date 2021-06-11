@@ -3,6 +3,7 @@ package com.webkype.happiroo.view.activity.shopService;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -10,22 +11,29 @@ import android.widget.Toast;
 
 import com.webkype.happiroo.R;
 import com.webkype.happiroo.controller.network.NetworkProvider;
+import com.webkype.happiroo.controller.network.responses.ImageModel;
 import com.webkype.happiroo.controller.network.responses.category.SubCatListResp;
 import com.webkype.happiroo.controller.network.responses.category.Subcat;
+import com.webkype.happiroo.controller.network.responses.home_page_resp.Bannerdetum;
 import com.webkype.happiroo.controller.network.responses.mservices.ServiceListResp;
 import com.webkype.happiroo.controller.network.responses.mservices.Servicelist;
 import com.webkype.happiroo.controller.pref.Preference;
 import com.webkype.happiroo.controller.utils.CartUtils;
 import com.webkype.happiroo.controller.utils.InternetConnectionCheck;
 import com.webkype.happiroo.databinding.ActivityListingBinding;
+import com.webkype.happiroo.model.CategoryModel;
 import com.webkype.happiroo.view.CommonListener;
 import com.webkype.happiroo.view.activity.auth.AuthenticateActivity;
 import com.webkype.happiroo.view.activity.checout_process.CartActivity;
+import com.webkype.happiroo.view.adapter.HomeBannerAdapter;
+import com.webkype.happiroo.view.adapter.ImageViewAdapter;
 import com.webkype.happiroo.view.adapter.ListingCatAdapter;
 import com.webkype.happiroo.view.adapter.ProductsAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -41,6 +49,9 @@ public class ServiceListingActivity extends AppCompatActivity {
 
     private ListingCatAdapter listingCatAdapter;
     private ProductsAdapter productsAdapter;
+    private ImageViewAdapter homeBannerAdapter;
+
+    private List<ImageModel> topBannerList = new ArrayList<>();
     private List<Subcat> serviceCatList = new ArrayList<>();
     private List<Servicelist> productList = new ArrayList<>();
 
@@ -49,6 +60,12 @@ public class ServiceListingActivity extends AppCompatActivity {
     private String mainCatId;
     private String cartid;
     ActivityListingBinding binding;
+
+    int currentPage = 0;
+    Timer timer;
+    long DELAY_MS = 2000;//delay in milliseconds before task is to be executed
+    long PERIOD_MS = 4000; // time in milliseconds between successive task executions.
+    private String catId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,11 +82,52 @@ public class ServiceListingActivity extends AppCompatActivity {
             Preference.setActiveShopping(context, "Service");
         }
         init();
+        setTopBanner();
+    }
+
+    void setTopBanner() {
+        topBannerList.clear();
+        topBannerList.add(new ImageModel(getResources().getDrawable(R.drawable.covid_1)));
+        topBannerList.add(new ImageModel(getResources().getDrawable(R.drawable.covid_2)));
+        topBannerList.add(new ImageModel(getResources().getDrawable(R.drawable.covid_3)));
+
+
+        binding.homeBannerViewPager.setClipToPadding(false);
+        binding.homeBannerViewPager.setClipChildren(false);
+        binding.homeBannerViewPager.setOffscreenPageLimit(3);
+        binding.homeBannerViewPager.getChildAt(0).setOverScrollMode(View.OVER_SCROLL_NEVER);
+
+//        binding.homeBannerViewPager.setFocusable(true);
+//        binding.homeBannerViewPager.setClipToPadding(false);
+//        binding.homeBannerViewPager.setPadding(8, 8, 60, 8);
+//        binding.homeBannerViewPager.setPageMargin(20);
+        homeBannerAdapter = new ImageViewAdapter(context, topBannerList);
+        binding.homeBannerViewPager.setAdapter(homeBannerAdapter);
+        timer = new Timer();
+        final Handler handler = new Handler();
+        final Runnable Update = new Runnable() {
+            public void run() {
+                if (topBannerList != null) {
+                    if (currentPage == topBannerList.size()) {
+                        //currentPage = 0;
+                        timer.cancel();
+                    }
+                }
+                binding.homeBannerViewPager.setCurrentItem(currentPage++, true);
+            }
+        };
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                handler.post(Update);
+            }
+        }, DELAY_MS, PERIOD_MS);
     }
 
 
     @Override
     public void onBackPressed() {
+        timer.cancel();
         finish();
     }
 

@@ -4,7 +4,7 @@
             "outputFile": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\a175e2da16eb53d15e4ee769378a9da4\\appcompat-1.1.0\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\66a5546e084132b8c29a8a182f840ca5\\appcompat-1.1.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\ade3d48849ab5a1cd2eb5fc7a6bf4c43\\jetified-play-services-auth-19.0.0\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\3be847042110e501c00a2edd2417a764\\jetified-play-services-auth-19.0.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",

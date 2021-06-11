@@ -35,9 +35,11 @@ import com.webkype.happiroo.databinding.FragmentOngoingBookingBindingImpl;
 import com.webkype.happiroo.databinding.FragmentProfileBindingImpl;
 import com.webkype.happiroo.databinding.FragmentShopBindingImpl;
 import com.webkype.happiroo.databinding.FragmentWalletBindingImpl;
+import com.webkype.happiroo.databinding.ImageItemBindingImpl;
 import com.webkype.happiroo.databinding.IncludeItemBindingImpl;
 import com.webkype.happiroo.databinding.ItemInOrderBindingImpl;
 import com.webkype.happiroo.databinding.OrderItemBindingImpl;
+import com.webkype.happiroo.databinding.PagerItemBindingImpl;
 import com.webkype.happiroo.databinding.PriceDetailLayoutBindingImpl;
 import com.webkype.happiroo.databinding.ProductInCartBindingImpl;
 import com.webkype.happiroo.databinding.ProductItemBindingImpl;
@@ -121,29 +123,33 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_FRAGMENTWALLET = 31;
 
-  private static final int LAYOUT_ITEMINORDERLAYOUT = 32;
+  private static final int LAYOUT_IMAGEBANNERLAYOUT = 32;
 
-  private static final int LAYOUT_ITEMINCLUDELAYOUT = 33;
+  private static final int LAYOUT_ITEMINORDERLAYOUT = 33;
 
-  private static final int LAYOUT_ORDERITEMLAYOUT = 34;
+  private static final int LAYOUT_ITEMINCLUDELAYOUT = 34;
 
-  private static final int LAYOUT_PRICEDETAILLAYOUT = 35;
+  private static final int LAYOUT_ORDERITEMLAYOUT = 35;
 
-  private static final int LAYOUT_PRODUCTSINCARTITEM = 36;
+  private static final int LAYOUT_PAGERBANNERLAYOUT = 36;
 
-  private static final int LAYOUT_PRODUCTSITEM = 37;
+  private static final int LAYOUT_PRICEDETAILLAYOUT = 37;
 
-  private static final int LAYOUT_SHOPCATITEM = 38;
+  private static final int LAYOUT_PRODUCTSINCARTITEM = 38;
 
-  private static final int LAYOUT_SHOPPRODUCTITEMLAYOUT = 39;
+  private static final int LAYOUT_PRODUCTSITEM = 39;
 
-  private static final int LAYOUT_TOOLBARLAYOUT = 40;
+  private static final int LAYOUT_SHOPCATITEM = 40;
 
-  private static final int LAYOUT_USERREVIEWITEM = 41;
+  private static final int LAYOUT_SHOPPRODUCTITEMLAYOUT = 41;
 
-  private static final int LAYOUT_WALLETTRANSACTIONITEM = 42;
+  private static final int LAYOUT_TOOLBARLAYOUT = 42;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(42);
+  private static final int LAYOUT_USERREVIEWITEM = 43;
+
+  private static final int LAYOUT_WALLETTRANSACTIONITEM = 44;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(44);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.webkype.happiroo.R.layout.activity_add_edit_address, LAYOUT_ACTIVITYADDEDITADDRESS);
@@ -177,9 +183,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.webkype.happiroo.R.layout.fragment_profile, LAYOUT_FRAGMENTPROFILE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.webkype.happiroo.R.layout.fragment_shop, LAYOUT_FRAGMENTSHOP);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.webkype.happiroo.R.layout.fragment_wallet, LAYOUT_FRAGMENTWALLET);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.webkype.happiroo.R.layout.image_banner_layout, LAYOUT_IMAGEBANNERLAYOUT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.webkype.happiroo.R.layout.item_in_order_layout, LAYOUT_ITEMINORDERLAYOUT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.webkype.happiroo.R.layout.item_include_layout, LAYOUT_ITEMINCLUDELAYOUT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.webkype.happiroo.R.layout.order_item_layout, LAYOUT_ORDERITEMLAYOUT);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.webkype.happiroo.R.layout.pager_banner_layout, LAYOUT_PAGERBANNERLAYOUT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.webkype.happiroo.R.layout.price_detail_layout, LAYOUT_PRICEDETAILLAYOUT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.webkype.happiroo.R.layout.products_in_cart_item, LAYOUT_PRODUCTSINCARTITEM);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.webkype.happiroo.R.layout.products_item, LAYOUT_PRODUCTSITEM);
@@ -385,6 +393,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for fragment_wallet is invalid. Received: " + tag);
         }
+        case  LAYOUT_IMAGEBANNERLAYOUT: {
+          if ("layout/image_banner_layout_0".equals(tag)) {
+            return new ImageItemBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for image_banner_layout is invalid. Received: " + tag);
+        }
         case  LAYOUT_ITEMINORDERLAYOUT: {
           if ("layout/item_in_order_layout_0".equals(tag)) {
             return new ItemInOrderBindingImpl(component, view);
@@ -402,6 +416,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new OrderItemBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for order_item_layout is invalid. Received: " + tag);
+        }
+        case  LAYOUT_PAGERBANNERLAYOUT: {
+          if ("layout/pager_banner_layout_0".equals(tag)) {
+            return new PagerItemBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for pager_banner_layout is invalid. Received: " + tag);
         }
         case  LAYOUT_PRICEDETAILLAYOUT: {
           if ("layout/price_detail_layout_0".equals(tag)) {
@@ -504,7 +524,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(42);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(44);
 
     static {
       sKeys.put("layout/activity_add_edit_address_0", com.webkype.happiroo.R.layout.activity_add_edit_address);
@@ -538,9 +558,11 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/fragment_profile_0", com.webkype.happiroo.R.layout.fragment_profile);
       sKeys.put("layout/fragment_shop_0", com.webkype.happiroo.R.layout.fragment_shop);
       sKeys.put("layout/fragment_wallet_0", com.webkype.happiroo.R.layout.fragment_wallet);
+      sKeys.put("layout/image_banner_layout_0", com.webkype.happiroo.R.layout.image_banner_layout);
       sKeys.put("layout/item_in_order_layout_0", com.webkype.happiroo.R.layout.item_in_order_layout);
       sKeys.put("layout/item_include_layout_0", com.webkype.happiroo.R.layout.item_include_layout);
       sKeys.put("layout/order_item_layout_0", com.webkype.happiroo.R.layout.order_item_layout);
+      sKeys.put("layout/pager_banner_layout_0", com.webkype.happiroo.R.layout.pager_banner_layout);
       sKeys.put("layout/price_detail_layout_0", com.webkype.happiroo.R.layout.price_detail_layout);
       sKeys.put("layout/products_in_cart_item_0", com.webkype.happiroo.R.layout.products_in_cart_item);
       sKeys.put("layout/products_item_0", com.webkype.happiroo.R.layout.products_item);

@@ -7,6 +7,7 @@ public class CategoryModel {
     private String catId;
     private String isHaveSubCat;
 
+
     public CategoryModel(String image, String name, String catId) {
         this.image = image;
         this.name = name;

@@ -40,6 +40,7 @@ public class ActivityShoppingCatBindingImpl extends ActivityShoppingCatBinding  
             );
         this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);
+        setContainedBinding(this.toolbarShoppingCat);
         setRootTag(root);
         // listeners
         invalidateAll();

@@ -276,6 +276,8 @@ public class ServiceDetailActivity extends AppCompatActivity {
         });
 //        binding.serviceDetailSampleVideo.setFocusable(false);
         binding.serviceDetailSampleVideo.start();
+        binding.serviceDetailSampleVideo.setFocusable(false);
+
     }
 
     private void setTopBanner() {

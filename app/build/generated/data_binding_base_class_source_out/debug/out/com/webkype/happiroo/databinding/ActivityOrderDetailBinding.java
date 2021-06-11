@@ -72,7 +72,6 @@ public abstract class ActivityOrderDetailBinding extends ViewDataBinding {
     this.progressBarOrderDetail = progressBarOrderDetail;
     this.rvProductList = rvProductList;
     this.toolbarOrdDetail = toolbarOrdDetail;
-    setContainedBinding(this.toolbarOrdDetail);
     this.tvFullAddress = tvFullAddress;
     this.tvOrderID = tvOrderID;
     this.tvOrderName = tvOrderName;

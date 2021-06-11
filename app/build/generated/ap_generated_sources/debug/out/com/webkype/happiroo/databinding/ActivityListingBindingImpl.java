@@ -21,11 +21,12 @@ public class ActivityListingBindingImpl extends ActivityListingBinding  {
         sViewsWithIds.put(R.id.listingCatRecycler, 5);
         sViewsWithIds.put(R.id.main_listing, 6);
         sViewsWithIds.put(R.id.selectedListingServiceTxt, 7);
-        sViewsWithIds.put(R.id.productListRecycler, 8);
-        sViewsWithIds.put(R.id.cartLayoutListing, 9);
-        sViewsWithIds.put(R.id.goCartListingLayout, 10);
-        sViewsWithIds.put(R.id.tv_quantity, 11);
-        sViewsWithIds.put(R.id.progressbar_listing, 12);
+        sViewsWithIds.put(R.id.homeBannerViewPager, 8);
+        sViewsWithIds.put(R.id.productListRecycler, 9);
+        sViewsWithIds.put(R.id.cartLayoutListing, 10);
+        sViewsWithIds.put(R.id.goCartListingLayout, 11);
+        sViewsWithIds.put(R.id.tv_quantity, 12);
+        sViewsWithIds.put(R.id.progressbar_listing, 13);
     }
     // views
     @NonNull
@@ -36,22 +37,23 @@ public class ActivityListingBindingImpl extends ActivityListingBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityListingBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 13, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 14, sIncludes, sViewsWithIds));
     }
     private ActivityListingBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (android.widget.ImageView) bindings[2]
-            , (android.widget.RelativeLayout) bindings[9]
-            , (android.widget.ImageView) bindings[3]
             , (android.widget.RelativeLayout) bindings[10]
+            , (android.widget.ImageView) bindings[3]
+            , (android.widget.RelativeLayout) bindings[11]
+            , (androidx.viewpager2.widget.ViewPager2) bindings[8]
             , (androidx.recyclerview.widget.RecyclerView) bindings[5]
             , (androidx.cardview.widget.CardView) bindings[1]
             , (androidx.core.widget.NestedScrollView) bindings[6]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[8]
-            , (android.widget.ProgressBar) bindings[12]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[9]
+            , (android.widget.ProgressBar) bindings[13]
             , (android.widget.TextView) bindings[7]
             , (android.widget.TextView) bindings[4]
-            , (android.widget.TextView) bindings[11]
+            , (android.widget.TextView) bindings[12]
             );
         this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);

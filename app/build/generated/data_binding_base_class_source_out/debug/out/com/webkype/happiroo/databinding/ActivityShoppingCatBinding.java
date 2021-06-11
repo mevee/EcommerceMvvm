@@ -31,7 +31,6 @@ public abstract class ActivityShoppingCatBinding extends ViewDataBinding {
     this.progressBarShopCat = progressBarShopCat;
     this.rvCategoryList = rvCategoryList;
     this.toolbarShoppingCat = toolbarShoppingCat;
-    setContainedBinding(this.toolbarShoppingCat);
   }
 
   @NonNull

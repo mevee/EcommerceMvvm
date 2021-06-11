@@ -1580,6 +1580,9 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable copy
+drawable covid_1
+drawable covid_2
+drawable covid_3
 drawable dark_radius
 drawable delete
 drawable design_bottom_navigation_item_background
@@ -1768,6 +1771,8 @@ drawable rzp_secured_by_bg
 drawable rzp_white_border_black_bg
 drawable search_icon
 drawable send
+drawable service_det1
+drawable service_det2
 drawable shadow
 drawable shadowdark
 drawable share_icon
@@ -2775,6 +2780,7 @@ layout fragment_shop
 layout fragment_wallet
 layout home_services_item
 layout home_strip_item
+layout image_banner_layout
 layout item_in_order_layout
 layout item_include_layout
 layout listing_cat_item

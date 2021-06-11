@@ -62,6 +62,7 @@ public class ActivityOrderDetailBindingImpl extends ActivityOrderDetailBinding  
             );
         this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);
+        setContainedBinding(this.toolbarOrdDetail);
         setRootTag(root);
         // listeners
         invalidateAll();

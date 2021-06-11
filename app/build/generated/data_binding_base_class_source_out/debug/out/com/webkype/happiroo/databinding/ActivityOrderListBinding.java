@@ -36,7 +36,6 @@ public abstract class ActivityOrderListBinding extends ViewDataBinding {
     this.progressBarOrderList = progressBarOrderList;
     this.rvOrderList = rvOrderList;
     this.toolbarOrdList = toolbarOrdList;
-    setContainedBinding(this.toolbarOrdList);
   }
 
   @NonNull

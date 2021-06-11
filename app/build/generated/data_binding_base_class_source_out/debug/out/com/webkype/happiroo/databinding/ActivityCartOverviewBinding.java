@@ -82,7 +82,6 @@ public abstract class ActivityCartOverviewBinding extends ViewDataBinding {
     this.cartOverviewHeaderCard = cartOverviewHeaderCard;
     this.confirmBookingRelative = confirmBookingRelative;
     this.costDistrLayout = costDistrLayout;
-    setContainedBinding(this.costDistrLayout);
     this.etTransactionId = etTransactionId;
     this.llOnline = llOnline;
     this.mainCartOverview = mainCartOverview;

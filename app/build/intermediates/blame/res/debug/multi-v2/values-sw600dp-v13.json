@@ -21,26 +21,26 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\0ed464ddc5b6e266d9e408e8594d9658\\jetified-checkout-1.5.16\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\a5bd181af2bdb8544e44103cb4ccee2c\\material-1.1.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,93",
-                        "endLines": "2,13",
-                        "endColumns": "37,12",
-                        "endOffsets": "88,745"
+                        "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,115,185,256,328,386,444,553,617,673,732,795",
+                        "endLines": "2,3,4,5,6,7,9,10,11,12,13,17",
+                        "endColumns": "59,69,70,71,57,57,10,63,55,58,62,10",
+                        "endOffsets": "110,180,251,323,381,439,548,612,668,727,790,962"
                     },
                     "to": {
-                        "startLines": "2,56",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,2622",
-                        "endLines": "2,66",
-                        "endColumns": "37,12",
-                        "endOffsets": "88,3274"
+                        "startLines": "44,45,46,47,48,49,50,52,53,54,55,67",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1882,1942,2012,2083,2155,2213,2271,2380,2444,2500,2559,3279",
+                        "endLines": "44,45,46,47,48,49,51,52,53,54,55,70",
+                        "endColumns": "59,69,70,71,57,57,10,63,55,58,62,10",
+                        "endOffsets": "1937,2007,2078,2150,2208,2266,2375,2439,2495,2554,2617,3446"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\a175e2da16eb53d15e4ee769378a9da4\\appcompat-1.1.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\66a5546e084132b8c29a8a182f840ca5\\appcompat-1.1.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -57,22 +57,22 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\70890aba28abd509e893cdf778b87741\\material-1.1.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\c866efe7ab5970e8f422ce5d205385ff\\jetified-checkout-1.5.16\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,115,185,256,328,386,444,553,617,673,732,795",
-                        "endLines": "2,3,4,5,6,7,9,10,11,12,13,17",
-                        "endColumns": "59,69,70,71,57,57,10,63,55,58,62,10",
-                        "endOffsets": "110,180,251,323,381,439,548,612,668,727,790,962"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,93",
+                        "endLines": "2,13",
+                        "endColumns": "37,12",
+                        "endOffsets": "88,745"
                     },
                     "to": {
-                        "startLines": "44,45,46,47,48,49,50,52,53,54,55,67",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1882,1942,2012,2083,2155,2213,2271,2380,2444,2500,2559,3279",
-                        "endLines": "44,45,46,47,48,49,51,52,53,54,55,70",
-                        "endColumns": "59,69,70,71,57,57,10,63,55,58,62,10",
-                        "endOffsets": "1937,2007,2078,2150,2208,2266,2375,2439,2495,2554,2617,3446"
+                        "startLines": "2,56",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,2622",
+                        "endLines": "2,66",
+                        "endColumns": "37,12",
+                        "endOffsets": "88,3274"
                     }
                 }
             ]

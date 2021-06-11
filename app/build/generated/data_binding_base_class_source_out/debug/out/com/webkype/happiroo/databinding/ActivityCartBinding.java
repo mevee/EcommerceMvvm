@@ -87,7 +87,6 @@ public abstract class ActivityCartBinding extends ViewDataBinding {
     this.cbWallet = cbWallet;
     this.continueToPayRelative = continueToPayRelative;
     this.costDistrLayout = costDistrLayout;
-    setContainedBinding(this.costDistrLayout);
     this.llEmptyCart = llEmptyCart;
     this.llNotLogged = llNotLogged;
     this.mainCart = mainCart;

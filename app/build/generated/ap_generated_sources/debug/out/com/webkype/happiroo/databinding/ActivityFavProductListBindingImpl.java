@@ -42,6 +42,7 @@ public class ActivityFavProductListBindingImpl extends ActivityFavProductListBin
             );
         this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);
+        setContainedBinding(this.toolbarFavList);
         setRootTag(root);
         // listeners
         invalidateAll();

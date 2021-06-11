@@ -15,6 +15,7 @@ import androidx.core.widget.NestedScrollView;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager2.widget.ViewPager2;
 import com.webkype.happiroo.R;
 import java.lang.Deprecated;
 import java.lang.Object;
@@ -31,6 +32,9 @@ public abstract class ActivityListingBinding extends ViewDataBinding {
 
   @NonNull
   public final RelativeLayout goCartListingLayout;
+
+  @NonNull
+  public final ViewPager2 homeBannerViewPager;
 
   @NonNull
   public final RecyclerView listingCatRecycler;
@@ -58,15 +62,16 @@ public abstract class ActivityListingBinding extends ViewDataBinding {
 
   protected ActivityListingBinding(Object _bindingComponent, View _root, int _localFieldCount,
       ImageView backListing, RelativeLayout cartLayoutListing, ImageView cartListing,
-      RelativeLayout goCartListingLayout, RecyclerView listingCatRecycler,
-      CardView listingHeaderCard, NestedScrollView mainListing, RecyclerView productListRecycler,
-      ProgressBar progressbarListing, TextView selectedListingServiceTxt, TextView tvCartQuantity,
-      TextView tvQuantity) {
+      RelativeLayout goCartListingLayout, ViewPager2 homeBannerViewPager,
+      RecyclerView listingCatRecycler, CardView listingHeaderCard, NestedScrollView mainListing,
+      RecyclerView productListRecycler, ProgressBar progressbarListing,
+      TextView selectedListingServiceTxt, TextView tvCartQuantity, TextView tvQuantity) {
     super(_bindingComponent, _root, _localFieldCount);
     this.backListing = backListing;
     this.cartLayoutListing = cartLayoutListing;
     this.cartListing = cartListing;
     this.goCartListingLayout = goCartListingLayout;
+    this.homeBannerViewPager = homeBannerViewPager;
     this.listingCatRecycler = listingCatRecycler;
     this.listingHeaderCard = listingHeaderCard;
     this.mainListing = mainListing;
