@@ -91,7 +91,6 @@ public class ServiceListingActivity extends AppCompatActivity {
         topBannerList.add(new ImageModel(getResources().getDrawable(R.drawable.covid_2)));
         topBannerList.add(new ImageModel(getResources().getDrawable(R.drawable.covid_3)));
 
-
         binding.homeBannerViewPager.setClipToPadding(false);
         binding.homeBannerViewPager.setClipChildren(false);
         binding.homeBannerViewPager.setOffscreenPageLimit(3);
