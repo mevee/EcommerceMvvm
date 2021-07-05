@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.webkype.happiroo.R;
+import com.webkype.happiroo.controller.network.responses.home_page_resp.Adddetum;
 import com.webkype.happiroo.controller.network.responses.home_page_resp.Stripcategory;
 import com.webkype.happiroo.controller.network.responses.home_page_resp.Stripdatum;
 import com.webkype.happiroo.model.CategoryModel;
@@ -42,19 +43,33 @@ public class HomeStripAdapter extends RecyclerView.Adapter<HomeStripAdapter.View
         final ViewHolder holder = (ViewHolder) vh;
         final Stripdatum data = stripCatList.get(position);
             holder.homeStripItemName.setText(data.getStripname());
-            setArrays(data.getStripcategories(),holder);
+            setArrays(data.getStripcategories(),data.getBannersdeta(),holder);
     }
 
-    private void setArrays(List<Stripcategory> stripcategories,ViewHolder holder) {
-
+    private void setArrays(List<Stripcategory> catList, List<Adddetum> addList, ViewHolder holder) {
+        int firstList=0,secondList=0;
         final List<CategoryModel> mList = new ArrayList<>();
-        for (Stripcategory detail : stripcategories) {
+        final List<CategoryModel> mAddList = new ArrayList<>();
+        for (Stripcategory detail : catList) {
+            firstList++;
             mList.add(new CategoryModel("" + detail.getCatimgnew(), detail.getCategoryname(), detail.getCatId()));
+//            if (firstList==4)break;
+
+        }
+        for (Adddetum detail : addList) {
+            secondList++;
+            mAddList.add(new CategoryModel("" + detail.getBanner(), detail.getId(), detail.getId()));
+            if (secondList==2)break;
         }
         holder.stripCategoryRecycler.setNestedScrollingEnabled(false);
-        holder.stripCategoryRecycler.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
+        holder.stripCategoryRecycler.setLayoutManager(new StaggeredGridLayoutManager(4, StaggeredGridLayoutManager.VERTICAL));
         holder.stripCategoryAdapter = new StripCategoryAdapter(context, mList);
+
+        holder.stripAddRecycler.setNestedScrollingEnabled(false);
+        holder.stripAddRecycler.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
+        holder.stripAddAdapter = new StripAddvertAdapter(context, mAddList);
         holder.stripCategoryRecycler.setAdapter(holder.stripCategoryAdapter);
+        holder.stripAddRecycler.setAdapter(holder.stripAddAdapter);
     }
 
 
@@ -69,7 +84,10 @@ public class HomeStripAdapter extends RecyclerView.Adapter<HomeStripAdapter.View
         TextView homeStripItemName;
         @BindView(R.id.stripCategoryRecycler)
         RecyclerView stripCategoryRecycler;
+        @BindView(R.id.stripAddRecycler)
+        RecyclerView stripAddRecycler;
         private StripCategoryAdapter stripCategoryAdapter;
+        private StripAddvertAdapter stripAddAdapter;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

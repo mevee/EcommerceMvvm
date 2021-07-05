@@ -20,9 +20,9 @@ public class FragmentHomeBindingImpl extends FragmentHomeBinding  {
         sViewsWithIds.put(R.id.homeSwipeRefresh, 4);
         sViewsWithIds.put(R.id.homeBannerViewPager, 5);
         sViewsWithIds.put(R.id.rlShopping, 6);
-        sViewsWithIds.put(R.id.homeShoppingPager, 7);
-        sViewsWithIds.put(R.id.homeAdPagerIndicator, 8);
-        sViewsWithIds.put(R.id.homeServicesRecycler, 9);
+        sViewsWithIds.put(R.id.homeVideoPager, 7);
+        sViewsWithIds.put(R.id.homeServicesRecycler, 8);
+        sViewsWithIds.put(R.id.addvertiseRecycler, 9);
         sViewsWithIds.put(R.id.homeStripRecycler, 10);
         sViewsWithIds.put(R.id.progressbar, 11);
     }
@@ -39,14 +39,14 @@ public class FragmentHomeBindingImpl extends FragmentHomeBinding  {
     }
     private FragmentHomeBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (me.relex.circleindicator.CircleIndicator) bindings[8]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[9]
             , (androidx.viewpager.widget.ViewPager) bindings[5]
             , (android.widget.LinearLayout) bindings[2]
             , (android.widget.TextView) bindings[3]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[9]
-            , (androidx.viewpager.widget.ViewPager) bindings[7]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[8]
             , (androidx.recyclerview.widget.RecyclerView) bindings[10]
             , (androidx.swiperefreshlayout.widget.SwipeRefreshLayout) bindings[4]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[7]
             , (androidx.coordinatorlayout.widget.CoordinatorLayout) bindings[1]
             , (android.widget.ProgressBar) bindings[11]
             , (android.widget.RelativeLayout) bindings[6]

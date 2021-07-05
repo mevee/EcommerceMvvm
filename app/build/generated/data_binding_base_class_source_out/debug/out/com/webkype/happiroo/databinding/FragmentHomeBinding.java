@@ -19,11 +19,10 @@ import androidx.viewpager.widget.ViewPager;
 import com.webkype.happiroo.R;
 import java.lang.Deprecated;
 import java.lang.Object;
-import me.relex.circleindicator.CircleIndicator;
 
 public abstract class FragmentHomeBinding extends ViewDataBinding {
   @NonNull
-  public final CircleIndicator homeAdPagerIndicator;
+  public final RecyclerView addvertiseRecycler;
 
   @NonNull
   public final ViewPager homeBannerViewPager;
@@ -38,13 +37,13 @@ public abstract class FragmentHomeBinding extends ViewDataBinding {
   public final RecyclerView homeServicesRecycler;
 
   @NonNull
-  public final ViewPager homeShoppingPager;
-
-  @NonNull
   public final RecyclerView homeStripRecycler;
 
   @NonNull
   public final SwipeRefreshLayout homeSwipeRefresh;
+
+  @NonNull
+  public final RecyclerView homeVideoPager;
 
   @NonNull
   public final CoordinatorLayout mainLayout;
@@ -56,20 +55,20 @@ public abstract class FragmentHomeBinding extends ViewDataBinding {
   public final RelativeLayout rlShopping;
 
   protected FragmentHomeBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      CircleIndicator homeAdPagerIndicator, ViewPager homeBannerViewPager,
+      RecyclerView addvertiseRecycler, ViewPager homeBannerViewPager,
       LinearLayout homeLocationAddLayout, TextView homeLocationAddTxt,
-      RecyclerView homeServicesRecycler, ViewPager homeShoppingPager,
-      RecyclerView homeStripRecycler, SwipeRefreshLayout homeSwipeRefresh,
+      RecyclerView homeServicesRecycler, RecyclerView homeStripRecycler,
+      SwipeRefreshLayout homeSwipeRefresh, RecyclerView homeVideoPager,
       CoordinatorLayout mainLayout, ProgressBar progressbar, RelativeLayout rlShopping) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.homeAdPagerIndicator = homeAdPagerIndicator;
+    this.addvertiseRecycler = addvertiseRecycler;
     this.homeBannerViewPager = homeBannerViewPager;
     this.homeLocationAddLayout = homeLocationAddLayout;
     this.homeLocationAddTxt = homeLocationAddTxt;
     this.homeServicesRecycler = homeServicesRecycler;
-    this.homeShoppingPager = homeShoppingPager;
     this.homeStripRecycler = homeStripRecycler;
     this.homeSwipeRefresh = homeSwipeRefresh;
+    this.homeVideoPager = homeVideoPager;
     this.mainLayout = mainLayout;
     this.progressbar = progressbar;
     this.rlShopping = rlShopping;

@@ -21,6 +21,7 @@ public class HomeStripAdapter$ViewHolder_ViewBinding implements Unbinder {
 
     target.homeStripItemName = Utils.findRequiredViewAsType(source, R.id.homeStripItemName, "field 'homeStripItemName'", TextView.class);
     target.stripCategoryRecycler = Utils.findRequiredViewAsType(source, R.id.stripCategoryRecycler, "field 'stripCategoryRecycler'", RecyclerView.class);
+    target.stripAddRecycler = Utils.findRequiredViewAsType(source, R.id.stripAddRecycler, "field 'stripAddRecycler'", RecyclerView.class);
   }
 
   @Override
@@ -32,5 +33,6 @@ public class HomeStripAdapter$ViewHolder_ViewBinding implements Unbinder {
 
     target.homeStripItemName = null;
     target.stripCategoryRecycler = null;
+    target.stripAddRecycler = null;
   }
 }

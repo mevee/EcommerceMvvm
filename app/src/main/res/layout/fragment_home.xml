@@ -116,6 +116,7 @@
                         android:orientation="vertical">
 
                         <androidx.viewpager.widget.ViewPager
+                            android:layout_margin="@dimen/_8dp"
                             android:id="@+id/homeBannerViewPager"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_148dp" />
@@ -123,36 +124,14 @@
                         <RelativeLayout
                             android:id="@+id/rlShopping"
                             android:layout_width="match_parent"
-                            android:layout_height="@dimen/_128dp">
+                            android:layout_height="@dimen/_148dp">
 
-                            <androidx.viewpager.widget.ViewPager
-                                android:id="@+id/homeShoppingPager"
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_margin="@dimen/_8dp"
+                                android:id="@+id/homeVideoPager"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent" />
 
-                            <RelativeLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentBottom="true"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginBottom="@dimen/_12dp"
-                                android:background="@drawable/transparent_background_fill">
-
-                                <me.relex.circleindicator.CircleIndicator
-                                    android:id="@+id/homeAdPagerIndicator"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="@dimen/_10dp"
-                                    android:focusable="false"
-                                    android:paddingStart="@dimen/_8dp"
-                                    android:paddingTop="@dimen/_1dp"
-                                    android:paddingEnd="@dimen/_8dp"
-                                    android:paddingBottom="@dimen/_1dp"
-                                    app:ci_drawable="@drawable/dark_radius"
-                                    app:ci_drawable_unselected="@drawable/white_radius"
-                                    app:ci_height="@dimen/_4dp"
-                                    app:ci_width="@dimen/_4dp" />
-
-                            </RelativeLayout>
 
                         </RelativeLayout>
 
@@ -172,6 +151,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_8dp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/addvertiseRecycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_6dp"
+                            android:layout_marginStart="@dimen/_6dp"
+                            android:layout_marginEnd="@dimen/_6dp" />
 
                         <View
                             android:layout_width="match_parent"

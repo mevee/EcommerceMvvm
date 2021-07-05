@@ -15,6 +15,9 @@ private String stripname;
 @SerializedName("stripcategories")
 @Expose
 private List<Stripcategory> stripcategories = null;
+@SerializedName("bannersdeta")
+@Expose
+private List<Adddetum> bannersdeta = null;
 
 public String getId() {
 return id;
@@ -40,4 +43,11 @@ public void setStripcategories(List<Stripcategory> stripcategories) {
 this.stripcategories = stripcategories;
 }
 
+    public List<Adddetum> getBannersdeta() {
+        return bannersdeta;
+    }
+
+    public void setBannersdeta(List<Adddetum> bannersdeta) {
+        this.bannersdeta = bannersdeta;
+    }
 }

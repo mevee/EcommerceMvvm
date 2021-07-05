@@ -12,6 +12,10 @@ private String status;
 @SerializedName("msg")
 @Expose
 private String msg;
+@SerializedName("banner_video")
+@Expose
+private List<BannerVieodetum> banner_video = null;
+
 @SerializedName("bannerdeta")
 @Expose
 private List<Bannerdetum> bannerdeta = null;
@@ -73,4 +77,11 @@ public void setStripdata(List<Stripdatum> stripdata) {
 this.stripdata = stripdata;
 }
 
+    public List<BannerVieodetum> getBanner_video() {
+        return banner_video;
+    }
+
+    public void setBanner_video(List<BannerVieodetum> banner_video) {
+        this.banner_video = banner_video;
+    }
 }

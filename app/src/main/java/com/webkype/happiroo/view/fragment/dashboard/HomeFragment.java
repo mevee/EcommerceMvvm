@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.webkype.happiroo.R;
 import com.webkype.happiroo.controller.network.NetworkProvider;
 import com.webkype.happiroo.controller.network.responses.home_page_resp.Addbanner;
+import com.webkype.happiroo.controller.network.responses.home_page_resp.BannerVieodetum;
 import com.webkype.happiroo.controller.network.responses.home_page_resp.Bannerdetum;
 import com.webkype.happiroo.controller.network.responses.home_page_resp.Categorydetum;
 import com.webkype.happiroo.controller.network.responses.home_page_resp.HomeApiResp;
@@ -24,6 +25,8 @@ import com.webkype.happiroo.view.activity.ChangeLocationActivity;
 import com.webkype.happiroo.view.adapter.HomeBannerAdapter;
 import com.webkype.happiroo.view.adapter.HomeServicesAdapter;
 import com.webkype.happiroo.view.adapter.HomeStripAdapter;
+import com.webkype.happiroo.view.adapter.HomeVideoAdapter;
+import com.webkype.happiroo.view.adapter.StripAddvertAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,13 +47,16 @@ public class HomeFragment extends Fragment {
 
     private Context context;
 
+    private HomeVideoAdapter homeVideoAdapter;
     private HomeBannerAdapter homeBannerAdapter;
     private HomeServicesAdapter homeServicesAdapter;
     private HomeStripAdapter homeStripAdapter;
+    private StripAddvertAdapter addAdapter;
     private List<CategoryModel> topBannerList = new ArrayList<>();
-    private List<CategoryModel> adBannerList = new ArrayList<>();
+    private List<CategoryModel> videoBannerList = new ArrayList<>();
     private List<CategoryModel> homeServiceList = new ArrayList<>();
     private List<Stripdatum> stripdatumList = new ArrayList<>();
+    private List<CategoryModel> addvertiseList = new ArrayList<>();
     private FragmentHomeBinding binding;
 
     @Override
@@ -70,7 +76,7 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        if (Preference.getAddress(context)!=null) {
+        if (Preference.getAddress(context) != null) {
             binding.homeLocationAddTxt.setText(Preference.getAddress(context).getAddress());
         }
 
@@ -91,29 +97,19 @@ public class HomeFragment extends Fragment {
     }
 
     void setTopBanner() {
-
         binding.homeBannerViewPager.setFocusable(true);
         binding.homeBannerViewPager.setClipToPadding(false);
-        binding.homeBannerViewPager.setPadding(40, 20, 160, 20);
-        binding.homeBannerViewPager.setPageMargin(40);
         homeBannerAdapter = new HomeBannerAdapter(context, topBannerList);
         binding.homeBannerViewPager.setAdapter(homeBannerAdapter);
-
     }
 
-    void setShoppingView() {
+    void setVideoView() {
         binding.rlShopping.setVisibility(View.VISIBLE);
-//        final String imag1 ="https://image.freepik.com/free-vector/elements-online-shopping-flat-style_1085-847.jpg";
-//        final String imag2 ="https://st4.depositphotos.com/8696740/26761/v/1600/depositphotos_267614420-stock-illustration-online-shopping-banner-vector-illustration.jpg";
-//        adBannerList.clear();
-//        adBannerList.add(new CategoryModel(imag2,"","id"));
+        homeVideoAdapter = new HomeVideoAdapter(context, videoBannerList);
+        binding.homeVideoPager.setNestedScrollingEnabled(false);
+        binding.homeVideoPager.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL));
+        binding.homeVideoPager.setAdapter(homeVideoAdapter);
 
-        binding.homeShoppingPager.setClipToPadding(false);
-        binding.homeShoppingPager.setPadding(40, 20, 40, 20);
-        binding.homeShoppingPager.setPageMargin(40);
-        homeBannerAdapter = new HomeBannerAdapter(context, adBannerList);
-        binding.homeShoppingPager.setAdapter(homeBannerAdapter);
-        binding.homeAdPagerIndicator.setViewPager(binding.homeShoppingPager);
 
     }
 
@@ -132,6 +128,21 @@ public class HomeFragment extends Fragment {
 
     }
 
+    void setAddStripAdapter() {
+        int secondList = 0;
+        final List<CategoryModel> mAddList = new ArrayList<>();
+        for (CategoryModel detail : addvertiseList) {
+            secondList++;
+            mAddList.add(detail);
+            if (secondList == 2) break;
+        }
+        binding.addvertiseRecycler.setNestedScrollingEnabled(false);
+        binding.addvertiseRecycler.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
+        addAdapter = new StripAddvertAdapter(context, mAddList);
+        binding.addvertiseRecycler.setAdapter(addAdapter);
+
+    }
+
     private void getHomeData() {
         if (InternetConnectionCheck.haveNetworkConnection(getContext())) {
             binding.progressbar.setVisibility(View.VISIBLE);
@@ -144,21 +155,30 @@ public class HomeFragment extends Fragment {
                     HomeApiResp resp = response.body();
                     if ("200".equals(resp.getStatus())) {
 
-                        if (resp.getBannerdeta() != null && resp.getBannerdeta().size() > 0) {
+                        if (resp.getAddbanner() != null && resp.getAddbanner().size() > 0) {
                             topBannerList.clear();
-                            for (Bannerdetum detail : resp.getBannerdeta()) {
-                                topBannerList.add(new CategoryModel("" + detail.getBanner(), detail.getId(), ""));
+                            for (Addbanner detail : resp.getAddbanner()) {
+                                topBannerList.add(new CategoryModel("" + detail.getBanner(), detail.getId(), detail.getId()));
                             }
                             setTopBanner();
                         }
-                        if (resp.getAddbanner() != null && resp.getAddbanner().size() > 0) {
-                            adBannerList.clear();
-                            for (Addbanner detail : resp.getAddbanner()) {
-                                adBannerList.add(new CategoryModel("" + detail.getBanner(), detail.getId(), ""));
+
+                        if (resp.getBannerdeta() != null && resp.getBannerdeta().size() > 0) {
+                            addvertiseList.clear();
+                            for (Bannerdetum detail : resp.getBannerdeta()) {
+                                addvertiseList.add(new CategoryModel("" + detail.getBanner(), detail.getId(), detail.getId()));
                             }
-                            setShoppingView();
+                            setAddStripAdapter();
                         }
-//                            setShoppingView();
+
+                        if (resp.getBanner_video() != null && resp.getBanner_video().size() > 0) {
+                            videoBannerList.clear();
+                            for (BannerVieodetum detail : resp.getBanner_video()) {
+                                videoBannerList.add(new CategoryModel("" + detail.getBanner(), detail.getBanner_vid(), detail.getId()));
+                            }
+                            setVideoView();
+                        }
+
                         if (resp.getCategorydeta() != null && resp.getCategorydeta().size() > 0) {
                             homeServiceList.clear();
                             for (Categorydetum detail : resp.getCategorydeta()) {

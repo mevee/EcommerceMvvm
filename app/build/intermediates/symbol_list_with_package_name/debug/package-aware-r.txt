@@ -1884,6 +1884,7 @@ id addressItemFullAddress
 id addressItemRelative
 id addressItemType
 id addressItemUser
+id addvertiseRecycler
 id adjust_height
 id adjust_width
 id alertTitle
@@ -2122,7 +2123,6 @@ id groups
 id headerVideoPlayer
 id hideable
 id home
-id homeAdPagerIndicator
 id homeAsUp
 id homeBannerViewPager
 id homeLocationAddLayout
@@ -2131,10 +2131,10 @@ id homeServicesImageItem
 id homeServicesLayoutItem
 id homeServicesRecycler
 id homeServicesTxtItem
-id homeShoppingPager
 id homeStripItemName
 id homeStripRecycler
 id homeSwipeRefresh
+id homeVideoPager
 id horizontal
 id icon
 id icon_group
@@ -2454,6 +2454,7 @@ id standard
 id start
 id status_bar_latest_event_content
 id stretch
+id stripAddRecycler
 id stripCatImageItem
 id stripCatLayoutItem
 id stripCatTextItem
@@ -2848,7 +2849,9 @@ layout shop_cat_item
 layout shop_product_item_layout
 layout slider_layout
 layout spinner_item
+layout strip_addvert_item
 layout strip_cat_item
+layout strip_video_item
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
 layout test_design_checkbox

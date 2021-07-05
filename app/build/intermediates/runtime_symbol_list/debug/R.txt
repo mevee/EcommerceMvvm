@@ -1883,6 +1883,7 @@ int id addressItemFullAddress 0x7f0a004d
 int id addressItemRelative 0x7f0a004e
 int id addressItemType 0x7f0a004f
 int id addressItemUser 0x7f0a0050
+int id addvertiseRecycler 0x7f0a0348
 int id adjust_height 0x7f0a0051
 int id adjust_width 0x7f0a0052
 int id alertTitle 0x7f0a0053
@@ -2121,7 +2122,6 @@ int id groups 0x7f0a013b
 int id headerVideoPlayer 0x7f0a013c
 int id hideable 0x7f0a013d
 int id home 0x7f0a013e
-int id homeAdPagerIndicator 0x7f0a013f
 int id homeAsUp 0x7f0a0140
 int id homeBannerViewPager 0x7f0a0141
 int id homeLocationAddLayout 0x7f0a0142
@@ -2130,10 +2130,10 @@ int id homeServicesImageItem 0x7f0a0144
 int id homeServicesLayoutItem 0x7f0a0145
 int id homeServicesRecycler 0x7f0a0146
 int id homeServicesTxtItem 0x7f0a0147
-int id homeShoppingPager 0x7f0a0148
 int id homeStripItemName 0x7f0a0149
 int id homeStripRecycler 0x7f0a014a
 int id homeSwipeRefresh 0x7f0a014b
+int id homeVideoPager 0x7f0a0349
 int id horizontal 0x7f0a014c
 int id icon 0x7f0a014d
 int id icon_group 0x7f0a014e
@@ -2453,6 +2453,7 @@ int id standard 0x7f0a0287
 int id start 0x7f0a0288
 int id status_bar_latest_event_content 0x7f0a0289
 int id stretch 0x7f0a028a
+int id stripAddRecycler 0x7f0a0346
 int id stripCatImageItem 0x7f0a028b
 int id stripCatLayoutItem 0x7f0a028c
 int id stripCatTextItem 0x7f0a028d
@@ -2847,7 +2848,9 @@ int layout shop_cat_item 0x7f0d00a8
 int layout shop_product_item_layout 0x7f0d00a9
 int layout slider_layout 0x7f0d00aa
 int layout spinner_item 0x7f0d00ab
+int layout strip_addvert_item 0x7f0d00bf
 int layout strip_cat_item 0x7f0d00ac
+int layout strip_video_item 0x7f0d00c0
 int layout support_simple_spinner_dropdown_item 0x7f0d00ad
 int layout test_action_chip 0x7f0d00ae
 int layout test_design_checkbox 0x7f0d00af

@@ -3,8 +3,8 @@
     android:id="@+id/stripCatLayoutItem"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="@dimen/_6dp"
-    android:layout_marginEnd="@dimen/_6dp"
+    android:layout_marginStart="@dimen/_2dp"
+    android:layout_marginEnd="@dimen/_2dp"
     android:layout_marginTop="@dimen/_6dp"
     android:orientation="vertical"
     android:background="@color/white">
@@ -12,7 +12,7 @@
     <ImageView
         android:id="@+id/stripCatImageItem"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_80dp"
+        android:layout_height="@dimen/_50dp"
         android:src="@drawable/image_placeholder"
         android:scaleType="centerInside"/>
 
