@@ -2152,6 +2152,8 @@ id item_rating_bar
 id item_touch_helper_previous_elevation
 id ivBackBtn
 id ivBackButton
+id ivImgL1
+id ivImgL2
 id ivItemImage
 id ivToolbarBackBtn
 id ivTotalVendorRaingsBd
@@ -2367,6 +2369,7 @@ id rounded
 id rvCategoryList
 id rvOrderList
 id rvProductList
+id rvProfCleanList
 id rvServiceInclude
 id rvShopCat
 id rv_address_list
@@ -2606,6 +2609,7 @@ id tv_vendor_rating_bd
 id tv_wallet_balance
 id tv_what_excluded
 id tv_you_used
+id tvwhyProfCleaning
 id twittericon
 id unchecked
 id uniform

@@ -34,6 +34,12 @@ public abstract class ActivityServiceDetailBinding extends ViewDataBinding {
   public final PlayerView headerVideoPlayer;
 
   @NonNull
+  public final ImageView ivImgL1;
+
+  @NonNull
+  public final ImageView ivImgL2;
+
+  @NonNull
   public final LinearLayout llVideoDetail;
 
   @NonNull
@@ -53,6 +59,9 @@ public abstract class ActivityServiceDetailBinding extends ViewDataBinding {
 
   @NonNull
   public final RelativeLayout rlIndicatorHolder;
+
+  @NonNull
+  public final RecyclerView rvProfCleanList;
 
   @NonNull
   public final RecyclerView serviceCatRecycler;
@@ -78,19 +87,25 @@ public abstract class ActivityServiceDetailBinding extends ViewDataBinding {
   @NonNull
   public final TextView tvTitleServiceDetail;
 
+  @NonNull
+  public final TextView tvwhyProfCleaning;
+
   protected ActivityServiceDetailBinding(Object _bindingComponent, View _root, int _localFieldCount,
       ImageView backServiceDetail, ImageView cartServiceDetail, PlayerView headerVideoPlayer,
-      LinearLayout llVideoDetail, CoordinatorLayout mainServiceDetail, ProgressBar pbVideo,
-      RelativeLayout productsHeaderLayout, ProgressBar progressBarServiceDetail,
-      RecyclerView rateCardRecycler, RelativeLayout rlIndicatorHolder,
+      ImageView ivImgL1, ImageView ivImgL2, LinearLayout llVideoDetail,
+      CoordinatorLayout mainServiceDetail, ProgressBar pbVideo, RelativeLayout productsHeaderLayout,
+      ProgressBar progressBarServiceDetail, RecyclerView rateCardRecycler,
+      RelativeLayout rlIndicatorHolder, RecyclerView rvProfCleanList,
       RecyclerView serviceCatRecycler, ImageView serviceDetailAdImage,
       CircleIndicator serviceDetailPagerIndicator, VideoView serviceDetailSampleVideo,
       ViewPager serviceDetailViewPager, TextView tvCartQuantity, TextView tvRateCardTile,
-      TextView tvTitleServiceDetail) {
+      TextView tvTitleServiceDetail, TextView tvwhyProfCleaning) {
     super(_bindingComponent, _root, _localFieldCount);
     this.backServiceDetail = backServiceDetail;
     this.cartServiceDetail = cartServiceDetail;
     this.headerVideoPlayer = headerVideoPlayer;
+    this.ivImgL1 = ivImgL1;
+    this.ivImgL2 = ivImgL2;
     this.llVideoDetail = llVideoDetail;
     this.mainServiceDetail = mainServiceDetail;
     this.pbVideo = pbVideo;
@@ -98,6 +113,7 @@ public abstract class ActivityServiceDetailBinding extends ViewDataBinding {
     this.progressBarServiceDetail = progressBarServiceDetail;
     this.rateCardRecycler = rateCardRecycler;
     this.rlIndicatorHolder = rlIndicatorHolder;
+    this.rvProfCleanList = rvProfCleanList;
     this.serviceCatRecycler = serviceCatRecycler;
     this.serviceDetailAdImage = serviceDetailAdImage;
     this.serviceDetailPagerIndicator = serviceDetailPagerIndicator;
@@ -106,6 +122,7 @@ public abstract class ActivityServiceDetailBinding extends ViewDataBinding {
     this.tvCartQuantity = tvCartQuantity;
     this.tvRateCardTile = tvRateCardTile;
     this.tvTitleServiceDetail = tvTitleServiceDetail;
+    this.tvwhyProfCleaning = tvwhyProfCleaning;
   }
 
   @NonNull
