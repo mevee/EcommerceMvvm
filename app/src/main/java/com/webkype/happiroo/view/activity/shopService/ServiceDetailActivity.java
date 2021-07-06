@@ -27,6 +27,7 @@ import com.webkype.happiroo.controller.network.responses.category.Categorydetail
 import com.webkype.happiroo.controller.network.responses.category.CatgoryDetailResp;
 import com.webkype.happiroo.controller.network.responses.category.Ratecardsimgdetum;
 import com.webkype.happiroo.controller.network.responses.category.ServiceCategory;
+import com.webkype.happiroo.controller.network.responses.home_page_resp.Bannerdetum;
 import com.webkype.happiroo.controller.pref.Preference;
 import com.webkype.happiroo.controller.utils.CartUtils;
 import com.webkype.happiroo.controller.utils.InternetConnectionCheck;
@@ -39,6 +40,7 @@ import com.webkype.happiroo.view.activity.checout_process.CartActivity;
 import com.webkype.happiroo.view.adapter.RateCardAdapter;
 import com.webkype.happiroo.view.adapter.ServiceCatAdapter;
 import com.webkype.happiroo.view.adapter.ServiceDetailPagerAdapter;
+import com.webkype.happiroo.view.adapter.StripAddvertAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,6 +53,7 @@ import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import androidx.viewpager.widget.ViewPager;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -63,8 +66,10 @@ public class ServiceDetailActivity extends AppCompatActivity {
     private ServiceDetailPagerAdapter serviceDetailPagerAdapter;
     private ServiceCatAdapter serviceCatAdapter;
     private RateCardAdapter rateCardAdapter;
+    private RateCardAdapter professionalAdapter;
     private List<SampleModel> serviceBannerList = new ArrayList<>();
     private List<CategoryModel> serviceCatList = new ArrayList<>();
+    private List<SampleModel> professionalList = new ArrayList<>();
     private List<SampleModel> rateCardList = new ArrayList<>();
     private SimpleExoPlayer player;
 
@@ -164,9 +169,9 @@ public class ServiceDetailActivity extends AppCompatActivity {
 
                         binding.tvTitleServiceDetail.setText(detail.getCategoryname());
 
-                        if (!TextUtils.isEmpty(detail.getVideo())){
+                        if (!TextUtils.isEmpty(detail.getVideo())) {
                             setHeaderVideoView(detail.getVideo());
-                        }else if(detail.getBannerimages() != null && detail.getBannerimages().size() > 0) {
+                        } else if (detail.getBannerimages() != null && detail.getBannerimages().size() > 0) {
                             serviceBannerList.clear();
                             for (Bannerimage banner : detail.getBannerimages()) {
                                 serviceBannerList.add(new SampleModel("" + banner.getBanerimgs(), banner.getId(), ""));
@@ -183,6 +188,17 @@ public class ServiceDetailActivity extends AppCompatActivity {
                                     .transform(new CenterInside(), new RoundedCorners(16))
                                     .into(binding.serviceDetailAdImage);
                         }
+
+                        Glide.with(context).load(detail.getAdbanner1())
+                                .thumbnail(Glide.with(context).load(R.drawable.image_placeholder))
+                                .transform(new CenterInside(), new RoundedCorners(16))
+                                .into(binding.ivImgL1);
+
+                        Glide.with(context).load(detail.getAdbanner2())
+                                .thumbnail(Glide.with(context).load(R.drawable.image_placeholder))
+                                .transform(new CenterInside(), new RoundedCorners(16))
+                                .into(binding.ivImgL2);
+
 
                         if (TextUtils.isEmpty(detail.getHowwedo())) {
                             binding.llVideoDetail.setVisibility(View.GONE);
@@ -208,6 +224,15 @@ public class ServiceDetailActivity extends AppCompatActivity {
                         } else {
                             binding.tvRateCardTile.setVisibility(View.GONE);
                         }
+
+                        if (detail.getBannersdeta_pro() != null && detail.getBannersdeta_pro().size() > 0) {
+                            professionalList.clear();
+                            for (Ratecardsimgdetum banner : detail.getBannersdeta_pro()) {
+                                professionalList.add(new SampleModel("" + banner.getBanerimgs(), banner.getId(), ""));
+                            }
+                            setProfessionAdapter();
+                        }
+
 
                     } else {
                         Toast.makeText(context, "" + resp.getMsg(), Toast.LENGTH_SHORT).show();
@@ -258,6 +283,22 @@ public class ServiceDetailActivity extends AppCompatActivity {
         }));
         binding.serviceCatRecycler.setFocusable(false);
         binding.serviceCatRecycler.setAdapter(serviceCatAdapter);
+
+    }
+
+
+    private void setProfessionAdapter() {
+        binding.rvProfCleanList.setNestedScrollingEnabled(false);
+        binding.rvProfCleanList.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
+        professionalAdapter = new RateCardAdapter(context, professionalList, (position, action) -> {
+            if (action == CommonListener.CLICKED) {
+                Intent intent = new Intent(context, ImagePagerActivity.class);
+                intent.putParcelableArrayListExtra("imageList", (ArrayList<? extends Parcelable>) professionalList);
+                startActivity(intent);
+            }
+        });
+        binding.rvProfCleanList.setFocusable(false);
+        binding.rvProfCleanList.setAdapter(professionalAdapter);
 
     }
 

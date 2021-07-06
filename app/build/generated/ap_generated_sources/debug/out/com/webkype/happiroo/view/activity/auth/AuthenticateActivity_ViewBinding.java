@@ -17,7 +17,7 @@ import java.lang.Override;
 public class AuthenticateActivity_ViewBinding implements Unbinder {
   private AuthenticateActivity target;
 
-  private View view7f0a0191;
+  private View view7f0a0193;
 
   @UiThread
   public AuthenticateActivity_ViewBinding(AuthenticateActivity target) {
@@ -32,7 +32,7 @@ public class AuthenticateActivity_ViewBinding implements Unbinder {
     target.mobileLogin_eT = Utils.findRequiredViewAsType(source, R.id.mobileLogin_eT, "field 'mobileLogin_eT'", EditText.class);
     view = Utils.findRequiredView(source, R.id.loginBtnLinear, "field 'loginBtnLinear' and method 'onClick'");
     target.loginBtnLinear = Utils.castView(view, R.id.loginBtnLinear, "field 'loginBtnLinear'", LinearLayout.class);
-    view7f0a0191 = view;
+    view7f0a0193 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +53,7 @@ public class AuthenticateActivity_ViewBinding implements Unbinder {
     target.loginBtnLinear = null;
     target.skipLoginTxtBtn = null;
 
-    view7f0a0191.setOnClickListener(null);
-    view7f0a0191 = null;
+    view7f0a0193.setOnClickListener(null);
+    view7f0a0193 = null;
   }
 }

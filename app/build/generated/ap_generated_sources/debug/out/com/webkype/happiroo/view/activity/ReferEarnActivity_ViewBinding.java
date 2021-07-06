@@ -15,27 +15,27 @@ import java.lang.Override;
 public class ReferEarnActivity_ViewBinding implements Unbinder {
   private ReferEarnActivity target;
 
-  private View view7f0a006a;
+  private View view7f0a006b;
 
-  private View view7f0a033c;
+  private View view7f0a0341;
 
-  private View view7f0a0124;
+  private View view7f0a0125;
 
-  private View view7f0a0322;
+  private View view7f0a0327;
 
-  private View view7f0a00b3;
+  private View view7f0a00b4;
 
   private View view7f0a0156;
 
-  private View view7f0a019e;
+  private View view7f0a01a0;
 
-  private View view7f0a0275;
+  private View view7f0a0278;
 
-  private View view7f0a0174;
+  private View view7f0a0176;
 
-  private View view7f0a0136;
+  private View view7f0a0137;
 
-  private View view7f0a019d;
+  private View view7f0a019f;
 
   @UiThread
   public ReferEarnActivity_ViewBinding(ReferEarnActivity target) {
@@ -49,7 +49,7 @@ public class ReferEarnActivity_ViewBinding implements Unbinder {
     View view;
     target.referTxt_eT = Utils.findRequiredViewAsType(source, R.id.referTxt_eT, "field 'referTxt_eT'", EditText.class);
     view = Utils.findRequiredView(source, R.id.backReferEarn, "method 'onClick'");
-    view7f0a006a = view;
+    view7f0a006b = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -57,7 +57,7 @@ public class ReferEarnActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.whatsappicon, "method 'onClick'");
-    view7f0a033c = view;
+    view7f0a0341 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -65,7 +65,7 @@ public class ReferEarnActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.fbicon, "method 'onClick'");
-    view7f0a0124 = view;
+    view7f0a0125 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -73,7 +73,7 @@ public class ReferEarnActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.twittericon, "method 'onClick'");
-    view7f0a0322 = view;
+    view7f0a0327 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -81,7 +81,7 @@ public class ReferEarnActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.copy, "method 'onClick'");
-    view7f0a00b3 = view;
+    view7f0a00b4 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -97,7 +97,7 @@ public class ReferEarnActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.messengerIcon, "method 'onClick'");
-    view7f0a019e = view;
+    view7f0a01a0 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -105,7 +105,7 @@ public class ReferEarnActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.skypeIcon, "method 'onClick'");
-    view7f0a0275 = view;
+    view7f0a0278 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -113,7 +113,7 @@ public class ReferEarnActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.linkedInIcon, "method 'onClick'");
-    view7f0a0174 = view;
+    view7f0a0176 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -121,7 +121,7 @@ public class ReferEarnActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.gmailIcon, "method 'onClick'");
-    view7f0a0136 = view;
+    view7f0a0137 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -129,7 +129,7 @@ public class ReferEarnActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.messageIcon, "method 'onClick'");
-    view7f0a019d = view;
+    view7f0a019f = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -147,27 +147,27 @@ public class ReferEarnActivity_ViewBinding implements Unbinder {
 
     target.referTxt_eT = null;
 
-    view7f0a006a.setOnClickListener(null);
-    view7f0a006a = null;
-    view7f0a033c.setOnClickListener(null);
-    view7f0a033c = null;
-    view7f0a0124.setOnClickListener(null);
-    view7f0a0124 = null;
-    view7f0a0322.setOnClickListener(null);
-    view7f0a0322 = null;
-    view7f0a00b3.setOnClickListener(null);
-    view7f0a00b3 = null;
+    view7f0a006b.setOnClickListener(null);
+    view7f0a006b = null;
+    view7f0a0341.setOnClickListener(null);
+    view7f0a0341 = null;
+    view7f0a0125.setOnClickListener(null);
+    view7f0a0125 = null;
+    view7f0a0327.setOnClickListener(null);
+    view7f0a0327 = null;
+    view7f0a00b4.setOnClickListener(null);
+    view7f0a00b4 = null;
     view7f0a0156.setOnClickListener(null);
     view7f0a0156 = null;
-    view7f0a019e.setOnClickListener(null);
-    view7f0a019e = null;
-    view7f0a0275.setOnClickListener(null);
-    view7f0a0275 = null;
-    view7f0a0174.setOnClickListener(null);
-    view7f0a0174 = null;
-    view7f0a0136.setOnClickListener(null);
-    view7f0a0136 = null;
-    view7f0a019d.setOnClickListener(null);
-    view7f0a019d = null;
+    view7f0a01a0.setOnClickListener(null);
+    view7f0a01a0 = null;
+    view7f0a0278.setOnClickListener(null);
+    view7f0a0278 = null;
+    view7f0a0176.setOnClickListener(null);
+    view7f0a0176 = null;
+    view7f0a0137.setOnClickListener(null);
+    view7f0a0137 = null;
+    view7f0a019f.setOnClickListener(null);
+    view7f0a019f = null;
   }
 }

@@ -14,9 +14,9 @@ import java.lang.Override;
 public class ChangeLocationActivity_ViewBinding implements Unbinder {
   private ChangeLocationActivity target;
 
-  private View view7f0a0060;
+  private View view7f0a0061;
 
-  private View view7f0a00ba;
+  private View view7f0a00bb;
 
   @UiThread
   public ChangeLocationActivity_ViewBinding(ChangeLocationActivity target) {
@@ -29,7 +29,7 @@ public class ChangeLocationActivity_ViewBinding implements Unbinder {
 
     View view;
     view = Utils.findRequiredView(source, R.id.backChangeLocation, "method 'onClick'");
-    view7f0a0060 = view;
+    view7f0a0061 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -37,7 +37,7 @@ public class ChangeLocationActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.currentLocationRelative, "method 'onClick'");
-    view7f0a00ba = view;
+    view7f0a00bb = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,9 +53,9 @@ public class ChangeLocationActivity_ViewBinding implements Unbinder {
     target = null;
 
 
-    view7f0a0060.setOnClickListener(null);
-    view7f0a0060 = null;
-    view7f0a00ba.setOnClickListener(null);
-    view7f0a00ba = null;
+    view7f0a0061.setOnClickListener(null);
+    view7f0a0061 = null;
+    view7f0a00bb.setOnClickListener(null);
+    view7f0a00bb = null;
   }
 }

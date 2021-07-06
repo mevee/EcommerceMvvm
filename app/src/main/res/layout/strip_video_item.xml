@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/stripCatLayoutItem"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_148dp"
+    android:layout_height="@dimen/_156dp"
     android:layout_marginStart="@dimen/_2dp"
     android:layout_marginEnd="@dimen/_2dp"
     android:layout_marginTop="@dimen/_6dp"

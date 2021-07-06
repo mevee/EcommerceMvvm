@@ -31,7 +31,11 @@ public class ActivityServiceDetailBindingImpl extends ActivityServiceDetailBindi
         sViewsWithIds.put(R.id.serviceDetailSampleVideo, 15);
         sViewsWithIds.put(R.id.tvRateCardTile, 16);
         sViewsWithIds.put(R.id.rateCardRecycler, 17);
-        sViewsWithIds.put(R.id.progressBar_service_detail, 18);
+        sViewsWithIds.put(R.id.tvwhyProfCleaning, 18);
+        sViewsWithIds.put(R.id.rvProfCleanList, 19);
+        sViewsWithIds.put(R.id.ivImgL2, 20);
+        sViewsWithIds.put(R.id.ivImgL1, 21);
+        sViewsWithIds.put(R.id.progressBar_service_detail, 22);
     }
     // views
     @NonNull
@@ -42,20 +46,23 @@ public class ActivityServiceDetailBindingImpl extends ActivityServiceDetailBindi
     // Inverse Binding Event Handlers
 
     public ActivityServiceDetailBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 19, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 23, sIncludes, sViewsWithIds));
     }
     private ActivityServiceDetailBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (android.widget.ImageView) bindings[8]
             , (android.widget.ImageView) bindings[10]
             , (com.google.android.exoplayer2.ui.PlayerView) bindings[3]
+            , (android.widget.ImageView) bindings[21]
+            , (android.widget.ImageView) bindings[20]
             , (android.widget.LinearLayout) bindings[14]
             , (androidx.coordinatorlayout.widget.CoordinatorLayout) bindings[1]
             , (android.widget.ProgressBar) bindings[4]
             , (android.widget.RelativeLayout) bindings[7]
-            , (android.widget.ProgressBar) bindings[18]
+            , (android.widget.ProgressBar) bindings[22]
             , (androidx.recyclerview.widget.RecyclerView) bindings[17]
             , (android.widget.RelativeLayout) bindings[5]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[19]
             , (androidx.recyclerview.widget.RecyclerView) bindings[12]
             , (android.widget.ImageView) bindings[13]
             , (me.relex.circleindicator.CircleIndicator) bindings[6]
@@ -64,6 +71,7 @@ public class ActivityServiceDetailBindingImpl extends ActivityServiceDetailBindi
             , (android.widget.TextView) bindings[11]
             , (android.widget.TextView) bindings[16]
             , (android.widget.TextView) bindings[9]
+            , (android.widget.TextView) bindings[18]
             );
         this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);

@@ -15,7 +15,7 @@ import java.lang.Override;
 public class NotificationsActivity_ViewBinding implements Unbinder {
   private NotificationsActivity target;
 
-  private View view7f0a0065;
+  private View view7f0a0066;
 
   @UiThread
   public NotificationsActivity_ViewBinding(NotificationsActivity target) {
@@ -29,7 +29,7 @@ public class NotificationsActivity_ViewBinding implements Unbinder {
     View view;
     target.rv_notification = Utils.findRequiredViewAsType(source, R.id.rv_notification, "field 'rv_notification'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.backNotification, "method 'onClick'");
-    view7f0a0065 = view;
+    view7f0a0066 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -47,7 +47,7 @@ public class NotificationsActivity_ViewBinding implements Unbinder {
 
     target.rv_notification = null;
 
-    view7f0a0065.setOnClickListener(null);
-    view7f0a0065 = null;
+    view7f0a0066.setOnClickListener(null);
+    view7f0a0066 = null;
   }
 }
