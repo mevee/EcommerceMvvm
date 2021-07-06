@@ -22,7 +22,7 @@ import java.lang.Object;
 
 public abstract class FragmentHomeBinding extends ViewDataBinding {
   @NonNull
-  public final RecyclerView addvertiseRecycler;
+  public final ViewPager addvertiseRecycler;
 
   @NonNull
   public final ViewPager homeBannerViewPager;
@@ -55,7 +55,7 @@ public abstract class FragmentHomeBinding extends ViewDataBinding {
   public final RelativeLayout rlShopping;
 
   protected FragmentHomeBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      RecyclerView addvertiseRecycler, ViewPager homeBannerViewPager,
+      ViewPager addvertiseRecycler, ViewPager homeBannerViewPager,
       LinearLayout homeLocationAddLayout, TextView homeLocationAddTxt,
       RecyclerView homeServicesRecycler, RecyclerView homeStripRecycler,
       SwipeRefreshLayout homeSwipeRefresh, RecyclerView homeVideoPager,

@@ -39,7 +39,7 @@ public class FragmentHomeBindingImpl extends FragmentHomeBinding  {
     }
     private FragmentHomeBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (androidx.recyclerview.widget.RecyclerView) bindings[9]
+            , (androidx.viewpager.widget.ViewPager) bindings[9]
             , (androidx.viewpager.widget.ViewPager) bindings[5]
             , (android.widget.LinearLayout) bindings[2]
             , (android.widget.TextView) bindings[3]

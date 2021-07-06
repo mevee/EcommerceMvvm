@@ -51,7 +51,7 @@ public class HomeFragment extends Fragment {
     private HomeBannerAdapter homeBannerAdapter;
     private HomeServicesAdapter homeServicesAdapter;
     private HomeStripAdapter homeStripAdapter;
-    private StripAddvertAdapter addAdapter;
+    private HomeBannerAdapter addAdapter;
     private List<CategoryModel> topBannerList = new ArrayList<>();
     private List<CategoryModel> videoBannerList = new ArrayList<>();
     private List<CategoryModel> homeServiceList = new ArrayList<>();
@@ -129,18 +129,10 @@ public class HomeFragment extends Fragment {
     }
 
     void setAddStripAdapter() {
-        int secondList = 0;
-        final List<CategoryModel> mAddList = new ArrayList<>();
-        for (CategoryModel detail : addvertiseList) {
-            secondList++;
-            mAddList.add(detail);
-            if (secondList == 2) break;
-        }
-        binding.addvertiseRecycler.setNestedScrollingEnabled(false);
-        binding.addvertiseRecycler.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
-        addAdapter = new StripAddvertAdapter(context, mAddList);
+        binding.addvertiseRecycler.setFocusable(true);
+        binding.addvertiseRecycler.setClipToPadding(false);
+        addAdapter = new HomeBannerAdapter(context, addvertiseList);
         binding.addvertiseRecycler.setAdapter(addAdapter);
-
     }
 
     private void getHomeData() {
@@ -155,21 +147,21 @@ public class HomeFragment extends Fragment {
                     HomeApiResp resp = response.body();
                     if ("200".equals(resp.getStatus())) {
 
-                        if (resp.getAddbanner() != null && resp.getAddbanner().size() > 0) {
+                        if (resp.getBannerdeta() != null && resp.getBannerdeta().size() > 0) {
                             topBannerList.clear();
-                            for (Addbanner detail : resp.getAddbanner()) {
+                            for (Bannerdetum detail : resp.getBannerdeta()) {
                                 topBannerList.add(new CategoryModel("" + detail.getBanner(), detail.getId(), detail.getId()));
                             }
                             setTopBanner();
                         }
-
-                        if (resp.getBannerdeta() != null && resp.getBannerdeta().size() > 0) {
+                        if (resp.getAddbanner() != null && resp.getAddbanner().size() > 0) {
                             addvertiseList.clear();
-                            for (Bannerdetum detail : resp.getBannerdeta()) {
+                            for (Addbanner detail : resp.getAddbanner()) {
                                 addvertiseList.add(new CategoryModel("" + detail.getBanner(), detail.getId(), detail.getId()));
                             }
                             setAddStripAdapter();
                         }
+
 
                         if (resp.getBanner_video() != null && resp.getBanner_video().size() > 0) {
                             videoBannerList.clear();

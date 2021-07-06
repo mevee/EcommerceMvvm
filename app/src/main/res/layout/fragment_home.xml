@@ -132,7 +132,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent" />
 
-
                         </RelativeLayout>
 
                         <TextView
@@ -152,10 +151,10 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_8dp" />
 
-                        <androidx.recyclerview.widget.RecyclerView
+                        <androidx.viewpager.widget.ViewPager
                             android:id="@+id/addvertiseRecycler"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/_128dp"
                             android:layout_marginTop="@dimen/_6dp"
                             android:layout_marginStart="@dimen/_6dp"
                             android:layout_marginEnd="@dimen/_6dp" />
