@@ -307,20 +307,10 @@
                         android:layout_marginTop="@dimen/_8dp"
                         android:layout_marginEnd="@dimen/_16dp"
                         android:fontFamily="@font/lato_black"
-                        android:text="Why professional cleaning"
+                        android:text="Why professional"
                         android:textColor="@color/dark_gray"
                         android:textSize="@dimen/_18sp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_16dp"
-                        android:layout_marginTop="@dimen/_4dp"
-                        android:layout_marginEnd="@dimen/_16dp"
-                        android:fontFamily="@font/lato_black"
-                        android:text="Guaranteed cleaning, everytime"
-                        android:textColor="@color/dark_gray"
-                        android:textSize="@dimen/_14sp" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvProfCleanList"
