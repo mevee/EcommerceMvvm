@@ -18,6 +18,7 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -42,34 +43,41 @@ public class HomeStripAdapter extends RecyclerView.Adapter<HomeStripAdapter.View
     public void onBindViewHolder(@NonNull ViewHolder vh, int position) {
         final ViewHolder holder = (ViewHolder) vh;
         final Stripdatum data = stripCatList.get(position);
-            holder.homeStripItemName.setText(data.getStripname());
-            setArrays(data.getStripcategories(),data.getBannersdeta(),holder);
+        holder.homeStripItemName.setText(data.getStripname());
+        setArrays(data.getStripcategories(), data.getBannersdeta(), holder);
     }
 
     private void setArrays(List<Stripcategory> catList, List<Adddetum> addList, ViewHolder holder) {
-        int firstList=0,secondList=0;
+        int firstList = 0, secondList = 0;
         final List<CategoryModel> mList = new ArrayList<>();
         final List<CategoryModel> mAddList = new ArrayList<>();
         for (Stripcategory detail : catList) {
             firstList++;
             mList.add(new CategoryModel("" + detail.getCatimgnew(), detail.getCategoryname(), detail.getCatId()));
-//            if (firstList==4)break;
-
         }
         for (Adddetum detail : addList) {
             secondList++;
             mAddList.add(new CategoryModel("" + detail.getBanner(), detail.getId(), detail.getId()));
-            if (secondList==2)break;
+            if (secondList == 2) break;
         }
         holder.stripCategoryRecycler.setNestedScrollingEnabled(false);
         holder.stripCategoryRecycler.setLayoutManager(new StaggeredGridLayoutManager(4, StaggeredGridLayoutManager.VERTICAL));
         holder.stripCategoryAdapter = new StripCategoryAdapter(context, mList);
 
         holder.stripAddRecycler.setNestedScrollingEnabled(false);
-        holder.stripAddRecycler.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
+        StaggeredGridLayoutManager lMangerForMOrethenOneItem = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+        StaggeredGridLayoutManager lMangerForOneItem = new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL);
+        if (mAddList.size() > 1)
+            holder.stripAddRecycler.setLayoutManager(lMangerForMOrethenOneItem);
+        else
+            holder.stripAddRecycler.setLayoutManager(lMangerForOneItem);
+
         holder.stripAddAdapter = new StripAddvertAdapter(context, mAddList);
         holder.stripCategoryRecycler.setAdapter(holder.stripCategoryAdapter);
         holder.stripAddRecycler.setAdapter(holder.stripAddAdapter);
+        if (mAddList.isEmpty())
+            holder.stripAddRecycler.setVisibility(View.GONE);
+
     }
 
 

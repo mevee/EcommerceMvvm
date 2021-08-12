@@ -111,7 +111,7 @@ public class HomeVideoAdapter extends RecyclerView.Adapter<HomeVideoAdapter.View
         player.setPlayWhenReady(true);
 
 //        binding.headerVideoPlayer.setResizeMode(AspectRatioFrameLayout.RESIZE_MODE_ZOOM);
-        player.setVideoScalingMode(C.VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING);
+//        player.setVideoScalingMode(C.VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING);
         /* binding.rlIndicatorHolder.setVisibility(View.GONE);
                 binding.serviceDetailViewPager.setVisibility(View.GONE);
                 binding.headerVideoPlayer.setVisibility(View.VISIBLE);*/

@@ -8,36 +8,37 @@
         android:id="@+id/homeStripItemName"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40dp"
-        android:text="Appliances: Service &amp; Repair"
+        android:fontFamily="@font/lato_black"
+        android:gravity="center_vertical"
         android:paddingStart="@dimen/_6dp"
         android:paddingEnd="@dimen/_6dp"
-        android:gravity="center_vertical"
-        android:textSize="@dimen/_18sp"
-        android:fontFamily="@font/lato_black"
-        android:textColor="@color/dark_gray"/>
+        android:text="Appliances: Service &amp; Repair"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_18sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/stripCategoryRecycler"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-<androidx.recyclerview.widget.RecyclerView
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/stripAddRecycler"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="@dimen/_168dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40dp"
-        android:visibility="gone"
-        android:layout_marginTop="@dimen/_8dp"
         android:layout_marginStart="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_8dp"
         android:layout_marginEnd="@dimen/_12dp"
         android:layout_marginBottom="@dimen/_12dp"
         android:background="@drawable/border_corner_back2"
-        android:text="View all"
-        android:textSize="@dimen/_16sp"
         android:fontFamily="@font/lato_bold"
         android:gravity="center"
-        android:textColor="@color/colorPrimary"/>
+        android:text="View all"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_16sp"
+        android:visibility="gone" />
 
 </LinearLayout>

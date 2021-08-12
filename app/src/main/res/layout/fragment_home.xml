@@ -123,11 +123,11 @@
 
                         <RelativeLayout
                             android:id="@+id/rlShopping"
+                            android:layout_margin="@dimen/_8dp"
                             android:layout_width="match_parent"
-                            android:layout_height="@dimen/_148dp">
+                            android:layout_height="@dimen/_156dp">
 
                             <androidx.recyclerview.widget.RecyclerView
-                                android:layout_margin="@dimen/_8dp"
                                 android:id="@+id/homeVideoPager"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent" />
