@@ -1055,8 +1055,11 @@ dimen _12sp
 dimen _148dp
 dimen _14sp
 dimen _156dp
+dimen _160dp
+dimen _168dp
 dimen _16dp
 dimen _16sp
+dimen _172dp
 dimen _18sp
 dimen _1dp
 dimen _20dp

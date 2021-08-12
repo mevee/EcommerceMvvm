@@ -3,6 +3,7 @@ package com.webkype.happiroo.view.fragment.dashboard;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,6 +31,8 @@ import com.webkype.happiroo.view.adapter.StripAddvertAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -38,10 +41,15 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.viewpager2.widget.CompositePageTransformer;
+import androidx.viewpager2.widget.MarginPageTransformer;
+import androidx.viewpager2.widget.ViewPager2;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+
+import static java.lang.Math.abs;
 
 public class HomeFragment extends Fragment {
 
@@ -58,6 +66,12 @@ public class HomeFragment extends Fragment {
     private List<Stripdatum> stripdatumList = new ArrayList<>();
     private List<CategoryModel> addvertiseList = new ArrayList<>();
     private FragmentHomeBinding binding;
+
+    private int currentPage = 1;
+    private Timer timer = null;
+    private long delayInMillis = 2000; //delay in milliseconds before task is to be executed
+    private long periodInMillis = 4000;
+    // time in milliseconds between successive task executions.
 
     @Override
     public void onAttach(@NonNull Context context) {
@@ -101,7 +115,49 @@ public class HomeFragment extends Fragment {
         binding.homeBannerViewPager.setClipToPadding(false);
         homeBannerAdapter = new HomeBannerAdapter(context, topBannerList);
         binding.homeBannerViewPager.setAdapter(homeBannerAdapter);
+        viewPagerAnimation();
     }
+
+    private void viewPagerAnimation() {
+        homeBannerAdapter.notifyDataSetChanged();
+//        binding.homePagerIndicator.setViewPager(binding.homeBannerViewPager)''
+
+//        val transformer = CompositePageTransformer()
+//        CompositePageTransformer transformer = new CompositePageTransformer();
+//        transformer.addTransformer(new MarginPageTransformer(16));
+//        transformer.addTransformer(new ViewPager2.PageTransformer() {
+//            @Override
+//            public void transformPage(@NonNull @org.jetbrains.annotations.NotNull View page, float position) {
+//                float v = 1 - abs(position);
+//                page.setScaleY(0.8f + v * 0.2f);
+//            }
+//        });
+//
+//        binding.homeBannerViewPager.setPageTransformer(true,transformer);
+
+        timer = new Timer();
+
+        Handler handler = new Handler();
+
+        Runnable update = new Runnable() {
+            @Override
+            public void run() {
+                if (currentPage == topBannerList.size()) {
+                    currentPage = 0;
+                }
+                binding.homeBannerViewPager.setCurrentItem(currentPage++, true);
+
+            }
+        };
+
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                handler.post(update);
+            }
+        }, delayInMillis, periodInMillis);
+    }
+
 
     void setVideoView() {
         binding.rlShopping.setVisibility(View.VISIBLE);
