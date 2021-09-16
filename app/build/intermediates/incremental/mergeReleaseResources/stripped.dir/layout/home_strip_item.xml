@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/homeStripItemName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:fontFamily="@font/lato_black"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_6dp"
+        android:paddingEnd="@dimen/_6dp"
+        android:text="Appliances: Service &amp; Repair"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stripCategoryRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stripAddRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_168dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:layout_marginStart="@dimen/_12dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginEnd="@dimen/_12dp"
+        android:layout_marginBottom="@dimen/_12dp"
+        android:background="@drawable/border_corner_back2"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:text="View all"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

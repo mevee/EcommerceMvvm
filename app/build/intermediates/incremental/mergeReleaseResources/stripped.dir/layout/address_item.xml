@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+                                     
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical" android:tag="layout/address_item_0">
+        <RelativeLayout
+            android:id="@+id/addressItemRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginStart="@dimen/_12dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:layout_marginBottom="@dimen/_4dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/border_corner_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:layout_marginStart="@dimen/_12dp"
+                    android:layout_marginEnd="@dimen/_12dp">
+
+                    <TextView
+                        android:id="@+id/addressItemType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home Address"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_14sp"
+                        android:fontFamily="@font/lato_bold"
+                        android:textColor="@color/dark_gray"/>
+
+                    <ImageView
+                        android:id="@+id/checkedAddress"
+                        android:layout_width="@dimen/_20dp"
+                        android:layout_height="@dimen/_20dp"
+                        android:src="@drawable/checked_icon"
+                        android:tint="@color/green"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/addressItemUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginStart="@dimen/_12dp"
+                    android:layout_marginEnd="@dimen/_12dp"
+                    android:text="Ashwini Kumar"
+                    android:textSize="@dimen/_14sp"
+                    android:fontFamily="@font/lato_semibold"
+                    android:textColor="@color/dark_gray"/>
+
+                <TextView
+                    android:id="@+id/addressItemFullAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12dp"
+                    android:layout_marginEnd="@dimen/_12dp"
+                    android:layout_marginTop="@dimen/_6dp"
+                    android:textSize="@dimen/_12sp"
+                    android:text="B-124, GreenView Apartments, Sector 63, Noida"
+                    android:fontFamily="@font/lato_regular"
+                    android:textColor="@color/dark_gray"/>
+
+                <TextView
+                    android:id="@+id/addressItemContactNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12dp"
+                    android:layout_marginEnd="@dimen/_12dp"
+                    android:text="Mobile No. - 8877665432"
+                    android:textSize="@dimen/_12sp"
+                    android:fontFamily="@font/lato_regular"
+                    android:textColor="@color/dark_gray"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:background="@color/bg_gray"/>
+
+                <TextView
+                    android:id="@+id/editAddressItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40dp"
+                    android:text="Edit Address"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+         

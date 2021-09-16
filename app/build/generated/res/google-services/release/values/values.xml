@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">652702705498-h01eretqg2hqc8iqu2nsj9oge5jsbcvl.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">652702705498</string>
+    <string name="google_api_key" translatable="false">AIzaSyDima95jFJ3ohM4p0IG5h_X49XI0ir-0kU</string>
+    <string name="google_app_id" translatable="false">1:652702705498:android:a3b3fc9022f84a34f37563</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDima95jFJ3ohM4p0IG5h_X49XI0ir-0kU</string>
+    <string name="google_storage_bucket" translatable="false">lemend-a3517.appspot.com</string>
+    <string name="project_id" translatable="false">lemend-a3517</string>
+</resources>
