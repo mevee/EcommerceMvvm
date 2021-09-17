@@ -1896,6 +1896,7 @@ int id applyPromoCodeRelativeBtn 0x7f0a0057
 int id applyPromoRelative 0x7f0a0058
 int id async 0x7f0a0059
 int id auto 0x7f0a005a
+int id back 0x7f0a034b
 int id backAddEditAddress 0x7f0a005b
 int id backAddress 0x7f0a005c
 int id backBookingDetail 0x7f0a005d
@@ -2187,10 +2188,13 @@ int id listingCatRecycler 0x7f0a017a
 int id listingCatTxtItem 0x7f0a017b
 int id listingHeaderCard 0x7f0a017c
 int id llAboutUs 0x7f0a017d
+int id llCancellationPolicy 0x7f0a034c
+int id llDisclaimer 0x7f0a034d
 int id llFIlter 0x7f0a017e
 int id llNoDataHistoryBooking 0x7f0a017f
 int id llNoDataOngoingBooing 0x7f0a0180
 int id llOnline 0x7f0a0181
+int id llPrivacyPolicies 0x7f0a034e
 int id llProfileRateApp 0x7f0a0182
 int id llProfileShareApp 0x7f0a0183
 int id ll_bottom_buttons 0x7f0a0184
@@ -2558,6 +2562,7 @@ int id tvShippingFee 0x7f0a02ed
 int id tvStatus 0x7f0a02ee
 int id tvStatusHistory 0x7f0a02ef
 int id tvTimeSlotTitle 0x7f0a02f0
+int id tvTnc 0x7f0a034f
 int id tvToBePaid 0x7f0a02f1
 int id tvToolbarTitle 0x7f0a02f2
 int id tvTotalAmount 0x7f0a02f3
@@ -2715,11 +2720,14 @@ int layout activity_add_edit_address 0x7f0d001c
 int layout activity_address 0x7f0d001d
 int layout activity_authenticate 0x7f0d001e
 int layout activity_booking_detail 0x7f0d001f
+int layout activity_cancellation_policy 0x7f0d00c2
 int layout activity_cart 0x7f0d0020
 int layout activity_cart_overview 0x7f0d0021
 int layout activity_change_location 0x7f0d0022
 int layout activity_covid_message 0x7f0d0023
+int layout activity_custromer_support 0x7f0d00c5
 int layout activity_dashboard 0x7f0d0024
+int layout activity_disclaimer 0x7f0d00c3
 int layout activity_fav_product_list 0x7f0d0025
 int layout activity_fav_service 0x7f0d0026
 int layout activity_fetch_location 0x7f0d0027
@@ -2729,6 +2737,7 @@ int layout activity_notifications 0x7f0d002a
 int layout activity_order_detail 0x7f0d002b
 int layout activity_order_list 0x7f0d002c
 int layout activity_otp 0x7f0d002d
+int layout activity_privacy_policy 0x7f0d00c4
 int layout activity_product_detail 0x7f0d002e
 int layout activity_product_list 0x7f0d002f
 int layout activity_profile_edit 0x7f0d0030
@@ -2739,6 +2748,7 @@ int layout activity_service_detail 0x7f0d0034
 int layout activity_shop_product_detail_activity 0x7f0d0035
 int layout activity_shopping_cat 0x7f0d0036
 int layout activity_splash 0x7f0d0037
+int layout activity_tnc 0x7f0d00c1
 int layout activity_walk_through 0x7f0d0038
 int layout activity_web_view 0x7f0d0039
 int layout add_rating_dialog 0x7f0d003a
@@ -2925,6 +2935,7 @@ int string booking_details 0x7f120027
 int string bottom_sheet_behavior 0x7f120028
 int string brand_s_and_equipment_used 0x7f120029
 int string cancel 0x7f12002a
+int string cancellationPolicy 0x7f1200ee
 int string change 0x7f12002b
 int string channel_id 0x7f12002c
 int string character_counter_content_description 0x7f12002d
@@ -2955,9 +2966,11 @@ int string common_signin_button_text_long 0x7f120045
 int string confirm_booking 0x7f120046
 int string continue_to_pay 0x7f120047
 int string coutry 0x7f120048
+int string customerSupport 0x7f1200f1
 int string customer_ratings_amp_reviews 0x7f120049
 int string damage_cover_on_every_booking 0x7f12004a
 int string default_web_client_id 0x7f12004b
+int string disclaimer 0x7f1200f0
 int string error_icon_content_description 0x7f12004c
 int string exo_controls_cc_disabled_description 0x7f12004d
 int string exo_controls_cc_enabled_description 0x7f12004e
@@ -3088,6 +3101,7 @@ int string path_password_eye_mask_strike_through 0x7f1200ca
 int string path_password_eye_mask_visible 0x7f1200cb
 int string path_password_strike_through 0x7f1200cc
 int string payment_options 0x7f1200cd
+int string privacyPolicy 0x7f1200ef
 int string product_details 0x7f1200ce
 int string project_id 0x7f1200cf
 int string rate_cards 0x7f1200d0
@@ -3112,6 +3126,7 @@ int string status_bar_notification_info_overflow 0x7f1200e2
 int string terms_amp_conditions 0x7f1200e3
 int string timing 0x7f1200e4
 int string title 0x7f1200e5
+int string tnc 0x7f1200ed
 int string total_amount 0x7f1200e6
 int string update_now 0x7f1200e7
 int string view_detail 0x7f1200e8

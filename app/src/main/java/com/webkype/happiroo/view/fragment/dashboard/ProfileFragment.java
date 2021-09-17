@@ -23,6 +23,11 @@ import com.webkype.happiroo.view.activity.WebViewActivity;
 import com.webkype.happiroo.view.activity.auth.AuthenticateActivity;
 import com.webkype.happiroo.view.activity.checout_process.CartActivity;
 import com.webkype.happiroo.view.activity.orders.OrderListActivity;
+import com.webkype.happiroo.view.activity.policyes.CancellationPolicyActivity;
+import com.webkype.happiroo.view.activity.policyes.CustromerSupportActivity;
+import com.webkype.happiroo.view.activity.policyes.DisclaimerActivity;
+import com.webkype.happiroo.view.activity.policyes.PrivacyPolicyActivity;
+import com.webkype.happiroo.view.activity.policyes.TncActivity;
 import com.webkype.happiroo.view.activity.shopProduct.FavProductListActivity;
 
 import androidx.annotation.NonNull;
@@ -87,15 +92,29 @@ public class ProfileFragment extends Fragment {
         binding.llLogoutProfile.setOnClickListener(v -> {
             logout();
         });
-        binding.llFaq.setOnClickListener(v -> {
-            goToHelpScreen("FAQ", "https://happiroo.in/about-us");
-        });
-        binding.llTnc.setOnClickListener(v -> {
-            goToHelpScreen("Terms & Conditions", "https://happiroo.in/terms-conditions");
-        });
         binding.llAboutUs.setOnClickListener(v -> {
             goToHelpScreen("About App", "https://happiroo.in/about-us");
         });
+
+        binding.llFaq.setOnClickListener(v -> {
+            startActivity(new Intent(context, CustromerSupportActivity.class));
+        });
+        binding.llTnc.setOnClickListener(v -> {
+            startActivity(new Intent(context, TncActivity.class));
+        });
+
+        binding.llCancellationPolicy.setOnClickListener(v -> {
+            startActivity(new Intent(context, CancellationPolicyActivity.class));
+        });
+
+        binding.llDisclaimer.setOnClickListener(v -> {
+            startActivity(new Intent(context, DisclaimerActivity.class));
+        });
+        binding.llPrivacyPolicies.setOnClickListener(v -> {
+            startActivity(new Intent(context, PrivacyPolicyActivity.class));
+        });
+
+
     }
 
     private void goToHelpScreen(String title, String urlLink) {

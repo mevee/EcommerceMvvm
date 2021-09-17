@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/my_new_p/happiro_projects/Happiroo/app/src/main/res/layout/activity_address.xml" value="0.175" />
+        <entry key="..\:/my_new_p/happiro_projects/Happiroo/app/src/main/res/layout/activity_booking_detail.xml" value="0.175" />
+        <entry key="..\:/my_new_p/happiro_projects/Happiroo/app/src/main/res/layout/activity_cancellation_policy.xml" value="0.11297915265635508" />
+        <entry key="..\:/my_new_p/happiro_projects/Happiroo/app/src/main/res/layout/activity_custromer_support.xml" value="0.12051649928263988" />
+        <entry key="..\:/my_new_p/happiro_projects/Happiroo/app/src/main/res/layout/activity_disclaimer.xml" value="0.12129963898916968" />
+        <entry key="..\:/my_new_p/happiro_projects/Happiroo/app/src/main/res/layout/activity_privacy_policy.xml" value="0.12129963898916968" />
+        <entry key="..\:/my_new_p/happiro_projects/Happiroo/app/src/main/res/layout/activity_tnc.xml" value="0.175" />
+        <entry key="..\:/my_new_p/happiro_projects/Happiroo/app/src/main/res/layout/fragment_profile.xml" value="0.175" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

@@ -24,6 +24,12 @@ public abstract class FragmentProfileBinding extends ViewDataBinding {
   public final LinearLayout llAboutUs;
 
   @NonNull
+  public final LinearLayout llCancellationPolicy;
+
+  @NonNull
+  public final LinearLayout llDisclaimer;
+
+  @NonNull
   public final LinearLayout llFaq;
 
   @NonNull
@@ -31,6 +37,9 @@ public abstract class FragmentProfileBinding extends ViewDataBinding {
 
   @NonNull
   public final LinearLayout llLogoutProfile;
+
+  @NonNull
+  public final LinearLayout llPrivacyPolicies;
 
   @NonNull
   public final LinearLayout llProfileRateApp;
@@ -69,8 +78,9 @@ public abstract class FragmentProfileBinding extends ViewDataBinding {
   public final TextView tvUserNameProfile;
 
   protected FragmentProfileBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageView editProfileIV, LinearLayout llAboutUs, LinearLayout llFaq,
-      LinearLayout llLoginProfile, LinearLayout llLogoutProfile, LinearLayout llProfileRateApp,
+      ImageView editProfileIV, LinearLayout llAboutUs, LinearLayout llCancellationPolicy,
+      LinearLayout llDisclaimer, LinearLayout llFaq, LinearLayout llLoginProfile,
+      LinearLayout llLogoutProfile, LinearLayout llPrivacyPolicies, LinearLayout llProfileRateApp,
       LinearLayout llProfileShareApp, LinearLayout llTnc, FrameLayout myCartLinear,
       FrameLayout myFavProducts, FrameLayout myFavServices, FrameLayout myOrdersLinear,
       LinearLayout notificationLinear, LinearLayout referEarnLinear, TextView tvUserEmailProfile,
@@ -78,9 +88,12 @@ public abstract class FragmentProfileBinding extends ViewDataBinding {
     super(_bindingComponent, _root, _localFieldCount);
     this.editProfileIV = editProfileIV;
     this.llAboutUs = llAboutUs;
+    this.llCancellationPolicy = llCancellationPolicy;
+    this.llDisclaimer = llDisclaimer;
     this.llFaq = llFaq;
     this.llLoginProfile = llLoginProfile;
     this.llLogoutProfile = llLogoutProfile;
+    this.llPrivacyPolicies = llPrivacyPolicies;
     this.llProfileRateApp = llProfileRateApp;
     this.llProfileShareApp = llProfileShareApp;
     this.llTnc = llTnc;

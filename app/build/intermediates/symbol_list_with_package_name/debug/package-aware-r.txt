@@ -1897,6 +1897,7 @@ id applyPromoCodeRelativeBtn
 id applyPromoRelative
 id async
 id auto
+id back
 id backAddEditAddress
 id backAddress
 id backBookingDetail
@@ -2188,10 +2189,13 @@ id listingCatRecycler
 id listingCatTxtItem
 id listingHeaderCard
 id llAboutUs
+id llCancellationPolicy
+id llDisclaimer
 id llFIlter
 id llNoDataHistoryBooking
 id llNoDataOngoingBooing
 id llOnline
+id llPrivacyPolicies
 id llProfileRateApp
 id llProfileShareApp
 id ll_bottom_buttons
@@ -2559,6 +2563,7 @@ id tvShippingFee
 id tvStatus
 id tvStatusHistory
 id tvTimeSlotTitle
+id tvTnc
 id tvToBePaid
 id tvToolbarTitle
 id tvTotalAmount
@@ -2716,11 +2721,14 @@ layout activity_add_edit_address
 layout activity_address
 layout activity_authenticate
 layout activity_booking_detail
+layout activity_cancellation_policy
 layout activity_cart
 layout activity_cart_overview
 layout activity_change_location
 layout activity_covid_message
+layout activity_custromer_support
 layout activity_dashboard
+layout activity_disclaimer
 layout activity_fav_product_list
 layout activity_fav_service
 layout activity_fetch_location
@@ -2730,6 +2738,7 @@ layout activity_notifications
 layout activity_order_detail
 layout activity_order_list
 layout activity_otp
+layout activity_privacy_policy
 layout activity_product_detail
 layout activity_product_list
 layout activity_profile_edit
@@ -2740,6 +2749,7 @@ layout activity_service_detail
 layout activity_shop_product_detail_activity
 layout activity_shopping_cat
 layout activity_splash
+layout activity_tnc
 layout activity_walk_through
 layout activity_web_view
 layout add_rating_dialog
@@ -2926,6 +2936,7 @@ string booking_details
 string bottom_sheet_behavior
 string brand_s_and_equipment_used
 string cancel
+string cancellationPolicy
 string change
 string channel_id
 string character_counter_content_description
@@ -2956,9 +2967,11 @@ string common_signin_button_text_long
 string confirm_booking
 string continue_to_pay
 string coutry
+string customerSupport
 string customer_ratings_amp_reviews
 string damage_cover_on_every_booking
 string default_web_client_id
+string disclaimer
 string error_icon_content_description
 string exo_controls_cc_disabled_description
 string exo_controls_cc_enabled_description
@@ -3089,6 +3102,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string payment_options
+string privacyPolicy
 string product_details
 string project_id
 string rate_cards
@@ -3113,6 +3127,7 @@ string status_bar_notification_info_overflow
 string terms_amp_conditions
 string timing
 string title
+string tnc
 string total_amount
 string update_now
 string view_detail

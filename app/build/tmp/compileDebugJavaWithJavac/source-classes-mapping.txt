@@ -143,6 +143,8 @@ com/webkype/happiroo/view/fragment/booking/AddVendorReviewBottomFragment.java
  com.webkype.happiroo.view.fragment.booking.AddVendorReviewBottomFragment$3
 com/webkype/happiroo/controller/network/responses/product_cat/ProductCategoryResp.java
  com.webkype.happiroo.controller.network.responses.product_cat.ProductCategoryResp
+com/webkype/happiroo/view/activity/policyes/TncActivity.java
+ com.webkype.happiroo.view.activity.policyes.TncActivity
 com/webkype/happiroo/view/adapter/shopProduct/ShopCatAdapter.java
  com.webkype.happiroo.view.adapter.shopProduct.ShopCatAdapter
  com.webkype.happiroo.view.adapter.shopProduct.ShopCatAdapter$1
@@ -182,6 +184,8 @@ com/webkype/happiroo/view/adapter/shopProduct/UserReviewAdapter.java
  com.webkype.happiroo.view.adapter.shopProduct.UserReviewAdapter$ViewHolder
 com/webkype/happiroo/databinding/FragmentWalletBinding.java
  com.webkype.happiroo.databinding.FragmentWalletBinding
+com/webkype/happiroo/view/activity/policyes/PrivacyPolicyActivity.java
+ com.webkype.happiroo.view.activity.policyes.PrivacyPolicyActivity
 com/webkype/happiroo/view/activity/shopProduct/AddProductRatingFragment.java
  com.webkype.happiroo.view.activity.shopProduct.AddProductRatingFragment
  com.webkype.happiroo.view.activity.shopProduct.AddProductRatingFragment$1
@@ -262,6 +266,7 @@ com/webkype/happiroo/view/activity/bookings/BookingDetailActivity.java
  com.webkype.happiroo.view.activity.bookings.BookingDetailActivity$3
  com.webkype.happiroo.view.activity.bookings.BookingDetailActivity$4
  com.webkype.happiroo.view.activity.bookings.BookingDetailActivity$5
+ com.webkype.happiroo.view.activity.bookings.BookingDetailActivity$6
 com/webkype/happiroo/controller/network/responses/prod_order_detail/Vendordeta.java
  com.webkype.happiroo.controller.network.responses.prod_order_detail.Vendordeta
 com/webkype/happiroo/controller/network/responses/prod_review_resp/ProductReviewResp.java
@@ -301,6 +306,8 @@ com/webkype/happiroo/controller/network/responses/wallet_resp/Transaction.java
 com/webkype/happiroo/view/activity/ChangeLocationActivity.java
  com.webkype.happiroo.view.activity.ChangeLocationActivity
  com.webkype.happiroo.view.activity.ChangeLocationActivity$1
+com/webkype/happiroo/view/activity/policyes/CustromerSupportActivity.java
+ com.webkype.happiroo.view.activity.policyes.CustromerSupportActivity
 com/webkype/happiroo/controller/utils/TimeSlotGenerator.java
  com.webkype.happiroo.controller.utils.TimeSlotGenerator
 com/webkype/happiroo/view/adapter/AddressAdapter.java
@@ -456,6 +463,8 @@ com/webkype/happiroo/view/fragment/dashboard/ProfileFragment.java
  com.webkype.happiroo.view.fragment.dashboard.ProfileFragment
  com.webkype.happiroo.view.fragment.dashboard.ProfileFragment$1
  com.webkype.happiroo.view.fragment.dashboard.ProfileFragment$2
+com/webkype/happiroo/view/activity/policyes/CancellationPolicyActivity.java
+ com.webkype.happiroo.view.activity.policyes.CancellationPolicyActivity
 com/webkype/happiroo/databinding/ActivityAddressBinding.java
  com.webkype.happiroo.databinding.ActivityAddressBinding
 com/webkype/happiroo/view/activity/FetchLocationActivity.java
@@ -557,6 +566,8 @@ com/webkype/happiroo/view/adapter/BookHistoryAdapter.java
  com.webkype.happiroo.view.adapter.BookHistoryAdapter$1
  com.webkype.happiroo.view.adapter.BookHistoryAdapter$2
  com.webkype.happiroo.view.adapter.BookHistoryAdapter$ViewHolder
+com/webkype/happiroo/view/activity/policyes/DisclaimerActivity.java
+ com.webkype.happiroo.view.activity.policyes.DisclaimerActivity
 com/webkype/happiroo/databinding/UserProductReviewBinding.java
  com.webkype.happiroo.databinding.UserProductReviewBinding
 com/webkype/happiroo/model/SampleModel.java

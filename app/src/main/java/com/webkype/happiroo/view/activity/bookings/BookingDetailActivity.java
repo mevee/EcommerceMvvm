@@ -3,6 +3,7 @@ package com.webkype.happiroo.view.activity.bookings;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -77,6 +78,7 @@ public class BookingDetailActivity extends AppCompatActivity {
             init();
         }
         binding.backBookingDetail.setOnClickListener(v -> onBackPressed());
+        binding.bookingDetailHelpBtn.setOnClickListener(v -> showHelpDialogue());
         binding.addReviewVendorBtn.setOnClickListener(v -> {
             Bundle bundle = new Bundle();
             bundle.putString("vId", vendorId);
@@ -95,6 +97,37 @@ public class BookingDetailActivity extends AppCompatActivity {
             askForCancelBooking();
         });
         getBookingDetail(bookingId);
+    }
+
+    private void showHelpDialogue() {
+
+        final String mobileNumber = "9999028002";
+        final String email = "happiroo.in@gmail.com";
+        final CharSequence options[] = new CharSequence[]{"Call : " + mobileNumber, "Mail : " + email};
+        android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(this);
+
+        builder.setTitle("Complaint desk");
+        builder.setItems(options, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+                if (i == 0) {
+                    String uri = "tel:" + mobileNumber.trim() ;
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse(uri));
+                    startActivity(intent);
+//                     call
+                } else if (i == 1) {
+                     Intent intent = new Intent(Intent.ACTION_SEND);
+                    intent.setType("text/html");
+                    intent.putExtra(Intent.EXTRA_EMAIL, email);
+                    intent.putExtra(Intent.EXTRA_SUBJECT, "Need Help for product");
+                     startActivity(Intent.createChooser(intent, "Send Email"));
+                }
+            }
+        });
+
+        builder.show();
     }
 
     private void askForCancelBooking() {
