@@ -1,4 +1,11 @@
 <resources>
+    <!--
+    happiro razer pay secret
+    rzp_test_9Nt3b3grKDXHcq,
+    bamD1Ask5UuET8l1mZacKwfI
+     -->
+<!--    <string name="razerKey">bamD1Ask5UuET8l1mZacKwfI</string>-->
+    <string name="razerKey">rzp_test_9Nt3b3grKDXHcq</string>
     <string name="app_name">Happiroo</string>
     <string name="notifications">Notifications</string>
     <string name="refer_amp_earn"><![CDATA[Refer & Earn]]></string>

@@ -16,9 +16,9 @@ import java.lang.Override;
 public class OtpActivity_ViewBinding implements Unbinder {
   private OtpActivity target;
 
-  private View view7f0a0067;
+  private View view7f0a0068;
 
-  private View view7f0a0294;
+  private View view7f0a0298;
 
   @UiThread
   public OtpActivity_ViewBinding(OtpActivity target) {
@@ -33,7 +33,7 @@ public class OtpActivity_ViewBinding implements Unbinder {
     target.mobileOTPTxt = Utils.findRequiredViewAsType(source, R.id.mobileOTPTxt, "field 'mobileOTPTxt'", TextView.class);
     target.otp_view = Utils.findRequiredViewAsType(source, R.id.otp_view, "field 'otp_view'", OtpTextView.class);
     view = Utils.findRequiredView(source, R.id.backOtp, "method 'onClick'");
-    view7f0a0067 = view;
+    view7f0a0068 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -41,7 +41,7 @@ public class OtpActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.submitOtpTxtBtn, "method 'onClick'");
-    view7f0a0294 = view;
+    view7f0a0298 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -60,9 +60,9 @@ public class OtpActivity_ViewBinding implements Unbinder {
     target.mobileOTPTxt = null;
     target.otp_view = null;
 
-    view7f0a0067.setOnClickListener(null);
-    view7f0a0067 = null;
-    view7f0a0294.setOnClickListener(null);
-    view7f0a0294 = null;
+    view7f0a0068.setOnClickListener(null);
+    view7f0a0068 = null;
+    view7f0a0298.setOnClickListener(null);
+    view7f0a0298 = null;
   }
 }

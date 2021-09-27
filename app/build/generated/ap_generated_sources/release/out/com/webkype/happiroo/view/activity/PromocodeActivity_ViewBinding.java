@@ -15,7 +15,7 @@ import java.lang.Override;
 public class PromocodeActivity_ViewBinding implements Unbinder {
   private PromocodeActivity target;
 
-  private View view7f0a006a;
+  private View view7f0a006b;
 
   private View view7f0a0057;
 
@@ -31,7 +31,7 @@ public class PromocodeActivity_ViewBinding implements Unbinder {
     View view;
     target.rv_promo_code_list = Utils.findRequiredViewAsType(source, R.id.rv_promo_code_list, "field 'rv_promo_code_list'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.backPromo, "method 'onClick'");
-    view7f0a006a = view;
+    view7f0a006b = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -57,8 +57,8 @@ public class PromocodeActivity_ViewBinding implements Unbinder {
 
     target.rv_promo_code_list = null;
 
-    view7f0a006a.setOnClickListener(null);
-    view7f0a006a = null;
+    view7f0a006b.setOnClickListener(null);
+    view7f0a006b = null;
     view7f0a0057.setOnClickListener(null);
     view7f0a0057 = null;
   }

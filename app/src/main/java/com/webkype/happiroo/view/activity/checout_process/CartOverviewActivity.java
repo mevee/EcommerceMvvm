@@ -1,5 +1,6 @@
 package com.webkype.happiroo.view.activity.checout_process;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import com.webkype.happiroo.R;
 import com.webkype.happiroo.controller.network.NetworkProvider;
 import com.webkype.happiroo.controller.network.responses.CommonResponse;
+import com.webkype.happiroo.controller.network.responses.book_serive_resp.BookServiceResp;
 import com.webkype.happiroo.controller.network.responses.booking.Servicedetum;
 import com.webkype.happiroo.controller.network.responses.cart.CartDetailResp;
 import com.webkype.happiroo.controller.network.responses.cart.Productdetail;
@@ -65,11 +67,20 @@ public class CartOverviewActivity extends AppCompatActivity implements PaymentRe
     private int finalPaymentAmount = 0;
     private int totalWalletBalance = 0;
 
+    private String orderId;
+
+    private String bookingId;
+    private double amount;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_cart_overview);
         context = CartOverviewActivity.this;
+
+//        Checkout.preload(getApplicationContext());
+
         progressDialog = new ProgressDialog(context);
         user = Preference.getUser(context);
         if (getIntent().getExtras() != null) {
@@ -95,11 +106,11 @@ public class CartOverviewActivity extends AppCompatActivity implements PaymentRe
                 if (action == CLICKED) {
                     paymentMode = mPaymentModes.get(position).getId();
                     transactionId = "";
-                    if ("online".equals(paymentMode)) {
+                    /*if ("online".equals(paymentMode)) {
                         binding.llOnline.setVisibility(View.VISIBLE);
                     } else {
                         binding.llOnline.setVisibility(View.GONE);
-                    }
+                    }*/
                 }
             }
         });
@@ -130,27 +141,27 @@ public class CartOverviewActivity extends AppCompatActivity implements PaymentRe
                 return;
             }
             if ("online".equals(paymentMode)) {
-                if (TextUtils.isEmpty(binding.etTransactionId.getText().toString())) {
+              /*  if (TextUtils.isEmpty(binding.etTransactionId.getText().toString())) {
                     Toast.makeText(context, "Transaction Id is required. Please enter it", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 transactionId = binding.etTransactionId.getText().toString();
+              */
                 bookService(walletUsed, Preference.getUser(context).getUserId());
-
 //                goToPaymentGateWay();
             } else if ("cod".equals(paymentMode)) {
                 if ("Service".equals(activeShopping)) {
 
                     bookService(walletUsed, Preference.getUser(context).getUserId());
 
-                } else if ("Product".equals(activeShopping)) {
+                }/* else if ("Product".equals(activeShopping)) {
                     bookProduct(walletUsed, Preference.getUser(context).getUserId());
-                }
+                }*/
             }/* else if ("wallet".equals(paymentMode)) {
                 if ("Service".equals(activeShopping)) {
                     bookService(walletUsed, Preference.getUser(context).getUserId());
                 } else if ("Product".equals(activeShopping)) {
-                    bookProduct(walletUsed, Preference.getUser(context).getUserId());
+//                    bookProduct(walletUsed, Preference.getUser(context).getUserId());
                 }
             }*/
         });
@@ -167,99 +178,123 @@ public class CartOverviewActivity extends AppCompatActivity implements PaymentRe
     }
 
 
-    private void goToPaymentGateWay() {
-        String email = user.getEmail();
-        String mobile = user.getMobile();
-//        startPayment(finalPaymentAmount, email, mobile, "Pay for Happiroo "+activeShopping);
-    }
+    private void paymentResponseAPI(String paymentId, String status) {
+        if (InternetConnectionCheck.haveNetworkConnection(this)) {
+            progressDialog.setMessage("Don't press back payment processing...");
+            progressDialog.setCancelable(false);
+            progressDialog.show();
+            NetworkProvider.instance().approveServicePayment(bookingId, orderId, user.getUserId())
+                    .enqueue(new Callback<CommonResponse>() {
+                        @Override
+                        public void onResponse(Call<CommonResponse> call, Response<CommonResponse> response) {
+                            progressDialog.dismiss();
+                            CommonResponse resp = response.body();
+                            if ("200".equals(resp.getStatus())) {
+                                bookingDone("Order Successful");
+                            } else {
+                                Toast.makeText(context, "" + resp.getMsg(), Toast.LENGTH_SHORT).show();
+                            }
+                        }
 
-    private void startPayment(double orderAmount, String email, String phone, String from) {
-        final Checkout co = new Checkout();
-        try {
-            JSONObject option = new JSONObject();
-            option.put("name", getString(R.string.app_name));
-            option.put("description", from);
-            option.put("image", "");
-            option.put("currency", "INR");
-            option.put("amount", (int) (orderAmount * 100));
-            JSONObject preFill = new JSONObject();
-            preFill.put("email", email);
-            preFill.put("contact", phone);
-            option.put("prefill", preFill);
-            co.open(this, option);
-        } catch (Exception e) {
-            Toast.makeText(this, "Error In Payment.Please try again!!", Toast.LENGTH_SHORT).show();
+                        @Override
+                        public void onFailure(Call<CommonResponse> call, Throwable t) {
+                            progressDialog.dismiss();
+                            Toast.makeText(context, "Server Not Responding", Toast.LENGTH_SHORT).show();
+                        }
+                    });
         }
     }
+
 
     public void bookService(String walletUsed, String userID) {
         String cartId = Preference.getCartId(context);
         if (InternetConnectionCheck.haveNetworkConnection(this)) {
-            progressDialog.setMessage("Don't press back transaction is in process...");
+            progressDialog.setMessage("Processing request...");
             progressDialog.setCancelable(false);
             progressDialog.show();
-            binding.progressbarCartOverView.setVisibility(View.VISIBLE);
-            NetworkProvider.instance().bookService(userID, cartId, paymentMode, serviceDate, serviceTime, addressId, transactionId, walletUsed).enqueue(new Callback<CommonResponse>() {
-                @Override
-                public void onResponse(Call<CommonResponse> call, Response<CommonResponse> response) {
-                    progressDialog.dismiss();
-                    CommonResponse resp = response.body();
-                    if ("200".equals(resp.getStatus())) {
-                        Toast.makeText(context, "" + resp.getMsg(), Toast.LENGTH_SHORT).show();
-                        Preference.setCartId(context, "");
-                        Intent intent = new Intent(context, DashboardActivity.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                        startActivity(intent);
-                        finish();
-                    } else {
-                        Toast.makeText(context, "" + resp.getMsg(), Toast.LENGTH_SHORT).show();
-                    }
-                }
+            NetworkProvider.instance().bookService(userID, cartId, paymentMode, serviceDate, serviceTime, addressId, transactionId, walletUsed)
+                    .enqueue(new Callback<BookServiceResp>() {
+                        @Override
+                        public void onResponse(Call<BookServiceResp> call, Response<BookServiceResp> response) {
+                            progressDialog.dismiss();
+                            BookServiceResp resp = response.body();
+                            if ("200".equals(resp.getStatus())) {
 
-                @Override
-                public void onFailure(Call<CommonResponse> call, Throwable t) {
-                    progressDialog.dismiss();
-                    Log.d(TAG, "" + t.getMessage());
-                }
-            });
+                                if ("online".equals(paymentMode)) {
 
-        } else {
-            Toast.makeText(context, "Check your internet connection", Toast.LENGTH_SHORT).show();
-        }
-    }
+                                    bookingId = "" + resp.getBooking_id();
+                                    try {
+                                        orderId = resp.getOrderid();
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
+                                    try {
+                                        amount = Double.parseDouble(resp.getOrderamount());
+                                    } catch (NumberFormatException e) {
+                                        e.printStackTrace();
+                                    }
+                                    startPayment(amount, user.getEmail(), user.getMobile(), "Book service");
 
-    public void bookProduct(String walletUsed, String userID) {
-        String cartId = Preference.getCartId(context);
-        if (InternetConnectionCheck.haveNetworkConnection(this)) {
-            binding.progressbarCartOverView.setVisibility(View.VISIBLE);
-            NetworkProvider.instance().bookProduct(userID, cartId, paymentMode, serviceDate, serviceTime, addressId, transactionId, walletUsed).enqueue(new Callback<CommonResponse>() {
-                @Override
-                public void onResponse(Call<CommonResponse> call, Response<CommonResponse> response) {
-                    binding.progressbarCartOverView.setVisibility(View.GONE);
-                    CommonResponse resp = response.body();
-                    if ("200".equals(resp.getStatus())) {
-                        Toast.makeText(context, "Order Successful", Toast.LENGTH_SHORT).show();
-                        Preference.setCartId(context, "");
-                        Intent intent = new Intent(context, DashboardActivity.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                        startActivity(intent);
-                        finish();
-                    } else {
-                        Toast.makeText(context, "" + resp.getMsg(), Toast.LENGTH_SHORT).show();
-                    }
-                }
+                                } else {
+                                    bookingDone(resp.getMsg());
+                                }
 
-                @Override
-                public void onFailure(Call<CommonResponse> call, Throwable t) {
-                    binding.progressbarCartOverView.setVisibility(View.GONE);
-                    Log.d(TAG, "" + t.getMessage());
-                }
-            });
+                            } else {
+                                Toast.makeText(context, "" + resp.getMsg(), Toast.LENGTH_SHORT).show();
+                            }
+                        }
+
+                        @Override
+                        public void onFailure(Call<BookServiceResp> call, Throwable t) {
+                            progressDialog.dismiss();
+                            Log.d(TAG, "" + t.getMessage());
+                        }
+                    });
 
         } else {
             Toast.makeText(context, "Check your internet connection", Toast.LENGTH_SHORT).show();
         }
     }
+
+    void bookingDone(String message) {
+        Toast.makeText(context, "" + message, Toast.LENGTH_SHORT).show();
+        Preference.setCartId(context, "");
+        Intent intent = new Intent(context, DashboardActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
+    }
+
+/*
+        public void bookProduct (String walletUsed, String userID){
+            String cartId = Preference.getCartId(context);
+            if (InternetConnectionCheck.haveNetworkConnection(this)) {
+                binding.progressbarCartOverView.setVisibility(View.VISIBLE);
+                NetworkProvider.instance().bookProduct(userID, cartId, paymentMode, serviceDate, serviceTime, addressId, transactionId, walletUsed).enqueue(new Callback<CommonResponse>() {
+                    @Override
+                    public void onResponse(Call<CommonResponse> call, Response<CommonResponse> response) {
+                        binding.progressbarCartOverView.setVisibility(View.GONE);
+                        CommonResponse resp = response.body();
+                        if ("200".equals(resp.getStatus())) {
+                        bookingDone( "Order Successful");
+
+                        } else {
+                            Toast.makeText(context, "" + resp.getMsg(), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<CommonResponse> call, Throwable t) {
+                        binding.progressbarCartOverView.setVisibility(View.GONE);
+                        Log.d(TAG, "" + t.getMessage());
+                    }
+                });
+
+            } else {
+                Toast.makeText(context, "Check your internet connection", Toast.LENGTH_SHORT).show();
+            }
+        }
+*/
 
     public void getCartDetail(String cartID) {
         User user = Preference.getUser(context);
@@ -330,11 +365,37 @@ public class CartOverviewActivity extends AppCompatActivity implements PaymentRe
         finish();
     }
 
+    private void startPayment(double orderAmount, String email, String phone, String from) {
+        final Checkout checkout = new Checkout();
+//        checkout.setKeyID(getResources().getString(R.string.razerKey));
+//        checkout.setImage(R.drawable.logo);
+        Activity activity = this;
+
+        try {
+            JSONObject option = new JSONObject();
+
+            option.put("name", getString(R.string.app_name));
+            option.put("description", from);
+            option.put("image", "https://s3.amazonaws.com/rzp-mobile/images/rzp.png");
+            option.put("order_id", orderId);
+            option.put("currency", "INR");
+            option.put("amount", (int) (orderAmount * 100));
+            option.put("prefill.email", email);
+            option.put("prefill.contact", phone);
+
+            checkout.open(activity, option);
+
+        } catch (Exception e) {
+            Toast.makeText(this, "Error In Payment.Please try again!!", Toast.LENGTH_SHORT).show();
+        }
+    }
+
     @Override
     public void onPaymentSuccess(String s) {
-        transactionId = s;
+//            transactionId = s;
         if ("Service".equals(activeShopping)) {
-            bookService(walletUsed, Preference.getUser(context).getUserId());
+            paymentResponseAPI(s, "success");
+
         } /*else if ("Product".equals(activeShopping)) {
             bookProduct(walletUsed, Preference.getUser(context).getUserId());
         }*/
@@ -344,4 +405,5 @@ public class CartOverviewActivity extends AppCompatActivity implements PaymentRe
     public void onPaymentError(int i, String s) {
         Toast.makeText(context, "Transaction Cancelled", Toast.LENGTH_SHORT).show();
     }
+
 }

@@ -28,9 +28,12 @@ public class FragmentProfileBindingImpl extends FragmentProfileBinding  {
         sViewsWithIds.put(R.id.llProfileShareApp, 12);
         sViewsWithIds.put(R.id.llProfileRateApp, 13);
         sViewsWithIds.put(R.id.ll_tnc, 14);
-        sViewsWithIds.put(R.id.ll_faq, 15);
-        sViewsWithIds.put(R.id.ll_logout_profile, 16);
-        sViewsWithIds.put(R.id.ll_login_profile, 17);
+        sViewsWithIds.put(R.id.llCancellationPolicy, 15);
+        sViewsWithIds.put(R.id.llPrivacyPolicies, 16);
+        sViewsWithIds.put(R.id.llDisclaimer, 17);
+        sViewsWithIds.put(R.id.ll_faq, 18);
+        sViewsWithIds.put(R.id.ll_logout_profile, 19);
+        sViewsWithIds.put(R.id.ll_login_profile, 20);
     }
     // views
     @NonNull
@@ -41,7 +44,7 @@ public class FragmentProfileBindingImpl extends FragmentProfileBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentProfileBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 18, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 21, sIncludes, sViewsWithIds));
     }
     private FragmentProfileBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
@@ -49,6 +52,9 @@ public class FragmentProfileBindingImpl extends FragmentProfileBinding  {
             , (android.widget.LinearLayout) bindings[11]
             , (android.widget.LinearLayout) bindings[15]
             , (android.widget.LinearLayout) bindings[17]
+            , (android.widget.LinearLayout) bindings[18]
+            , (android.widget.LinearLayout) bindings[20]
+            , (android.widget.LinearLayout) bindings[19]
             , (android.widget.LinearLayout) bindings[16]
             , (android.widget.LinearLayout) bindings[13]
             , (android.widget.LinearLayout) bindings[12]

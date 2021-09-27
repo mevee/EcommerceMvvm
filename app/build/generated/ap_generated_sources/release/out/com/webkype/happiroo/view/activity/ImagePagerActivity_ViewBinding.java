@@ -15,7 +15,7 @@ import java.lang.Override;
 public class ImagePagerActivity_ViewBinding implements Unbinder {
   private ImagePagerActivity target;
 
-  private View view7f0a0063;
+  private View view7f0a0064;
 
   @UiThread
   public ImagePagerActivity_ViewBinding(ImagePagerActivity target) {
@@ -29,7 +29,7 @@ public class ImagePagerActivity_ViewBinding implements Unbinder {
     View view;
     target.zoomImagePager = Utils.findRequiredViewAsType(source, R.id.zoomImagePager, "field 'zoomImagePager'", ViewPager.class);
     view = Utils.findRequiredView(source, R.id.backImagePager, "method 'backImagePager'");
-    view7f0a0063 = view;
+    view7f0a0064 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -47,7 +47,7 @@ public class ImagePagerActivity_ViewBinding implements Unbinder {
 
     target.zoomImagePager = null;
 
-    view7f0a0063.setOnClickListener(null);
-    view7f0a0063 = null;
+    view7f0a0064.setOnClickListener(null);
+    view7f0a0064 = null;
   }
 }

@@ -17,9 +17,9 @@ import me.relex.circleindicator.CircleIndicator;
 public class WalkThroughActivity_ViewBinding implements Unbinder {
   private WalkThroughActivity target;
 
-  private View view7f0a0277;
+  private View view7f0a027b;
 
-  private View view7f0a0080;
+  private View view7f0a0081;
 
   @UiThread
   public WalkThroughActivity_ViewBinding(WalkThroughActivity target) {
@@ -35,7 +35,7 @@ public class WalkThroughActivity_ViewBinding implements Unbinder {
     target.welcomePagerIndicator = Utils.findRequiredViewAsType(source, R.id.welcomePagerIndicator, "field 'welcomePagerIndicator'", CircleIndicator.class);
     target.btnWelcomeTxt = Utils.findRequiredViewAsType(source, R.id.btnWelcomeTxt, "field 'btnWelcomeTxt'", TextView.class);
     view = Utils.findRequiredView(source, R.id.skipWelcome_tV, "method 'onClick'");
-    view7f0a0277 = view;
+    view7f0a027b = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -43,7 +43,7 @@ public class WalkThroughActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.btnWelcomeCard, "method 'onClick'");
-    view7f0a0080 = view;
+    view7f0a0081 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,9 +63,9 @@ public class WalkThroughActivity_ViewBinding implements Unbinder {
     target.welcomePagerIndicator = null;
     target.btnWelcomeTxt = null;
 
-    view7f0a0277.setOnClickListener(null);
-    view7f0a0277 = null;
-    view7f0a0080.setOnClickListener(null);
-    view7f0a0080 = null;
+    view7f0a027b.setOnClickListener(null);
+    view7f0a027b = null;
+    view7f0a0081.setOnClickListener(null);
+    view7f0a0081 = null;
   }
 }

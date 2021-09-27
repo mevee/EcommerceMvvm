@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-184:12
-INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-184:12
-INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-184:12
-INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-184:12
+ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-186:12
+INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-186:12
+INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-186:12
+INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-186:12
 MERGED from [androidx.databinding:databinding-adapters:4.2.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\d297931e21d9301e33706218bda8107a\databinding-adapters-4.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.databinding:databinding-runtime:4.2.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\68e55a5b9aaafa178044ca1730609a78\databinding-runtime-4.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b78c47a3778e18896f4bda6d9bf63c6b\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
@@ -89,20 +89,20 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Abdul\.gradle\caches
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b815b92270c9517cad1ba61d96ab6197\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\14eca98119bbcb63f3081b185189a281\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\13dcc99157078dbe9c8e89e8d7df4f2b\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-184:12
-INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-184:12
-INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-184:12
+INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-186:12
+INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-186:12
+INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-186:12
 	package
 		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml
 		INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml
-		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-184:12
+		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-186:12
 		INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml
-		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-184:12
+		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:1-186:12
 		INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:2:11-69
@@ -171,7 +171,7 @@ ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xm
 	android:name
 		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:10:22-78
 application
-ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:12:5-182:19
+ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:12:5-184:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b78c47a3778e18896f4bda6d9bf63c6b\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b78c47a3778e18896f4bda6d9bf63c6b\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\a8126778c10c80ee744ba58e665b6135\material-1.1.0\AndroidManifest.xml:22:5-20
@@ -530,42 +530,42 @@ category#android.intent.category.LAUNCHER
 ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:153:17-77
 	android:name
 		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:153:27-74
-meta-data#com.razorpay.ApiKey
-ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:157:9-159:55
-	android:value
-		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:159:13-52
-	android:name
-		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:158:13-47
 service#com.webkype.happiroo.Firebase.MyFirebaseService
-ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:161:9-181:19
+ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:159:9-179:19
 	android:exported
-		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:163:13-37
+		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:161:13-37
 	android:name
-		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:162:13-55
+		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:160:13-55
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:164:13-166:29
+ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:162:13-164:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:165:17-78
+ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:163:17-78
 	android:name
-		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:165:25-75
+		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:163:25-75
 meta-data#com.google.firebase.messaging.default_notification_channel_id
-ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:168:13-170:54
+ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:166:13-168:54
 	android:value
-		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:170:17-51
+		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:168:17-51
 	android:name
-		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:169:17-93
+		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:167:17-93
 meta-data#com.google.firebase.messaging.default_notification_icon
-ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:171:13-173:53
+ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:169:13-171:53
 	android:resource
-		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:173:17-50
+		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:171:17-50
 	android:name
-		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:172:17-87
+		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:170:17-87
 meta-data#com.google.firebase.messaging.default_notification_color
-ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:178:13-180:62
+ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:176:13-178:62
 	android:resource
-		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:180:17-59
+		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:178:17-59
 	android:name
-		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:179:17-88
+		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:177:17-88
+meta-data#com.razorpay.ApiKey
+ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:181:9-183:48
+	android:value
+		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:183:13-45
+	android:name
+		ADDED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:182:13-47
 uses-sdk
 INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml

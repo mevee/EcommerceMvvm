@@ -104,6 +104,10 @@
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_cart_overview.xml"
     },
     {
+        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_disclaimer.xml.flat",
+        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_disclaimer.xml"
+    },
+    {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_address.xml.flat",
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_address.xml"
     },
@@ -200,6 +204,10 @@
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\drawable\\ic_star.xml"
     },
     {
+        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_cancellation_policy.xml.flat",
+        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_cancellation_policy.xml"
+    },
+    {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\drawable_city_background.png.flat",
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\drawable\\city_background.png"
     },
@@ -276,6 +284,10 @@
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\drawable\\slider1.png"
     },
     {
+        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_tnc.xml.flat",
+        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_tnc.xml"
+    },
+    {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\drawable_covid_3.png.flat",
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\drawable\\covid_3.png"
     },
@@ -346,6 +358,10 @@
     {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_slider_layout.xml.flat",
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\slider_layout.xml"
+    },
+    {
+        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_custromer_support.xml.flat",
+        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_custromer_support.xml"
     },
     {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\drawable_whatsappicon.png.flat",
@@ -774,6 +790,10 @@
     {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\drawable_image_placeholder.png.flat",
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\drawable\\image_placeholder.png"
+    },
+    {
+        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_privacy_policy.xml.flat",
+        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_privacy_policy.xml"
     },
     {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_product_detail.xml.flat",

@@ -15,9 +15,9 @@ import java.lang.Override;
 public class CovidMessageActivity_ViewBinding implements Unbinder {
   private CovidMessageActivity target;
 
-  private View view7f0a0065;
+  private View view7f0a0066;
 
-  private View view7f0a00b8;
+  private View view7f0a00b9;
 
   @UiThread
   public CovidMessageActivity_ViewBinding(CovidMessageActivity target) {
@@ -31,7 +31,7 @@ public class CovidMessageActivity_ViewBinding implements Unbinder {
     View view;
     target.covidAgree_rB = Utils.findRequiredViewAsType(source, R.id.covidAgree_rB, "field 'covidAgree_rB'", RadioButton.class);
     view = Utils.findRequiredView(source, R.id.backMessage, "method 'onClick'");
-    view7f0a0065 = view;
+    view7f0a0066 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -39,7 +39,7 @@ public class CovidMessageActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.covidIAgreeRelative, "method 'onClick'");
-    view7f0a00b8 = view;
+    view7f0a00b9 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -57,9 +57,9 @@ public class CovidMessageActivity_ViewBinding implements Unbinder {
 
     target.covidAgree_rB = null;
 
-    view7f0a0065.setOnClickListener(null);
-    view7f0a0065 = null;
-    view7f0a00b8.setOnClickListener(null);
-    view7f0a00b8 = null;
+    view7f0a0066.setOnClickListener(null);
+    view7f0a0066 = null;
+    view7f0a00b9.setOnClickListener(null);
+    view7f0a00b9 = null;
   }
 }

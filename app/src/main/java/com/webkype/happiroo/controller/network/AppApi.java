@@ -4,6 +4,7 @@ import com.webkype.happiroo.controller.network.responses.CommonResponse;
 import com.webkype.happiroo.controller.network.responses.address.AddressResp;
 import com.webkype.happiroo.controller.network.responses.auth.LoginResp;
 import com.webkype.happiroo.controller.network.responses.auth.OtpResp;
+import com.webkype.happiroo.controller.network.responses.book_serive_resp.BookServiceResp;
 import com.webkype.happiroo.controller.network.responses.booking.BookingDetailResp;
 import com.webkype.happiroo.controller.network.responses.booking.BookingHistoryResp;
 import com.webkype.happiroo.controller.network.responses.booking.BookingsResp;
@@ -124,7 +125,6 @@ public interface AppApi {
     @POST("booking-list.php")
     Call<BookingsResp> getBookingList(@Field("user_id") String user_id);
 
-
     @FormUrlEncoded
     @POST("booking-details.php")
     Call<BookingDetailResp> getBookingDetail(@Field("bookingid") String bookingid);
@@ -168,15 +168,21 @@ public interface AppApi {
 
     @FormUrlEncoded
     @POST("book-service.php")
-    Call<CommonResponse> bookService(@Field("user_id") String user_id,
-                                     @Field("cartid") String cartid,
-                                     @Field("payment_mode") String payment_mode,
-                                     @Field("servicedate") String servicedate,
-                                     @Field("timeslot") String timeslot,
-                                     @Field("addressid") String addressid,
-                                     @Field("transaction_id") String transaction_id,
-                                     @Field("iswalletused") String iswalletused);
+    Call<BookServiceResp> bookService(@Field("user_id") String user_id,
+                                      @Field("cartid") String cartid,
+                                      @Field("payment_mode") String payment_mode,
+                                      @Field("servicedate") String servicedate,
+                                      @Field("timeslot") String timeslot,
+                                      @Field("addressid") String addressid,
+                                      @Field("transaction_id") String transaction_id,
+                                      @Field("iswalletused") String iswalletused);
 
+
+    @FormUrlEncoded
+    @POST("approve-service-payment.php")
+    Call<CommonResponse> approveServicePayment(@Field("booking_id") String booking_id,
+                                     @Field("orderid") String orderid,
+                                     @Field("user_id") String user_id);
 
     @FormUrlEncoded
     @POST("book-product.php")

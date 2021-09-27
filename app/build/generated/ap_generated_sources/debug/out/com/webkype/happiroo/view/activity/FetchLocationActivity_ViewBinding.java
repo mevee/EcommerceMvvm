@@ -14,11 +14,11 @@ import java.lang.Override;
 public class FetchLocationActivity_ViewBinding implements Unbinder {
   private FetchLocationActivity target;
 
-  private View view7f0a0062;
+  private View view7f0a0063;
 
-  private View view7f0a00ba;
+  private View view7f0a00bb;
 
-  private View view7f0a0259;
+  private View view7f0a025d;
 
   @UiThread
   public FetchLocationActivity_ViewBinding(FetchLocationActivity target) {
@@ -31,7 +31,7 @@ public class FetchLocationActivity_ViewBinding implements Unbinder {
 
     View view;
     view = Utils.findRequiredView(source, R.id.backFetchLocation, "method 'onClick'");
-    view7f0a0062 = view;
+    view7f0a0063 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -39,7 +39,7 @@ public class FetchLocationActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.currentLocationLinear, "method 'onClick'");
-    view7f0a00ba = view;
+    view7f0a00bb = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -47,7 +47,7 @@ public class FetchLocationActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.searchLocationLinear, "method 'onClick'");
-    view7f0a0259 = view;
+    view7f0a025d = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,11 +63,11 @@ public class FetchLocationActivity_ViewBinding implements Unbinder {
     target = null;
 
 
-    view7f0a0062.setOnClickListener(null);
-    view7f0a0062 = null;
-    view7f0a00ba.setOnClickListener(null);
-    view7f0a00ba = null;
-    view7f0a0259.setOnClickListener(null);
-    view7f0a0259 = null;
+    view7f0a0063.setOnClickListener(null);
+    view7f0a0063 = null;
+    view7f0a00bb.setOnClickListener(null);
+    view7f0a00bb = null;
+    view7f0a025d.setOnClickListener(null);
+    view7f0a025d = null;
   }
 }

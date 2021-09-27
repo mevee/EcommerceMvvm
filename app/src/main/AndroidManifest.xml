@@ -154,9 +154,7 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="com.razorpay.ApiKey"
-            android:value="rzp_live_qD5gsSOze976lE" />
+
 
         <service
             android:name=".Firebase.MyFirebaseService"
@@ -179,6 +177,10 @@
                 android:name="com.google.firebase.messaging.default_notification_color"
                 android:resource="@color/colorPrimaryDark" />
         </service>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="@string/razerKey" />
     </application>
 
 </manifest>
