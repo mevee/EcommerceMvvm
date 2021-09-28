@@ -1,11 +1,14 @@
 <resources>
     <!--
-    happiro razer pay secret
+    happiro TEST = key_id, key_secret
     rzp_test_9Nt3b3grKDXHcq,
     bamD1Ask5UuET8l1mZacKwfI
+
+    Happiro live = key_id,key_secret
+rzp_live_JHkGoJA11Bv4sg,nmaLPRn9BPu9LcNLrCBgi1Wt
      -->
-<!--    <string name="razerKey">bamD1Ask5UuET8l1mZacKwfI</string>-->
-    <string name="razerKey">rzp_test_9Nt3b3grKDXHcq</string>
+    <string name="razerKeyTest">rzp_test_9Nt3b3grKDXHcq</string>
+    <string name="razerKey">rzp_live_JHkGoJA11Bv4sg</string>
     <string name="app_name">Happiroo</string>
     <string name="notifications">Notifications</string>
     <string name="refer_amp_earn"><![CDATA[Refer & Earn]]></string>

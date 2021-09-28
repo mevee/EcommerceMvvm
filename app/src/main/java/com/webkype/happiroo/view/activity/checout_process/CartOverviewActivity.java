@@ -233,7 +233,7 @@ public class CartOverviewActivity extends AppCompatActivity implements PaymentRe
                                     } catch (NumberFormatException e) {
                                         e.printStackTrace();
                                     }
-                                    startPayment(amount, user.getEmail(), user.getMobile(), "Book service");
+                                    startPayment(amount, user.getEmail(), user.getMobile(), " Book service");
 
                                 } else {
                                     bookingDone(resp.getMsg());
