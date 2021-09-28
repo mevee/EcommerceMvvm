@@ -3110,6 +3110,7 @@ string rate_mclap
 string rate_product
 string ratings_amp_reviews
 string razerKey
+string razerKeyTest
 string refer_amp_earn
 string search_menu_title
 string select_a_service
