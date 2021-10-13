@@ -24,12 +24,12 @@
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\drawable\\home_icon.png"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
-    },
-    {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\drawable_border_corner_back2.xml.flat",
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\drawable\\border_corner_back2.xml"
+    },
+    {
+        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\drawable_account_icon.png.flat",
@@ -96,12 +96,12 @@
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_select_slot.xml.flat",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_select_slot.xml"
-    },
-    {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_cart_overview.xml.flat",
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_cart_overview.xml"
+    },
+    {
+        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_select_slot.xml.flat",
+        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_select_slot.xml"
     },
     {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_disclaimer.xml.flat",
@@ -148,12 +148,12 @@
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\drawable\\ovel_active.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_booking_detail.xml.flat",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_booking_detail.xml"
-    },
-    {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\drawable_cart_qnt_background_primary.xml.flat",
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\drawable\\cart_qnt_background_primary.xml"
+    },
+    {
+        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_booking_detail.xml.flat",
+        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_booking_detail.xml"
     },
     {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_fav_service.xml.flat",
@@ -164,12 +164,12 @@
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\drawable\\stroke_rounded_grey.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\drawable_qr_gpay.jpeg.flat",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\drawable\\qr_gpay.jpeg"
-    },
-    {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\drawable_qr_ppay.jpeg.flat",
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\drawable\\qr_ppay.jpeg"
+    },
+    {
+        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\drawable_qr_gpay.jpeg.flat",
+        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\drawable\\qr_gpay.jpeg"
     },
     {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_fragment_add_product_rating.xml.flat",
@@ -180,12 +180,12 @@
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\drawable\\logout_icon.png"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_image_banner_layout.xml.flat",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\image_banner_layout.xml"
-    },
-    {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_image_banner_layout.xml.flat",
+        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\image_banner_layout.xml"
     },
     {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_spinner_item.xml.flat",
@@ -240,12 +240,12 @@
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_covid_message.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
-    },
-    {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_item_include_layout.xml.flat",
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\item_include_layout.xml"
+    },
+    {
+        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\drawable_home_background.png.flat",
@@ -300,12 +300,12 @@
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_fetch_location.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\drawable_fbicon.png.flat",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\drawable\\fbicon.png"
-    },
-    {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_activity_shop_product_detail_activity.xml.flat",
         "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_shop_product_detail_activity.xml"
+    },
+    {
+        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\drawable_fbicon.png.flat",
+        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\drawable\\fbicon.png"
     },
     {
         "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\res\\merged\\release\\layout_wallet_amout_recharge_dialog.xml.flat",

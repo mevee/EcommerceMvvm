@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.webkype.happiroo"
-4    android:versionCode="7"
-5    android:versionName="1.7" >
+4    android:versionCode="8"
+5    android:versionName="1.8" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
@@ -39,7 +39,7 @@
 19-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\4676b7fe6fdda56f8ec006a1ded151e0\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:26:22-107
 20
 21    <application
-21-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:12:5-182:19
+21-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:12:5-184:19
 22        android:allowBackup="true"
 22-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:13:9-35
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -333,49 +333,49 @@
 164            </intent-filter>
 165        </activity>
 166
-167        <meta-data
-167-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:157:9-159:55
-168            android:name="com.razorpay.ApiKey"
-168-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:158:13-47
-169            android:value="rzp_live_qD5gsSOze976lE" />
-169-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:159:13-52
-170
-171        <service
-171-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:161:9-181:19
-172            android:name="com.webkype.happiroo.Firebase.MyFirebaseService"
-172-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:162:13-55
-173            android:exported="false" >
-173-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:163:13-37
-174            <intent-filter>
-174-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:164:13-166:29
-175                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-175-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:165:17-78
-175-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:165:25-75
-176            </intent-filter>
-177
-178            <meta-data
-178-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:168:13-170:54
-179                android:name="com.google.firebase.messaging.default_notification_channel_id"
-179-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:169:17-93
-180                android:value="@string/channel_id" />
-180-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:170:17-51
-181            <meta-data
-181-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:171:13-173:53
-182                android:name="com.google.firebase.messaging.default_notification_icon"
-182-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:172:17-87
-183                android:resource="@drawable/logo" />
-183-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:173:17-50
-184            <!--
-185                 Set color used with incoming notification messages. This is used when no color is set for the incoming
-186                 notification message. See README(https://goo.gl/6BKBk7) for more.
-187            -->
-188            <meta-data
-188-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:178:13-180:62
-189                android:name="com.google.firebase.messaging.default_notification_color"
-189-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:179:17-88
-190                android:resource="@color/colorPrimaryDark" />
-190-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:180:17-59
-191        </service>
+167        <service
+167-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:159:9-179:19
+168            android:name="com.webkype.happiroo.Firebase.MyFirebaseService"
+168-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:160:13-55
+169            android:exported="false" >
+169-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:161:13-37
+170            <intent-filter>
+170-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:162:13-164:29
+171                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+171-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:163:17-78
+171-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:163:25-75
+172            </intent-filter>
+173
+174            <meta-data
+174-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:166:13-168:54
+175                android:name="com.google.firebase.messaging.default_notification_channel_id"
+175-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:167:17-93
+176                android:value="@string/channel_id" />
+176-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:168:17-51
+177            <meta-data
+177-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:169:13-171:53
+178                android:name="com.google.firebase.messaging.default_notification_icon"
+178-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:170:17-87
+179                android:resource="@drawable/logo" />
+179-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:171:17-50
+180            <!--
+181                 Set color used with incoming notification messages. This is used when no color is set for the incoming
+182                 notification message. See README(https://goo.gl/6BKBk7) for more.
+183            -->
+184            <meta-data
+184-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:176:13-178:62
+185                android:name="com.google.firebase.messaging.default_notification_color"
+185-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:177:17-88
+186                android:resource="@color/colorPrimaryDark" />
+186-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:178:17-59
+187        </service>
+188
+189        <meta-data
+189-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:181:9-183:48
+190            android:name="com.razorpay.ApiKey"
+190-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:182:13-47
+191            android:value="@string/razerKey" />
+191-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:183:13-45
 192
 193        <receiver android:name="com.razorpay.RzpTokenReceiver" >
 193-->[com.razorpay:checkout:1.5.16] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b7a64b724b076f711a3ae5e1b78f4d82\jetified-checkout-1.5.16\AndroidManifest.xml:12:9-16:20
@@ -423,10 +423,10 @@
 218            android:exported="false" >
 218-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\Abdul\.gradle\caches\transforms-2\files-2.1\b5378b4080be5791287f7567e839f937\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:31:13-37
 219            <intent-filter android:priority="-500" >
-219-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:164:13-166:29
+219-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:162:13-164:29
 220                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-220-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:165:17-78
-220-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:165:25-75
+220-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:163:17-78
+220-->F:\my_new_p\happiro_projects\Happiroo\app\src\main\AndroidManifest.xml:163:25-75
 221            </intent-filter>
 222        </service>
 223        <service
