@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                                   
+
+    
+
+           
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" android:tag="layout/fragment_shop_0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/lato_black"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_12dp"
+            android:paddingEnd="@dimen/_12dp"
+            android:text="Shop By Category"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sp" />
+
+        <androidx.core.widget.NestedScrollView
+             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_48dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvShopCat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressbarShopFrag"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+         

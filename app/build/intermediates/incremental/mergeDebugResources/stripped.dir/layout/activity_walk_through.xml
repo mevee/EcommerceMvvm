@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.activity.WalkThroughActivity">
+
+    <TextView
+        android:id="@+id/skipWelcome_tV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:paddingTop="@dimen/_6dp"
+        android:paddingBottom="@dimen/_6dp"
+        android:layout_alignParentEnd="true"
+        android:text="Skip"
+        android:textSize="@dimen/_16sp"
+        android:fontFamily="@font/lato_medium"
+        android:textColor="@color/dark_gray"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/welcomeViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/skipWelcome_tV"
+        android:layout_above="@+id/welcomePagerIndicator"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"/>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/welcomePagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_10dp"
+        android:focusable="false"
+        android:layout_above="@+id/btnWelcomeCard"
+        android:layout_marginBottom="@dimen/_24dp"
+        app:ci_drawable="@drawable/dark_radius"
+        app:ci_drawable_unselected="@drawable/white_radius"
+        app:ci_height="@dimen/_5dp"
+        app:ci_width="@dimen/_5dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnWelcomeCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        app:cardCornerRadius="@dimen/_4dp"
+        app:cardElevation="@dimen/_2dp"
+        android:layout_marginEnd="@dimen/_24dp"
+        android:layout_marginStart="@dimen/_24dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:layout_alignParentBottom="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/btnWelcomeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Next"
+            android:fontFamily="@font/lato_black"
+            android:textSize="@dimen/_16sp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

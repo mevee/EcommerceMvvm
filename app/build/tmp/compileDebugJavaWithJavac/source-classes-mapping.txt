@@ -10,10 +10,10 @@ com/webkype/happiroo/controller/network/responses/home_page_resp/Bannerdetum.jav
  com.webkype.happiroo.controller.network.responses.home_page_resp.Bannerdetum
 com/webkype/happiroo/controller/network/responses/mservices/ServiceListResp.java
  com.webkype.happiroo.controller.network.responses.mservices.ServiceListResp
-com/webkype/happiroo/view/CommonListener.java
- com.webkype.happiroo.view.CommonListener
 com/webkype/happiroo/databinding/FavServiceListBinding.java
  com.webkype.happiroo.databinding.FavServiceListBinding
+com/webkype/happiroo/view/CommonListener.java
+ com.webkype.happiroo.view.CommonListener
 com/webkype/happiroo/controller/network/responses/book_serive_resp/BookServiceResp.java
  com.webkype.happiroo.controller.network.responses.book_serive_resp.BookServiceResp
 com/webkype/happiroo/controller/network/responses/mservices/Service.java
@@ -109,6 +109,9 @@ com/webkype/happiroo/databinding/FragmentProfileBinding.java
  com.webkype.happiroo.databinding.FragmentProfileBinding
 com/webkype/happiroo/controller/network/NetworkProvider.java
  com.webkype.happiroo.controller.network.NetworkProvider
+com/webkype/happiroo/view/fragment/booking/BookingHistoryFragment.java
+ com.webkype.happiroo.view.fragment.booking.BookingHistoryFragment
+ com.webkype.happiroo.view.fragment.booking.BookingHistoryFragment$1
 com/webkype/happiroo/view/activity/shopService/ServiceProductDetailActivity.java
  com.webkype.happiroo.view.activity.shopService.ServiceProductDetailActivity
  com.webkype.happiroo.view.activity.shopService.ServiceProductDetailActivity$1
@@ -124,9 +127,6 @@ com/webkype/happiroo/view/activity/shopService/ServiceProductDetailActivity.java
  com.webkype.happiroo.view.activity.shopService.ServiceProductDetailActivity$7
  com.webkype.happiroo.view.activity.shopService.ServiceProductDetailActivity$8
  com.webkype.happiroo.view.activity.shopService.ServiceProductDetailActivity$9
-com/webkype/happiroo/view/fragment/booking/BookingHistoryFragment.java
- com.webkype.happiroo.view.fragment.booking.BookingHistoryFragment
- com.webkype.happiroo.view.fragment.booking.BookingHistoryFragment$1
 com/webkype/happiroo/Firebase/NotificationUtils.java
  com.webkype.happiroo.Firebase.NotificationUtils
 com/webkype/happiroo/view/activity/ReferEarnActivity.java
@@ -177,20 +177,20 @@ com/webkype/happiroo/databinding/UserInputRatingBinding.java
  com.webkype.happiroo.databinding.UserInputRatingBinding
 com/webkype/happiroo/controller/network/responses/category/Subcat.java
  com.webkype.happiroo.controller.network.responses.category.Subcat
-com/webkype/happiroo/view/activity/orders/OrderListActivity.java
- com.webkype.happiroo.view.activity.orders.OrderListActivity
- com.webkype.happiroo.view.activity.orders.OrderListActivity$1
+com/webkype/happiroo/databinding/FragmentWalletBinding.java
+ com.webkype.happiroo.databinding.FragmentWalletBinding
 com/webkype/happiroo/view/adapter/shopProduct/UserReviewAdapter.java
  com.webkype.happiroo.view.adapter.shopProduct.UserReviewAdapter
  com.webkype.happiroo.view.adapter.shopProduct.UserReviewAdapter$1
  com.webkype.happiroo.view.adapter.shopProduct.UserReviewAdapter$ViewHolder
-com/webkype/happiroo/databinding/FragmentWalletBinding.java
- com.webkype.happiroo.databinding.FragmentWalletBinding
-com/webkype/happiroo/view/activity/policyes/PrivacyPolicyActivity.java
- com.webkype.happiroo.view.activity.policyes.PrivacyPolicyActivity
+com/webkype/happiroo/view/activity/orders/OrderListActivity.java
+ com.webkype.happiroo.view.activity.orders.OrderListActivity
+ com.webkype.happiroo.view.activity.orders.OrderListActivity$1
 com/webkype/happiroo/view/activity/shopProduct/AddProductRatingFragment.java
  com.webkype.happiroo.view.activity.shopProduct.AddProductRatingFragment
  com.webkype.happiroo.view.activity.shopProduct.AddProductRatingFragment$1
+com/webkype/happiroo/view/activity/policyes/PrivacyPolicyActivity.java
+ com.webkype.happiroo.view.activity.policyes.PrivacyPolicyActivity
 com/webkype/happiroo/controller/network/responses/prod_order_detail/Bookingdata.java
  com.webkype.happiroo.controller.network.responses.prod_order_detail.Bookingdata
 com/webkype/happiroo/databinding/OrderItemBinding.java
@@ -237,17 +237,17 @@ com/webkype/happiroo/view/activity/checout_process/SelectSlotActivity.java
  com.webkype.happiroo.view.activity.checout_process.SelectSlotActivity$2
 com/webkype/happiroo/databinding/ProductItemBinding.java
  com.webkype.happiroo.databinding.ProductItemBinding
-com/webkype/happiroo/view/activity/auth/OtpActivity.java
- com.webkype.happiroo.view.activity.auth.OtpActivity
- com.webkype.happiroo.view.activity.auth.OtpActivity$1
 com/webkype/happiroo/view/activity/checout_process/AddressActivity.java
  com.webkype.happiroo.view.activity.checout_process.AddressActivity
  com.webkype.happiroo.view.activity.checout_process.AddressActivity$1
  com.webkype.happiroo.view.activity.checout_process.AddressActivity$2
-com/webkype/happiroo/databinding/ItemInOrderBinding.java
- com.webkype.happiroo.databinding.ItemInOrderBinding
+com/webkype/happiroo/view/activity/auth/OtpActivity.java
+ com.webkype.happiroo.view.activity.auth.OtpActivity
+ com.webkype.happiroo.view.activity.auth.OtpActivity$1
 com/webkype/happiroo/databinding/ShopProductItemBinding.java
  com.webkype.happiroo.databinding.ShopProductItemBinding
+com/webkype/happiroo/databinding/ItemInOrderBinding.java
+ com.webkype.happiroo.databinding.ItemInOrderBinding
 com/webkype/happiroo/view/activity/WebViewActivity.java
  com.webkype.happiroo.view.activity.WebViewActivity
  com.webkype.happiroo.view.activity.WebViewActivity$HelloWebViewClient
@@ -414,16 +414,16 @@ com/webkype/happiroo/controller/network/responses/home_page_resp/Addbanner.java
 com/webkype/happiroo/view/adapter/WelcomePagerAdapter.java
  com.webkype.happiroo.view.adapter.WelcomePagerAdapter
  com.webkype.happiroo.view.adapter.WelcomePagerAdapter$1
-com/webkype/happiroo/databinding/PriceDetailLayoutBinding.java
- com.webkype.happiroo.databinding.PriceDetailLayoutBinding
-com/webkype/happiroo/view/adapter/NotificationAdapter.java
- com.webkype.happiroo.view.adapter.NotificationAdapter
- com.webkype.happiroo.view.adapter.NotificationAdapter$ViewHolder
-com/webkype/happiroo/databinding/ToolbarLayoutBinding.java
- com.webkype.happiroo.databinding.ToolbarLayoutBinding
 com/webkype/happiroo/view/adapter/HomeStripAdapter.java
  com.webkype.happiroo.view.adapter.HomeStripAdapter
  com.webkype.happiroo.view.adapter.HomeStripAdapter$ViewHolder
+com/webkype/happiroo/view/adapter/NotificationAdapter.java
+ com.webkype.happiroo.view.adapter.NotificationAdapter
+ com.webkype.happiroo.view.adapter.NotificationAdapter$ViewHolder
+com/webkype/happiroo/databinding/PriceDetailLayoutBinding.java
+ com.webkype.happiroo.databinding.PriceDetailLayoutBinding
+com/webkype/happiroo/databinding/ToolbarLayoutBinding.java
+ com.webkype.happiroo.databinding.ToolbarLayoutBinding
 com/webkype/happiroo/controller/network/responses/mservices/Servicepic.java
  com.webkype.happiroo.controller.network.responses.mservices.Servicepic
 com/webkype/happiroo/controller/network/responses/product_list/Product.java
@@ -525,14 +525,14 @@ com/webkype/happiroo/controller/network/responses/mservices/ReviewItem.java
  com.webkype.happiroo.controller.network.responses.mservices.ReviewItem
 com/webkype/happiroo/databinding/ProductInCartBinding.java
  com.webkype.happiroo.databinding.ProductInCartBinding
-com/webkype/happiroo/view/activity/shopProduct/FavProductListActivity.java
- com.webkype.happiroo.view.activity.shopProduct.FavProductListActivity
- com.webkype.happiroo.view.activity.shopProduct.FavProductListActivity$1
- com.webkype.happiroo.view.activity.shopProduct.FavProductListActivity$2
 com/webkype/happiroo/view/activity/shopProduct/ShoppingCatActivity.java
  com.webkype.happiroo.view.activity.shopProduct.ShoppingCatActivity
  com.webkype.happiroo.view.activity.shopProduct.ShoppingCatActivity$1
  com.webkype.happiroo.view.activity.shopProduct.ShoppingCatActivity$2
+com/webkype/happiroo/view/activity/shopProduct/FavProductListActivity.java
+ com.webkype.happiroo.view.activity.shopProduct.FavProductListActivity
+ com.webkype.happiroo.view.activity.shopProduct.FavProductListActivity$1
+ com.webkype.happiroo.view.activity.shopProduct.FavProductListActivity$2
 com/webkype/happiroo/view/activity/shopService/ServiceDetailActivity.java
  com.webkype.happiroo.view.activity.shopService.ServiceDetailActivity
  com.webkype.happiroo.view.activity.shopService.ServiceDetailActivity$1
@@ -541,12 +541,12 @@ com/webkype/happiroo/view/activity/shopService/ServiceDetailActivity.java
  com.webkype.happiroo.view.activity.shopService.ServiceDetailActivity$4
  com.webkype.happiroo.view.activity.shopService.ServiceDetailActivity$5
  com.webkype.happiroo.view.activity.shopService.ServiceDetailActivity$6
-com/webkype/happiroo/view/adapter/PromoCodeAdapter.java
- com.webkype.happiroo.view.adapter.PromoCodeAdapter
- com.webkype.happiroo.view.adapter.PromoCodeAdapter$ViewHolder
 com/webkype/happiroo/view/fragment/dashboard/WalletFragment.java
  com.webkype.happiroo.view.fragment.dashboard.WalletFragment
  com.webkype.happiroo.view.fragment.dashboard.WalletFragment$1
+com/webkype/happiroo/view/adapter/PromoCodeAdapter.java
+ com.webkype.happiroo.view.adapter.PromoCodeAdapter
+ com.webkype.happiroo.view.adapter.PromoCodeAdapter$ViewHolder
 com/webkype/happiroo/controller/network/responses/booking/BookingsResp.java
  com.webkype.happiroo.controller.network.responses.booking.BookingsResp
 com/webkype/happiroo/controller/pref/PrefConstants.java

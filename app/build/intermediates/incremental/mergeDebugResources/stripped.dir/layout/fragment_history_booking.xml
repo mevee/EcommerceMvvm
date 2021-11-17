@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgnd" android:tag="layout/fragment_history_booking_0">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_book_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/llNoDataHistoryBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/_80dp"
+                android:layout_height="@dimen/_80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/booking_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12dp"
+                android:layout_marginTop="@dimen/_12dp"
+                android:layout_marginEnd="@dimen/_12dp"
+                android:fontFamily="@font/lato_medium"
+                android:gravity="center"
+                android:text="Whoops, No bookings!"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6dp"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center"
+                android:text="You can start by \nbooking a service now"
+                android:textColor="@color/dark_gray" />
+
+            <TextView
+                android:id="@+id/bookServiceNowBtn"
+                android:layout_width="@dimen/_156dp"
+                android:layout_height="@dimen/_36dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_12dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/lato_semibold"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="Book a Service"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sp" />
+
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressbarHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+         

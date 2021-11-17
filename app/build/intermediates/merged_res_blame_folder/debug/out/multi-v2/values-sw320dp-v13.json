@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw320dp-v13\\values-sw320dp-v13.xml",
+            "outputFile": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw320dp-v13/values-sw320dp-v13.xml",
             "map": [
                 {
-                    "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\values-sw320dp\\dimens.xml",
+                    "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/values-sw320dp/dimens.xml",
                     "from": {
                         "startLines": "28,8,29,30,9,31,32,10,2,11,12,13,33,14,3,34,15,16,17,18,19,20,4,21,22,5,23,6,24,25,26,7,27",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1113,291,1156,1199,332,1242,1285,373,57,414,455,496,1328,537,96,1371,578,619,660,701,742,783,135,824,865,174,906,213,947,988,1029,252,1071",
+                        "startOffsets": "1085,283,1127,1169,323,1211,1253,363,55,403,443,483,1295,523,93,1337,563,603,643,683,723,763,131,803,843,169,883,207,923,963,1003,245,1044",
                         "endColumns": "41,39,41,41,39,41,41,39,37,39,39,39,41,39,37,41,39,39,39,39,39,39,37,39,39,37,39,37,39,39,40,37,40",
-                        "endOffsets": "1150,326,1193,1236,367,1279,1322,408,90,449,490,531,1365,572,129,1408,613,654,695,736,777,818,168,859,900,207,941,246,982,1023,1065,285,1107"
+                        "endOffsets": "1122,318,1164,1206,358,1248,1290,398,88,438,478,518,1332,558,126,1374,598,638,678,718,758,798,164,838,878,202,918,240,958,998,1039,278,1080"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v28\\values-v28.xml",
+            "outputFile": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\a8126778c10c80ee744ba58e665b6135\\material-1.1.0\\res\\values-v28\\values-v28.xml",
+                    "source": "/home/bigohtech/.gradle/caches/transforms-2/files-2.1/a8126778c10c80ee744ba58e665b6135/material-1.1.0/res/values-v28/values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\295072dbd297cc632a6382ebd8d1bb63\\appcompat-1.1.0\\res\\values-v28\\values-v28.xml",
+                    "source": "/home/bigohtech/.gradle/caches/transforms-2/files-2.1/295072dbd297cc632a6382ebd8d1bb63/appcompat-1.1.0/res/values-v28/values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",

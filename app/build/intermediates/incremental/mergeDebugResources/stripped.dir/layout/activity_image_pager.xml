@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".view.activity.ImagePagerActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imagePagerHeaderCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="@dimen/_4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48dp">
+
+            <ImageView
+                android:id="@+id/backImagePager"
+                android:layout_width="@dimen/_36dp"
+                android:layout_height="@dimen/_36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/_8dp"
+                android:src="@drawable/ic_arrow_back"
+                android:tint="@color/white"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/zoomImagePager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imagePagerHeaderCard"/>
+
+</RelativeLayout>

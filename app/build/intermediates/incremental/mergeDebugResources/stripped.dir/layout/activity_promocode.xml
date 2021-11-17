@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.activity.PromocodeActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/promoHeaderCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="@dimen/_4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48dp">
+
+            <ImageView
+                android:id="@+id/backPromo"
+                android:layout_width="@dimen/_36dp"
+                android:layout_height="@dimen/_36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/_8dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_48dp"
+                android:fontFamily="@font/lato_black"
+                android:text="Coupons"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_18sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/promoHeaderCard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginStart="@dimen/_12dp"
+                android:layout_marginTop="@dimen/_12dp"
+                android:layout_marginEnd="@dimen/_12dp"
+                android:layout_marginBottom="@dimen/_12dp"
+                android:background="@drawable/text_bg">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/referralApplyBtnTxt"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/lato_medium"
+                    android:hint="Enter Coupon Code"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_8dp"
+                    android:paddingEnd="@dimen/_8dp"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/_16sp" />
+
+                <TextView
+                    android:id="@+id/referralApplyBtnTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:alpha="0.7"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/lato_bold"
+                    android:paddingStart="@dimen/_12dp"
+                    android:paddingTop="@dimen/_8dp"
+                    android:paddingEnd="@dimen/_12dp"
+                    android:paddingBottom="@dimen/_8dp"
+                    android:text="Apply"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_16sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_6dp"
+                android:background="@color/bg_gray" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_promo_code_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_grey_blue"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2dp"
+            android:background="@color/bg_gray" />
+
+        <RelativeLayout
+            android:id="@+id/applyPromoCodeRelativeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48dp"
+            android:layout_marginStart="@dimen/_12dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:background="@drawable/button_background"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/_12dp"
+                android:fontFamily="@font/lato_semibold"
+                android:text="Apply"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

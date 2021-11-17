@@ -1,178 +1,178 @@
 [
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_include_layout.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\item_include_layout.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_include_layout.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/item_include_layout.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_fav_product_list.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_fav_product_list.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/book_ongoing_item.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/book_ongoing_item.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_shop.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\fragment_shop.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_fav_product_list.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/activity_fav_product_list.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\user_review_item.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\user_review_item.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_order_detail.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/activity_order_detail.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\book_history_item.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\book_history_item.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/user_review_item.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/user_review_item.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_bottom_add_vendor_review.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\fragment_bottom_add_vendor_review.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_service_detail.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/activity_service_detail.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\book_ongoing_item.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\book_ongoing_item.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/address_item.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/address_item.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\products_item.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\products_item.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_booking_detail.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/activity_booking_detail.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_profile_edit.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_profile_edit.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_profile.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/fragment_profile.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_cart_overview.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_cart_overview.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_history_booking.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/fragment_history_booking.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_booking_detail.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_booking_detail.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/shop_cat_item.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/shop_cat_item.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_product_list.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_product_list.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_add_product_rating.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/fragment_add_product_rating.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\pager_banner_layout.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\pager_banner_layout.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/shop_product_item_layout.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/shop_product_item_layout.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\price_detail_layout.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\price_detail_layout.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_cart.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/activity_cart.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_edit_address.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_add_edit_address.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/pager_banner_layout.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/pager_banner_layout.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_profile.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/order_item_layout.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/order_item_layout.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_cart.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_cart.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_wallet.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/fragment_wallet.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_ongoing_booking.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\fragment_ongoing_booking.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/book_history_item.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/book_history_item.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_address.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_address.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/wallet_transaction_item.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/wallet_transaction_item.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_service_detail.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_service_detail.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_home.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/fragment_home.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\address_item.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\address_item.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/image_banner_layout.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/image_banner_layout.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\image_banner_layout.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\image_banner_layout.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_address.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/activity_address.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_fav.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\fragment_fav.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add_edit_address.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/activity_add_edit_address.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\products_in_cart_item.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\products_in_cart_item.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/price_detail_layout.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/price_detail_layout.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\customer_review_item.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\customer_review_item.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_cart_overview.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/activity_cart_overview.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_listing.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_listing.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/products_item.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/products_item.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\add_rating_dialog.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\add_rating_dialog.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_shopping_cat.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/activity_shopping_cat.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_select_slot.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_select_slot.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/products_in_cart_item.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/products_in_cart_item.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\order_item_layout.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\order_item_layout.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_in_order_layout.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/item_in_order_layout.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_history_booking.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\fragment_history_booking.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/add_rating_dialog.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/add_rating_dialog.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_shop_product_detail_activity.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_shop_product_detail_activity.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_fav.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/fragment_fav.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_in_order_layout.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\item_in_order_layout.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_ongoing_booking.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/fragment_ongoing_booking.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\fragment_home.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_select_slot.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/activity_select_slot.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add_product_rating.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\fragment_add_product_rating.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_listing.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/activity_listing.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\toolbar_layout.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\toolbar_layout.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_product_detail.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/activity_product_detail.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_wallet.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\fragment_wallet.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/customer_review_item.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/customer_review_item.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_order_list.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_order_list.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_order_list.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/activity_order_list.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_product_detail.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_product_detail.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_shop_product_detail_activity.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/activity_shop_product_detail_activity.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_shopping_cat.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_shopping_cat.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_product_list.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/activity_product_list.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\wallet_transaction_item.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\wallet_transaction_item.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/toolbar_layout.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/toolbar_layout.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\shop_cat_item.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\shop_cat_item.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_bottom_add_vendor_review.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/fragment_bottom_add_vendor_review.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\shop_product_item_layout.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\shop_product_item_layout.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_shop.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/fragment_shop.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fav_service_item.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\fav_service_item.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fav_service_item.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/fav_service_item.xml"
     },
     {
-        "merged": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_order_detail.xml",
-        "source": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\src\\main\\res\\layout\\activity_order_detail.xml"
+        "merged": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_profile_edit.xml",
+        "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/layout/activity_profile_edit.xml"
     }
 ]

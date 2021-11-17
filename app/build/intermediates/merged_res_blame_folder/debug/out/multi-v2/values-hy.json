@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hy\\values-hy.xml",
+            "outputFile": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hy/values-hy.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\2f3d7637012b5e6485bf0f3c490202d6\\jetified-play-services-base-17.1.0\\res\\values-hy\\values.xml",
+                    "source": "/home/bigohtech/.gradle/caches/transforms-2/files-2.1/2f3d7637012b5e6485bf0f3c490202d6/jetified-play-services-base-17.1.0/res/values-hy/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\cc6b41725c7ac1bcdf6317f6e1b829d3\\core-1.1.0\\res\\values-hy\\values-hy.xml",
+                    "source": "/home/bigohtech/.gradle/caches/transforms-2/files-2.1/cc6b41725c7ac1bcdf6317f6e1b829d3/core-1.1.0/res/values-hy/values-hy.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,7 +38,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\295072dbd297cc632a6382ebd8d1bb63\\appcompat-1.1.0\\res\\values-hy\\values-hy.xml",
+                    "source": "/home/bigohtech/.gradle/caches/transforms-2/files-2.1/3063b970ed0dc20b9692784dabc78d07/jetified-play-services-basement-17.1.1/res/values-hy/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "209",
+                        "endOffsets": "456"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "4015",
+                        "endColumns": "209",
+                        "endOffsets": "4220"
+                    }
+                },
+                {
+                    "source": "/home/bigohtech/.gradle/caches/transforms-2/files-2.1/295072dbd297cc632a6382ebd8d1bb63/appcompat-1.1.0/res/values-hy/values-hy.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,24 +72,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\b5378b4080be5791287f7567e839f937\\jetified-firebase-messaging-21.0.1\\res\\values-hy\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "207",
-                        "endColumns": "101",
-                        "endOffsets": "308"
-                    },
-                    "to": {
-                        "startLines": "98",
-                        "startColumns": "4",
-                        "startOffsets": "9303",
-                        "endColumns": "105",
-                        "endOffsets": "9404"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\12aa36e322731efcdb6d27e6bdf43ee7\\jetified-exoplayer-ui-2.12.0\\res\\values-hy\\values-hy.xml",
+                    "source": "/home/bigohtech/.gradle/caches/transforms-2/files-2.1/12aa36e322731efcdb6d27e6bdf43ee7/jetified-exoplayer-ui-2.12.0/res/values-hy/values-hy.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -89,20 +89,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\3063b970ed0dc20b9692784dabc78d07\\jetified-play-services-basement-17.1.1\\res\\values-hy\\values.xml",
+                    "source": "/home/bigohtech/.gradle/caches/transforms-2/files-2.1/b5378b4080be5791287f7567e839f937/jetified-firebase-messaging-21.0.1/res/values-hy/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "209",
-                        "endOffsets": "456"
+                        "startOffsets": "207",
+                        "endColumns": "101",
+                        "endOffsets": "308"
                     },
                     "to": {
-                        "startLines": "37",
+                        "startLines": "98",
                         "startColumns": "4",
-                        "startOffsets": "4015",
-                        "endColumns": "209",
-                        "endOffsets": "4220"
+                        "startOffsets": "9303",
+                        "endColumns": "105",
+                        "endOffsets": "9404"
                     }
                 }
             ]

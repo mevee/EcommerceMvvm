@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\my_new_p\\happiro_projects\\Happiroo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
+            "outputFile": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Abdul\\.gradle\\caches\\transforms-2\\files-2.1\\295072dbd297cc632a6382ebd8d1bb63\\appcompat-1.1.0\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "/home/bigohtech/.gradle/caches/transforms-2/files-2.1/295072dbd297cc632a6382ebd8d1bb63/appcompat-1.1.0/res/values-watch-v21/values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

@@ -9,7 +9,7 @@ android {
         storePassword 'happiroo@1234'
         keyPassword 'happiroo@1234'
         keyAlias 'happiroo'
-        storeFile file('F:\\my_new_p\\happiro_projects\\Happiroo\\app\\happirokey.jks')
+        storeFile file('/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/happirokey.jks')
     }
     }
     compileSdkVersion 29
