@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw320dp-v13/values-sw320dp-v13.xml",
+            "outputFile": "/home/vikesh.kumar/testprojects/EcommerceMvvm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw320dp-v13/values-sw320dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/src/main/res/values-sw320dp/dimens.xml",
+                    "source": "/home/vikesh.kumar/testprojects/EcommerceMvvm/app/src/main/res/values-sw320dp/dimens.xml",
                     "from": {
                         "startLines": "28,8,29,30,9,31,32,10,2,11,12,13,33,14,3,34,15,16,17,18,19,20,4,21,22,5,23,6,24,25,26,7,27",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

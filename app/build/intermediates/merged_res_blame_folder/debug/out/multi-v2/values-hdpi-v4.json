@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "/home/vikesh.kumar/testprojects/EcommerceMvvm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/home/bigohtech/.gradle/caches/transforms-2/files-2.1/295072dbd297cc632a6382ebd8d1bb63/appcompat-1.1.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/home/vikesh.kumar/.gradle/caches/transforms-2/files-2.1/2564194e141246d3ca031b5c9d28e85d/appcompat-1.1.0/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

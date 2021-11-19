@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Happiroo.iml" filepath="$PROJECT_DIR$/.idea/modules/Happiroo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Happiroo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Happiroo.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Happiroo.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/Happiroo.buildSrc.iml" />
     </modules>
   </component>
 </project>

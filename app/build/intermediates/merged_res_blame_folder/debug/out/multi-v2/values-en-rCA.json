@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bigohtech/vikesh_experiments/Happiroo kotlin/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "/home/vikesh.kumar/testprojects/EcommerceMvvm/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
-                    "source": "/home/bigohtech/.gradle/caches/transforms-2/files-2.1/295072dbd297cc632a6382ebd8d1bb63/appcompat-1.1.0/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "/home/vikesh.kumar/.gradle/caches/transforms-2/files-2.1/2564194e141246d3ca031b5c9d28e85d/appcompat-1.1.0/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/bigohtech/.gradle/caches/transforms-2/files-2.1/cc6b41725c7ac1bcdf6317f6e1b829d3/core-1.1.0/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "/home/vikesh.kumar/.gradle/caches/transforms-2/files-2.1/9908f44f7cecbd7e062390717af86478/core-1.1.0/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

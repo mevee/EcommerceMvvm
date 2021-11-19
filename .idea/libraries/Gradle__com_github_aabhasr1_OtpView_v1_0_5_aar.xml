@@ -1,33 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.aabhasr1:OtpView:v1.0.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/966858be9f6526399083d61daabaa6d9/jetified-OtpView-v1.0.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/966858be9f6526399083d61daabaa6d9/jetified-OtpView-v1.0.5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/966858be9f6526399083d61daabaa6d9/jetified-OtpView-v1.0.5/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/77046f9f80ae54b87edd687a7a29e389/jetified-OtpView-v1.0.5/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/77046f9f80ae54b87edd687a7a29e389/jetified-OtpView-v1.0.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/77046f9f80ae54b87edd687a7a29e389/jetified-OtpView-v1.0.5/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c624cc3d4aee7741b62ec21194a78790/jetified-OtpView-v1.0.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c624cc3d4aee7741b62ec21194a78790/jetified-OtpView-v1.0.5/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c624cc3d4aee7741b62ec21194a78790/jetified-OtpView-v1.0.5/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c16112e671b4892a5506bcaa1c2a2822/jetified-OtpView-v1.0.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c16112e671b4892a5506bcaa1c2a2822/jetified-OtpView-v1.0.5/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c16112e671b4892a5506bcaa1c2a2822/jetified-OtpView-v1.0.5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b1f0eb6cf22f8c02873be9768ea42d8/jetified-OtpView-v1.0.5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b1f0eb6cf22f8c02873be9768ea42d8/jetified-OtpView-v1.0.5/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7b1f0eb6cf22f8c02873be9768ea42d8/jetified-OtpView-v1.0.5/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eba02a15e0a7b32acce3366c5612be68/jetified-OtpView-v1.0.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eba02a15e0a7b32acce3366c5612be68/jetified-OtpView-v1.0.5/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eba02a15e0a7b32acce3366c5612be68/jetified-OtpView-v1.0.5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/92f66c74a5c0ebec42ffe19c8f72c1e9/jetified-OtpView-v1.0.5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/92f66c74a5c0ebec42ffe19c8f72c1e9/jetified-OtpView-v1.0.5/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/92f66c74a5c0ebec42ffe19c8f72c1e9/jetified-OtpView-v1.0.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7ed788cae90cbb3a7f95d4dc31329222/jetified-OtpView-v1.0.5/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7ed788cae90cbb3a7f95d4dc31329222/jetified-OtpView-v1.0.5/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7ed788cae90cbb3a7f95d4dc31329222/jetified-OtpView-v1.0.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a6fad2501ec714ddbe261290e50c79f7/jetified-OtpView-v1.0.5/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a6fad2501ec714ddbe261290e50c79f7/jetified-OtpView-v1.0.5/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a6fad2501ec714ddbe261290e50c79f7/jetified-OtpView-v1.0.5/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d04cbe0a7e99b635f62e4f92bc075a33/jetified-OtpView-v1.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d04cbe0a7e99b635f62e4f92bc075a33/jetified-OtpView-v1.0.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d04cbe0a7e99b635f62e4f92bc075a33/jetified-OtpView-v1.0.5/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
