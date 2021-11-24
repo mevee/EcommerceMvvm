@@ -1,12 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.exoplayer:exoplayer-core:2.12.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c408938e9f6235d4368f73429caeaa15/jetified-exoplayer-core-2.12.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/55ef57a9423fa6e75593b561d0e1e20b/jetified-exoplayer-core-2.12.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c408938e9f6235d4368f73429caeaa15/jetified-exoplayer-core-2.12.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c408938e9f6235d4368f73429caeaa15/jetified-exoplayer-core-2.12.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c408938e9f6235d4368f73429caeaa15/jetified-exoplayer-core-2.12.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bb4450b89a8ddb00eed0a67fa4e17155/jetified-exoplayer-core-2.12.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/797303b108e54c855cdc0ec42c7edf57/jetified-exoplayer-core-2.12.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/30aff944a92e6a70dfb542fdbe099f65/jetified-exoplayer-core-2.12.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/55ef57a9423fa6e75593b561d0e1e20b/jetified-exoplayer-core-2.12.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/55ef57a9423fa6e75593b561d0e1e20b/jetified-exoplayer-core-2.12.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/55ef57a9423fa6e75593b561d0e1e20b/jetified-exoplayer-core-2.12.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/exoplayer-core/2.12.0/5f85c3d79410161114fa8f586e4a22d944b0ff4e/exoplayer-core-2.12.0-javadoc.jar!/" />

@@ -1,8 +1,11 @@
+import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
+
 plugins {
     id("com.android.application")
     id("com.google.gms.google-services")
-//    id("kotlin-kapt")
-//    id("dagger.hilt.android.plugin")
+    id("kotlin-android")
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 android {/*
     signingConfigs {
@@ -45,28 +48,23 @@ android {/*
     }
     lintOptions {
         isCheckReleaseBuilds = false
-        // Or, if you prefer, you can continue to check for errors in release builds,
-        // but continue the build even when errors are found:
 //        abortOnError false
     }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
-// Allow references to generated code
-//kapt {
-//    correctErrorTypes = true
-//}
+
 
 repositories {
     maven { url = uri("https://jitpack.io") }
-/*flatDir{
-        dirs = dirs("libs")
-    }*/
-
 }
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation("androidx.appcompat:appcompat:1.1.0")
+    implementation(Dependency.Dependance.kotlinStdLib)
 
+    implementation("androidx.appcompat:appcompat:1.1.0")
 
     implementation("com.google.android.gms:play-services-location:17.0.0")
 
@@ -98,7 +96,45 @@ dependencies {
     implementation(Dependency.Dependance.OtpView)
     implementation(Dependency.Dependance.material)
     implementation(Dependency.Dependance.constraintlayout)
-//    implementation(Dependency.Dependance.hiltDagger)
-//    kapt(Dependency.Dependance.hiltKotlinCompiler)
+//
+    implementation(Dependency.Dependance.lifecycleliveData)
+    implementation(Dependency.Dependance.lifecycleViewModel)
+    implementation(Dependency.Dependance.lifecycleRuntime)
 
-}
+    //coroutines
+    implementation(Dependency.Dependance.coroutinesAndroid)
+    implementation(Dependency.Dependance.coroutinesCore)
+
+    //navigation
+    implementation(Dependency.Dependance.navigationFragment)
+    implementation(Dependency.Dependance.navigationUi)
+
+    val dagger_version = "2.27"
+    val hilt_version = "2.37"
+
+    kaptAndroidTest ("com.google.dagger:dagger-compiler:$dagger_version")
+
+    // Hilt dependencies
+    implementation ("com.google.dagger:hilt-android:$hilt_version")
+    kapt( "com.google.dagger:hilt-android-compiler:$hilt_version")
+
+    // Hilt testing
+    androidTestImplementation ("com.google.dagger:hilt-android-testing:$hilt_version")
+    kaptAndroidTest ("com.google.dagger:hilt-android-compiler:$hilt_version")
+
+
+/*    // Dagger Core
+    implementation("com.google.dagger:dagger:2.37")
+    kapt("com.google.dagger:dagger-compiler:2.37")
+
+    // Dagger Android
+    api("com.google.dagger:dagger-android:2.35.1")
+    api("com.google.dagger:dagger-android-support:2.23.2")
+    kapt("com.google.dagger:dagger-android-processor:2.23.2")
+
+    //Dagger - Hilt
+    implementation("com.google.dagger:hilt-android:2.37")
+    kapt("com.google.dagger:hilt-android-compiler:2.37")
+//    implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
+    kapt("androidx.hilt:hilt-compiler:1.0.0")*/
+ }

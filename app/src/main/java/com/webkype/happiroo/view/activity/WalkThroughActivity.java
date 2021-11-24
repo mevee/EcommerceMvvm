@@ -53,7 +53,7 @@ public class WalkThroughActivity extends AppCompatActivity {
             finish();
         }
 
-        init();
+//        init();
     }
 
     @OnClick({R.id.skipWelcome_tV, R.id.btnWelcomeCard})

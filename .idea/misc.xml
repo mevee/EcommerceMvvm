@@ -12,6 +12,7 @@
         <entry key="..\:/my_new_p/happiro_projects/Happiroo/app/src/main/res/layout/activity_privacy_policy.xml" value="0.12129963898916968" />
         <entry key="..\:/my_new_p/happiro_projects/Happiroo/app/src/main/res/layout/activity_tnc.xml" value="0.175" />
         <entry key="..\:/my_new_p/happiro_projects/Happiroo/app/src/main/res/layout/fragment_profile.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/activity_web_view.xml" value="0.21" />
       </map>
     </option>
   </component>
@@ -20,5 +21,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SuppressABINotification">
+    <option name="modulesWithSuppressedNotConfigured">
+      <set>
+        <option value="Happiroo.app" />
+      </set>
+    </option>
   </component>
 </project>

@@ -6,12 +6,12 @@ buildscript {
         google()
         jcenter()
         maven { url= uri("https://jitpack.io") }
-
     }
     dependencies {
-        classpath(Dependency.Project.gradle)
+        classpath(Dependency.Project.androidGradle)
+        classpath(Dependency.Project.kotlinGradlePlugin)
         classpath(Dependency.Project.googleServices)
-        classpath(Dependency.Project.hiltAndroid)
+        classpath(Dependency.Project.hiltGradlePlugin)
     }
 }
 
